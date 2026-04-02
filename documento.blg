@@ -16,8 +16,17 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: 3-pos-textuais/referencias.bib
-Warning--entry type for "elat2015densidade" isn't style-file defined
---line 94 of file 3-pos-textuais/referencias.bib
+Warning--I didn't find a database entry for "rakov2003lightning"
+Warning--I didn't find a database entry for "elat2015densidade"
+Warning--I didn't find a database entry for "LangtangenLogg2017"
+Warning--I didn't find a database entry for "secretaria1999"
+Warning--I didn't find a database entry for "NBR10520:2002"
+Warning--I didn't find a database entry for "Almeida2018"
+Warning--I didn't find a database entry for "Gondim2017"
+Warning--I didn't find a database entry for "manuais1989"
+Warning--I didn't find a database entry for "feitosa2016"
+Warning--I didn't find a database entry for "UFC2012"
+Warning--I didn't find a database entry for "NASA2016"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -27,45 +36,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 17 entries,
+You've used 7 entries,
             6714 wiz_defined-function locations,
-            1284 strings with 11981 characters,
-and the built_in function-call counts, 13851 in all, are:
-= -- 1462
-> -- 238
-< -- 225
-+ -- 351
-- -- 77
-* -- 822
-:= -- 1782
-add.period$ -- 49
-call.type$ -- 19
-change.case$ -- 109
-chr.to.int$ -- 31
-cite$ -- 12
-duplicate$ -- 1057
-empty$ -- 930
-format.name$ -- 353
-if$ -- 3056
+            1238 strings with 10161 characters,
+and the built_in function-call counts, 3932 in all, are:
+= -- 373
+> -- 90
+< -- 11
++ -- 84
+- -- 28
+* -- 231
+:= -- 503
+add.period$ -- 6
+call.type$ -- 9
+change.case$ -- 43
+chr.to.int$ -- 21
+cite$ -- 2
+duplicate$ -- 124
+empty$ -- 364
+format.name$ -- 129
+if$ -- 994
 int.to.chr$ -- 4
 int.to.str$ -- 3
-missing$ -- 258
-newline$ -- 69
-num.names$ -- 55
-pop$ -- 285
+missing$ -- 91
+newline$ -- 18
+num.names$ -- 10
+pop$ -- 89
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 24
 quote$ -- 0
-skip$ -- 1350
+skip$ -- 403
 stack$ -- 1
-substring$ -- 517
-swap$ -- 398
-text.length$ -- 8
+substring$ -- 145
+swap$ -- 64
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 5
+type$ -- 0
 warning$ -- 0
-while$ -- 75
+while$ -- 18
 width$ -- 0
-write$ -- 194
-(There was 1 warning)
+write$ -- 43
+(There were 11 warnings)

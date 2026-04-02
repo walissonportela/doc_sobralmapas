@@ -1,4 +1,4 @@
-PWD C:\Users\walis\OneDrive\Documentos\TCC_Walisson
+PWD c:\Users\walis\OneDrive\Documentos\TCC_Walisson
 INPUT C:\Users\walis\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\Users\walis\OneDrive\Documentos\TCC_Walisson\documento.tex
 OUTPUT documento.log
@@ -411,20 +411,6 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
-INPUT .\1-pre-textuais\ficha-catalografica.pdf
 INPUT .\1-pre-textuais\dedicatoria.tex
 INPUT .\1-pre-textuais\dedicatoria.tex
 INPUT .\1-pre-textuais\dedicatoria.tex
@@ -459,20 +445,6 @@ INPUT 1-pre-textuais\abstract.tex
 INPUT .\documento.lof
 INPUT .\documento.lof
 INPUT documento.lof
-INPUT .\documento.lot
-INPUT .\documento.lot
-INPUT documento.lot
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT 1-pre-textuais\lista-de-simbolos.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT .\documento.toc
 INPUT .\documento.toc
 INPUT documento.toc
@@ -484,14 +456,28 @@ INPUT .\2-textuais\1-introducao.tex
 INPUT .\2-textuais\1-introducao.tex
 INPUT .\2-textuais\1-introducao.tex
 INPUT 2-textuais\1-introducao.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT 2-textuais\2-fundamentacao-teorica.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\figuras\exemplo-1.jpg
 INPUT .\figuras\exemplo-1.jpg
 INPUT .\figuras\exemplo-1.jpg
@@ -597,92 +583,7 @@ INPUT 2-textuais\5-conclusao.tex
 INPUT .\documento.bbl
 INPUT .\documento.bbl
 INPUT documento.bbl
-INPUT .\3-pos-textuais\apendices\apendice-a.tex
-INPUT .\3-pos-textuais\apendices\apendice-a.tex
-INPUT .\3-pos-textuais\apendices\apendice-a.tex
-INPUT .\3-pos-textuais\apendices\apendice-a.tex
-INPUT 3-pos-textuais\apendices\apendice-a.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT 3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT 3-pos-textuais\apendices\apendice-c.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT .\figuras\main.cpp
-INPUT .\figuras\main.cpp
-INPUT figuras\main.cpp
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT 3-pos-textuais\apendices\apendice-d.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT 3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT 3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\documento.ind
-INPUT .\documento.ind
-INPUT documento.ind
 OUTPUT documento.lof
-OUTPUT documento.lot
 OUTPUT documento.toc
 INPUT documento.aux
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
@@ -695,8 +596,6 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb

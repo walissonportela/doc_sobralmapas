@@ -1,32 +1,25 @@
 \chapter{Introdução}
 \label{cap:introducao}
 
-%Para começar a usar este \textit{template}, na plataforma \textit{ShareLatex}, vá nas opções (três barras vermelhas horizontais) no canto esquerdo superior da tela e clique em "Copiar Projeto" e dê um novo nome para o projeto. 
+A crescente complexidade da gestão urbana moderna exige que a Administração Pública adote infraestruturas tecnológicas capazes de processar, organizar e democratizar o acesso a grandes volumes de dados geoespaciais do município. Nesse cenário, os Sistemas de Informação Geográfica (SIG), do inglês \textit{Geographic Information System} (GIS), baseados na \textit{web} (WebGIS), consolidaram-se como ferramentas essenciais para o planejamento urbano e a transparência governamental. Segundo \citeonline{VinuezaMartinez2024}, a arquitetura de sistemas WebGIS tem evoluído rapidamente, impulsionando novas tendências de pesquisa focadas em escalabilidade, interoperabilidade e desempenho na disponibilização de serviços geoespaciais.
 
-Para começar a utilizar este \textit{template}, siga o tutorial clicando no seguinte \textit{link}:
-\url{https://biblioteca.ufc.br/wp-content/uploads/2015/09/tutorial-sharelatex.pdf}
+Apesar da importância comprovada dessas ferramentas, o desenvolvimento de aplicações cartográficas para a \textit{web} apresenta desafios próprios da engenharia de \textit{software}. A publicação de mapas topográficos e dados vetoriais exige métodos eficientes de renderização e transferência de rede para evitar a degradação da experiência do usuário \cite{BastosCamboim2022}. Quando o volume de camadas (\textit{layers}) e o tráfego de usuários aumentam, aplicações estruturadas sob modelos arquiteturais monolíticos tradicionais tendem a apresentar gargalos significativos de desempenho e manutenção.
 
-Neste \textit{template}, o autor irá encontrar diversas instruções e exemplos dos recursos do uso do \LaTeX~na plataforma \textit{Overleaf}. O \LaTeX~foi desenvolvido, inicialmente, na década de 80, por Leslie Lamport e é utilizado amplamente na produção de textos matemáticos e científicos, devido a sua alta qualidade tipográfica \cite{goossens1994latex}. 
+É neste contexto de inovação e modernização tecnológica que se consolida o projeto "Sobral em Mapas", uma iniciativa estratégica e uma ferramenta imprescindível para a Prefeitura Municipal de Sobral, que busca integrar e publicar os dados geoespaciais do município utilizando a biblioteca OpenLayers. Durante o desenvolvimento do projeto, identificou-se que, para assegurar a longevidade, a segurança e a escalabilidade da plataforma em um ambiente de produção, seria necessário adotar um ecossistema tecnológico robusto, superando as limitações de servidores locais e pilhas de desenvolvimento convencionais.
 
-O \textit{ShareLatex} é uma plataforma \textit{online} que pode ser acessado por meio de qualquer navegador de internet até mesmo de um \textit{smartphone}. Essa plataforma dispensa a instalação de aplicativos no computador para desenvolver trabalhos em \LaTeX. Também, não é necessário instalar \textit{packages}, ou seja, pacotes que permitem diferentes efeitos na formatação e no visual do trabalho. Todos os \textit{packages} que este \textit{template} utiliza são encontrados \textit{online}. 
+O presente trabalho aborda essa evolução por meio da transição para uma arquitetura de \textit{software} estritamente desacoplada. Ao separar a interface do usuário (\textit{front-end}) — desenvolvida como uma \textit{Single Page Application} (SPA) reativa utilizando a biblioteca React — da lógica de controle e acesso a dados (\textit{back-end}) — orquestrada por uma API \textit{RESTful} em PHP Laravel —, o sistema mitiga gargalos de recarregamento e ganha flexibilidade. Além disso, para solucionar as complexidades históricas de implantação (\textit{deploy}) e garantir a reprodutibilidade do ambiente em qualquer infraestrutura, a aplicação foi integralmente conteinerizada com a tecnologia Docker. Em paralelo, o servidor GeoServer foi adotado como o motor robusto para a distribuição inteligente de dados abertos padronizados.
 
-Apresentam-se, também, neste modelo, algumas orientações de como desenvolver um trabalho acadêmico. Entretanto, este arquivo deve ser editado pelo autor de acordo com o seu trabalho sendo que a formatação já está de acordo com o aceito pela Universidade Federal do Ceará.  
+\section{Objetivos}
 
-A introdução, tem como finalidade, dar ao leitor uma visão concisa do tema investigado, ressaltando-se o assunto de forma delimitada, ou seja, enquadrando-o sob a perspectiva de uma área do conhecimento, de forma que fique evidente sobre o que se está investigando; a justificativa da escolha do tema; os objetivos do trabalho; o objeto de pesquisa que será investigado. Observe que não se divide a introdução em seções, mas a mesma informa como o trabalho ao todo está organizado.
+\subsection{Objetivo Geral}
+O objetivo geral deste trabalho é projetar, desenvolver e implementar uma arquitetura de \textit{software} moderna, estritamente desacoplada e conteinerizada para a plataforma \textit{web} do projeto "Sobral em Mapas", buscando construir um ecossistema tecnológico escalável e de alto desempenho que otimize a gestão, a integração, a distribuição e a visualização interativa de dados geoespaciais abertos, fornecendo assim uma ferramenta resiliente e de fácil manutenção para o apoio à gestão pública do município de Sobral.
 
-
-
-%Testando o símbolo $\symE$
-
-%\lipsum[5]  % Simulador de texto, ou seja, é um gerador de lero-lero.
-
-%	\begin{alineas}
-%		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed tortor nec viverra.
-%		\item Praesent vitae nulla varius, pulvinar quam at, dapibus nisi. Aenean in commodo tellus. Mauris molestie est sed justo malesuada, quis feugiat tellus venenatis.
-%		\item Praesent quis erat eleifend, lacinia turpis in, tristique tellus. Nunc dictum sed tortor nec viverra.
-%		\item Mauris facilisis odio eu ornare tempor. Nunc dictum sed tortor nec viverra.
-%		\item Curabitur convallis odio at eros consequat pretium.
-%	\end{alineas}
-	
-
-	
+\subsection{Objetivos Específicos}
+Para que o objetivo geral seja alcançado com êxito, a metodologia deste trabalho foi estruturada a partir dos seguintes objetivos específicos:
+\begin{itemize}
+    \item Realizar o levantamento de requisitos e a modelagem estrutural do sistema, definindo as entidades de banco de dados e os relacionamentos necessários para o armazenamento de usuários, categorias e metadados geográficos;
+    \item Projetar e desenvolver o \textit{back-end} da aplicação sob o formato de uma API \textit{RESTful} utilizando o \textit{framework} PHP Laravel, implementando rotas de comunicação, autenticação segura e orquestrando toda a lógica de negócios da plataforma;
+    \item Construir a interface com o usuário (\textit{front-end}) adotando o paradigma de \textit{Single Page Application} (SPA) por meio da biblioteca React, com foco na componentização do código e na entrega de uma experiência de usuário (UX) fluida e altamente responsiva em múltiplos dispositivos;
+    \item Integrar a infraestrutura de dados ao servidor de mapas de código aberto GeoServer para a publicação e administração inteligente das bases espaciais, utilizando a biblioteca OpenLayers no cliente para o consumo, manipulação interativa e renderização em tempo real das camadas cartográficas;
+    \item Padronizar os ambientes de desenvolvimento e produção por meio da conteinerização com a tecnologia Docker, estabelecendo contêineres independentes para os serviços da aplicação, o que garante um fluxo de implantação (\textit{deploy}) isolado, reprodutível e altamente escalável.
+\end{itemize}
