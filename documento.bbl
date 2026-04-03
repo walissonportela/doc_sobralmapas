@@ -5,11 +5,35 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Alc{\^a}ntara \textit{et al.} 2015]{Alcantara2015}
+\abntrefinfo{Alc{\^a}ntara \textit{et al.}}{ALC{\^A}NTARA \textit{et
+  al.}}{2015}
+{ALC{\^A}NTARA, G. C.~d.; SILVA, G. B. S.~d.; DRUCKER, D.~P.; VICT{\'O}RIA, D.
+  d.~C.; BOLFE, {\'E}.~L. Geoinfo e matopiba: Um webgis para a
+  dissemina{\c{c}}{\~a}o de informa{\c{c}}{\~o}es geoespaciais. In:  \textbf{I
+  Simp{\'o}sio Internacional de {\'A}guas, Solos e Geotecnologias (SASGEO)}.
+  Uberaba, MG: [s.n.], 2015.}
+
 \bibitem[Bastos e Camboim 2022]{BastosCamboim2022}
 \abntrefinfo{Bastos e Camboim}{BASTOS; CAMBOIM}{2022}
 {BASTOS, T.~L.; CAMBOIM, S.~P. Comparação e análise de métodos de
   disponibilização e publicação de mapas topográficos na web.
 \textbf{Revista Brasileira de Cartografia}, v.~74, n.~3, p. 540--560, 2022.}
+
+\bibitem[Marotta \textit{et al.} 2020]{Marotta2020}
+\abntrefinfo{Marotta \textit{et al.}}{MAROTTA \textit{et al.}}{2020}
+{MAROTTA, V. d.~S.; BRUMATTI, C. H.~T.; ALMEIDA, B.~B.; MARTINS, S. R. d.~M.;
+  DUARTE, D. C. d.~O.; COELHO, R. B.~C.; MARQUES, {\'E}.~T.; OLIVEIRA, I.~A.
+  Webgente: Desenvolvimento de um framework open source para um webgis
+  cadastral. In:  \textbf{14º Congresso de Cadastro Multifinalit{\'a}rio e
+  Gest{\~a}o Territorial (COBRAC)}. Florian{\'o}polis, SC: [s.n.], 2020.}
+
+\bibitem[Silva 2013]{Silva2013}
+\abntrefinfo{Silva}{SILVA}{2013}
+{SILVA, C. N.~d. O webgis como ferramenta no processo de ensino-aprendizagem de
+  geografia e cartografia.
+\textbf{Revista GeoAmaz{\^o}nia}, Universidade Federal do Par{\'a}, v.~2, n.~2,
+  p. 19--32, 2013.}
 
 \bibitem[Vinueza-Martinez \textit{et al.} 2024]{VinuezaMartinez2024}
 \abntrefinfo{Vinueza-Martinez \textit{et al.}}{VINUEZA-MARTINEZ \textit{et
