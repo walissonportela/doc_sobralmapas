@@ -1,155 +1,253 @@
-\chapter{Título do segundo capítulo}
+\chapter{Fundamentação Teórica}
 \label{cap:fundamentacao-teorica}
 
-Alguns autores preferem fazer uma ``fundamentação teórica'' no segundo capítulo, outros, preferem fazer uma ``revisão da literatura''. Entretanto, isto é particular de cada trabalho e o autor deve escolher o título mais adequado para o capítulo. Consultar o orientador é importante para determinar o título apropriado.
+Este capítulo apresenta o embasamento teórico, conceitual e tecnológico que fundamenta o desenvolvimento da plataforma \textit{web} "Sobral em Mapas". A fundamentação aborda os conceitos essenciais de \gls{WebGIS} na gestão pública municipal, os padrões de interoperabilidade do \textit{Open Geospatial Consortium} (\gls{OGC}) e a evolução dos padrões de arquitetura de \textit{software}. Em seguida, detalham-se o ecossistema tecnológico empregado (React, Laravel, GeoServer, PostGIS e OpenLayers), a análise comparativa de bibliotecas cartográficas e os conceitos de conteinerização com Docker.
+\section{Sistemas de Informação Geográfica na Web (WebGIS)}
+\label{sec:webgis}
 
-Evite começar da seção secundária, ou seja, não passe direto do título do capítulo para o título da seção secundária. Escreva um texto para introduzir as seções subsequentes. Lembre-se de utilizar primeira letra maiúscula quando estiver se referindo a um objeto com numeração específica como capítulo, seção, subseção, figura, tabela, quadro, equação, normalmente, se escreve a primeira letra maiúscula da palavra do objeto seguido do \textit{label}. Por exemplo, a Seção \ref{sec:citacoes} explica como fazer citações bibliográficas. Observe no código fonte deste texto como foi feita a referência cruzada. Isso permite enumerar a seção do modo automático o que facilita caso novas seções sejam criadas.  
+Os Sistemas de Informação Geográfica (\gls{SIG}) são estruturas computacionais concebidas para capturar, armazenar, manipular, analisar e exibir dados espacialmente referenciados à superfície terrestre \cite{Silva2013}. Tradicionalmente associados a \textit{softwares} de bancada (\textit{desktop}) — variando de soluções livres e de código aberto, como o QGIS (desenvolvido colaborativamente por uma comunidade global), a suítes comerciais proprietárias de elevado custo, como o ArcGIS (plataforma privada mantida pela corporação Esri) —, os \gls{SIG} convencionais exigiam elevado poder de processamento local e conhecimento técnico especializado para a sua operação. Essa arquitetura centralizada limitava o compartilhamento de dados intersetoriais e restringia a tomada de decisão a pequenos grupos de especialistas, cenário que motivou a emergência de soluções integradas à rede mundial de computadores.
 
-\section{Citações bibliográficas}\label{sec:citacoes}
+\subsection{Evolução dos SIGs Desktop para o WebGIS}
+\label{sec:evolucao-webgis}
 
-    Esta frase mostra como citar um livro sobre descargas atmosféricas \cite{rakov2003lightning}. Também podem ser citados \textit{sites} como \citeonline{elat2015densidade}. Você precisa escrever o código da referência no arquivo "referencia.bib" dentro da pasta "elementos-pos-textuais". Veja esse, onde estão alguns exemplos que já foram testados.        
+Com o avanço da rede mundial de computadores, o aprimoramento dos motores de execução JavaScript nos navegadores e a consolidação do modelo cliente-servidor, emergiu a geotecnologia conhecida como \gls{WebGIS} \cite{Silva2013}. A transição do modelo \textit{desktop} para o ambiente \textit{web} transferiu o processamento pesado de geometria e espacialização para servidores remotos, permitindo que a visualização e a consulta interativa ocorressem diretamente no navegador do usuário, sem a necessidade de instalação de dependências locais \cite{BastosCamboim2022}.
 
-    Referenciando outro livro \cite{LangtangenLogg2017}. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+O \gls{WebGIS} diferencia-se da cartografia digital estática por oferecer elevado dinamismo: o usuário pode realizar controle de \textit{zoom}, navegação panorâmica (\textit{pan}), sobreposição de camadas (\textit{layers}), consultas estruturadas a atributos e análises espaciais em tempo real. A convergência entre a computação em nuvem e o \gls{WebGIS} viabilizou a distribuição elástica de volumes massivos de dados geoespaciais, atendendo concorrentemente a centenas de requisições de forma escalável, resiliente e segura \cite{VinuezaMartinez2024}.
 
-    Referenciando outro site \cite{secretaria1999}. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Citando uma norma \cite{NBR10520:2002}.
-        
-    Citação de duas referências que concordam entre si \cite{Almeida2018,Gondim2017}. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Citando um manual \cite{manuais1989}. 
-        
-    Outro tipo de citação é a citação literal ou direta com mais de três linhas. Este tipo de citação deve ser destacada com recuo de $4~cm$ da margem esquerda com letra menor (tamanho 10), sem aspas e com espaçamento simples.  Para exemplificar esse tipo de citação, considere a afirmação de \citeonline{feitosa2016}:
-    \begin{citacao}
-        A cultura é o processo através do qual o homem cria o algo onde antes imperava o nada. Esse algo é toda complexidade de criações simbólicas, de sentidos e significados que damos às coisas e ao mundo. Um ``algo'' que não se sustenta se não se entender os processos culturais como mecanismos de mediação entre nós e os fenômenos. Assim, mais do que apenas um elemento da comunicação, a mediação é, por excelência, cultural. As diversas modalidades de mediação são apenas sotaques diferenciados dessa mediação cultural. Assim é a mediação informacional.
-    \end{citacao}
-        
-    A afirmação do parágrafo anterior também pode ser reproduzida com a citação na final como mostra o exemplo a seguir: 
-    \begin{citacao}
-        A cultura é o processo através do qual o homem cria o algo onde antes imperava o nada. Esse algo é toda complexidade de criações simbólicas, de sentidos e significados que damos às coisas e ao mundo. Um “algo” que não se sustenta se não se entender os processos culturais como mecanismos de mediação entre nós e os fenômenos. Assim, mais do que apenas um elemento da comunicação, a mediação é, por excelência, cultural. As diversas modalidades de mediação são apenas sotaques diferenciados dessa mediação cultural. Assim é a mediação informacional. \cite{feitosa2016}.
-    \end{citacao}
-        
-%Mais exemplos e opções de citações podem ser encontradas em:
-%        https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
-%        https://github.com/cfgnunes/latex-cefetmg/blob/master/latex-cefetmg/03-elementos-pos-textuais/apendices.tex            
+\subsection{O WebGIS na Gestão Pública Municipal e Planejamento Urbano}
+\label{sec:webgis-gestao-publica}
 
-\section{Inserindo figuras}\label{sec:figuras}
-    
-    A Figura \ref{fig:reitoria} apresenta a fotografia da reitoria da Universidade Federal do Ceará. Observe a estrutura do código para ver como inserir figuras. No título, comece especificando o tipo de figura. Por exemplo, fotografia, desenho, diagrama, fluxograma, gráfico e etc. O espaçamento entre linhas no título é de $1~pt$ (espaçamento simples), apenas a primeira letra da frase é maiúscula. As demais palavras são escritas com letra maiúsculas somente quando são nomes próprios e não há ponto final. 
-    
-    As margens do título da figura são delimitadas pelo tamanho da figura. Por isso, procure ajustar o tamanho da figura para preencher a largura delimitada pelas margens esquerda e direita da página que possui $16~cm$ de largura. Não esqueça de indicar fonte da figura. O autor deve evitar deixar figuras pequenas menores do que $7~cm$ de largura.
-    
-    A posição da figura deve ser o mais próximo logo após ter sido chamada no texto (a figura nunca deve aparecer antes de ter sido anunciada no texto). 
-    
-    %troque h pelo b ou t para mudar a posição da figura.
- 	\begin{figure}[h!] 
-   	    \captionsetup{width=16cm}%Da mesma largura que a figura
-		\Caption{\label{fig:reitoria} Fotografia da reitoria da Universidade Federal do Ceará}
-		\UFCfig{}{
-			\includegraphics[width=16cm]{figuras/exemplo-1}
-		}{
-			\Fonte{\citeonline{UFC2012}.}
-		}	
-	\end{figure}
-	
-    Texto1 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto1.
+No âmbito da Administração Pública Municipal, o \gls{WebGIS} consolida-se como uma ferramenta estratégica indispensável para o planejamento urbano, a governança territorial e a transparência pública \cite{Alcantara2015}. Cidades modernas geram continuamente volumes heterogêneos de dados espaciais referentes ao sistema viário, zoneamento urbano, redes de saneamento, iluminação pública, equipamentos de saúde e educação, além de dados cadastrais imobiliários para fins de tributação (como o Imposto Predial e Territorial Urbano - IPTU).
 
-    Texto2 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto2.
+A centralização e democratização dessas bases cartográficas em um portal \gls{WebGIS} único, como a iniciativa "Sobral em Mapas", mitiga o problema histórico da fragmentação de informações entre secretarias municipais. Além disso, ao disponibilizar dados geoespaciais abertos (\textit{Open Data}) para a população, o município cumpre as diretrizes de transparência passiva e ativa estipulados pela Lei de Acesso à Informação (Lei nº 12.527/2011), estimulando o controle social e o desenvolvimento de pesquisas acadêmicas focadas nos desafios urbanos locais \cite{Marotta2020}.
 
-    Texto3 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto3.
+\section{Interoperabilidade e Padrões OGC}
+\label{sec:padroes-ogc}
 
-    Texto4 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto4.
+A diversidade de formatos de dados espaciais (vetores, matrizes, tabelas alfanuméricas) e de plataformas de processamento criou a necessidade histórica de padronização para garantir a interoperabilidade entre sistemas computacionais distintos. O \textit{Open Geospatial Consortium} (\gls{OGC}) é a organização internacional neutra responsável por definir padrões abertos globais para dados e serviços geoespaciais \cite{Foerster2011}.
 
-    A Figura \ref{fig:sondas} Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto3.
+A conformidade com as especificações do \gls{OGC} garante que uma camada publicada por um servidor de mapas específico possa ser consumida de forma transparente por qualquer cliente cartográfico compatível, independentemente de linguagens de programação ou sistemas operacionais subjacentes.
 
-	\begin{figure}[h!]
-		\centering
-		\captionsetup{width=14cm}%Da mesma largura que a figura
-		\Caption{\label{fig:sondas} Gráfico da Atmosfera Superior}	
-		\UFCfig{}{
-			\includegraphics[width=14cm]{figuras/sondas}
-		}{
-			\Fonte{adaptado da \citeonline{NASA2016}.}}	
-	\end{figure}
+\subsection{Web Map Service (WMS) e Web Map Tile Service (WMTS)}
+\label{sec:wms-wmts}
 
-    Texto5 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto5.
+O protocolo \textit{Web Map Service} (\gls{WMS}) define uma interface padronizada para a requisição de mapas georreferenciados sob a forma de imagens renderizadas no lado do servidor (como \texttt{PNG}, \texttt{JPEG} ou \texttt{WebP}) \cite{BastosCamboim2022}. O cliente estabelece os limites geográficos da consulta enviando parâmetros \gls{HTTP} como \texttt{BBOX} (\textit{Bounding Box}), largura, altura, sistema de referência espacial e as camadas desejadas. O servidor processa a geometria espacial no banco de dados, aplica o estilo visual definido e retorna uma única imagem gerada dinamicamente.
 
-    Texto6 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto5.
+Para cenários que exigem alto desempenho em áreas extensas com grande fluxo de usuários, o \gls{OGC} padronizou o \textit{Web Map Tile Service} (\gls{WMTS}). Ao contrário do \gls{WMS} tradicional, que gera imagens sob demanda para cada requisição, o \gls{WMTS} divide a representação espacial em uma pirâmide de blocos pré-renderizados (\textit{tiles}) organizados por níveis de detalhe (\textit{zoom levels}). Essa abordagem maximiza o uso de rotinas de \textit{caching} no servidor e no navegador, reduzindo drasticamente a latência de rede.
 
-    Texto7 texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto6.
+\subsection{Web Feature Service (WFS) e Formatos Vetoriais (GeoJSON)}
+\label{sec:wfs-geojson}
 
-    Evite terminar seções, capítulos e etc com figura. Procure escrever mais.
+Enquanto o \gls{WMS} fornece imagens estáticas dos mapas, o \textit{Web Feature Service} (\gls{WFS}) possibilita o acesso direto às feições vetoriais geográficas, incluindo a sua geometria exata (pontos, linhas e polígonos) e a sua tabela de atributos alfanuméricos correlata \cite{Cui2022}. Por meio do \gls{WFS}, o cliente adquire autonomia para aplicar estilização dinâmica no navegador, efetuar seleção de objetos, filtrar atributos sem novas consultas ao servidor e realizar cálculos de distância ou área localmente.
 
-\section{Inserindo tabelas}\label{sec:tabelas}
-    
-    A Tabela \ref{tab:exemplo-1}... texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto. Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-	
-	\begin{table}[!h]
-	\captionsetup{width=7cm}%Deixe da mesma largura que a tabela
-	\Caption{\label{tab:exemplo-1} Um Exemplo de tabela alinhada que pode ser longa ou curta}%
-	\IBGEtab{}{%
-		\begin{tabular}{ccc}
-			\toprule
-			Nome & Nascimento & Documento \\
-			\midrule \midrule
-			Maria da Silva & 11/11/1111 & 111.111.111-11 \\
-			Maria da Silva & 11/11/1111 & 111.111.111-11 \\
-			Maria da Silva & 11/11/1111 & 111.111.111-11 \\
-			\bottomrule
-		\end{tabular}%
-	}{%
-	\Fonte{o autor.}%
-	\Nota{esta é uma nota, que diz que os dados são baseados na
-		regressão linear.}%
-	\Nota[Anotações]{uma anotação adicional, seguida de várias outras.}%
+O formato padrão utilizado para a serialização e troca de dados vetoriais em aplicações \textit{web} modernas é o \texttt{GeoJSON}. Derivado da notação \gls{JSON} (\textit{JavaScript Object Notation}), o \texttt{GeoJSON} descreve estruturas de dados geográficos simples de forma leve, legível por humanos e nativamente interpretável pelos motores JavaScript dos navegadores, conforme exemplificado a seguir:
+
+\begin{verbatim}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-40.3497, -3.6881] },
+      "properties": { "nome": "Prefeitura de Sobral", "categoria": "Publico" }
     }
-    \end{table}
+  ]
+}
+\end{verbatim}
 
-	%\begin{table}[h!]	
-	%	\centering
-	%	\Caption{\label{tab:exemplo-1} Exemplo de tabela}	
-	%	\UFCtab{}{
-	%		\begin{tabular}{cll}
-	%			\toprule
-	%			Ranking & Exon Coverage & Splice Site Support \\
-	%			\midrule \midrule
-	%			E1 & Complete coverage by a single transcript & Both splice sites\\
-	%			E2 & Complete coverage by more than a single transcript & Both splice sites\\
-	%			E3 & Partial coverage & Both splice sites\\
-	%			E4 & Partial coverage & One splice site\\
-	%			E5 & Complete or partial coverage & No splice sites\\
-	%			E6 & No coverage & No splice sites\\
-	%			\bottomrule
-	%		\end{tabular}
-	%	}{
-	%	\Fonte{elaborado pelo autor.}
-	%}
-	%\end{table}
+Para sintetizar as diferenças técnicas, as vantagens e os casos de uso ideais de cada serviço de mapeamento discutido, a Tabela \ref{tab:comparativo-ogc} apresenta um comparativo estruturado entre as especificações do OGC.
 
-\subsection{Exemplo de subseção} \label{sec:ex_sec}
-	
-    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\begin{table}[htb]
+\captionsetup{width=15cm}
+\Caption{\label{tab:comparativo-ogc} Matriz comparativa entre os serviços padronizados do OGC}
+\IBGEtab{}{
+    \begin{tabular}{p{3.2cm}p{3.4cm}p{3.8cm}p{3.8cm}}
+        \toprule
+        \textbf{Característica} & \textbf{WMS} & \textbf{WFS} & \textbf{WMTS} \\
+        \midrule \midrule
+        Tipo de Dado Retornado & Imagem raster (PNG/JPEG) & Vetor bruto (GeoJSON/GML) & Mosaico de imagens (\textit{tiles}) \\
+        Local de Processamento & Servidor de Mapas & Navegador / Cliente & Servidor (Pré-renderizado) \\
+        Interatividade no Cliente & Baixa (Apenas imagem) & Alta (Seleção, Edição, Filtro) & Baixa (Navegação rápida) \\
+        Desempenho em Rede & Médio (Gera imagem por busca) & Variável (Depende do nº de vetores) & Extremamente Elevado (Usa Cache) \\
+        Uso Principal & Camadas pesadas/de fundo & Camadas vetoriais interativas & Mapas de base (\textit{basemaps}) \\
+        \bottomrule
+    \end{tabular}
+}{
+    \Fonte{Elaborado pelo autor.}
+}
+\end{table}
 
-    %acrlong{DATASUS},\acrlong{DNV},\acrlong{DO},\acrlong{ESF},\acrlong{IBGE},\acrlong{MFC},\acrlong{MI},\acrlong{MS},\acrlong{NV},\acrlong{ODM},\acrlong{OI},\acrlong{OMS},\acrlong{ONU},\acrlong{PNI},\acrlong{PSF},\acrlong{RIPSA},\acrlong{RN},\acrlong{SIM},\acrlong{SINASC},\acrlong{SUS},\acrlong{TMI},\acrlong{TMMFC}
+\section{Arquitetura de Software para Aplicações Web Geoespaciais}
+\label{sec:arquitetura-software}
 
+A arquitetura de \textit{software} estabelece a estrutura organizacional interna de um sistema computacional, definindo como seus componentes interagem, comunicam-se e dividem responsabilidades. No ecossistema \textit{web}, o modelo de arquitetura adotado influencia diretamente métricas críticas de qualidade, tais como desempenho sob carga, escalabilidade vertical e horizontal, manutencionalidade e segurança \cite{VinuezaMartinez2024}.
 
-    \begin{alineascomponto}
-	    \item Integer non lacinia magna. Aenean tempor lorem tellus, non sodales nisl commodo ut
-	    \item Proin mattis placerat risus sit amet laoreet. Praesent sapien arcu, maximus ac fringilla efficitur, vulputate faucibus sem. Donec aliquet velit eros, sit amet elementum dolor pharetra eget
-	    \item Integer eget mattis libero. Praesent ex velit, pulvinar at massa vel, fermentum dictum mauris. Ut feugiat accumsan augue, et ultrices ipsum euismod vitae
-	    \begin{subalineascomponto}
-		    \item Integer non lacinia magna. Aenean tempor lorem tellus, non sodales nisl commodo ut
-		    \item Proin mattis placerat risus sit amet laoreet.
-	    \end{subalineascomponto}
-    \end{alineascomponto}
+\subsection{Gargalos da Arquitetura Monolítica em Sistemas Cartográficos}
+\label{sec:monolito-gargalos}
 
-\subsection{Uso de siglas} \label{sec:siglas}
+Em abordagens arquiteturais monolíticas tradicionais, todas as camadas da aplicação — a lógica de exibição gráfica (\textit{presentation layer}), o controle de rotas, as regras de negócio e a camada de acesso ao banco de dados — encontram-se acopladas em uma única base de código unificada e executada inteiramente no servidor.
 
-    Para utilizar siglas, primeiro defina a sigla no arquivo "lista-de-abreviaturas-e-siglas"~ dentro da pasta "1-pre-textuais" com o comando 
-    \begin{verbatim}
-        \newacronym{ABNT}{ABNT}{Associação Brasileira de Normas Técnicas}
-    \end{verbatim}
-    Depois chame a sigla com o comando:
-    \begin{verbatim}
-        \gls{ABNT}
-    \end{verbatim}
-    Fica assim: \gls{ABNT}. A primeira vez que o comando é usado para uma determinada sigla, aparece o significado por extenso da sigla com a sua abreviação em seguida. A partir da segunda vez que o comando para uma determinada sigla é usado, aparace apenas a sigla. Por exemplo: \gls{ABNT}.  
-    
-    Veja o código fonte de outros exemplos: Teste de siglas \gls{TEST}, outros exemplos de siglas: \gls{DA}, \gls{MCEG}. 
-    Repare que sempre as siglas estão sendo definidas primeiramente no arquivo ``lista-de-abreviaturas-e-siglas''.
+Quando aplicadas a plataformas \gls{WebGIS}, arquiteturas monolíticas enfrentam gargalos severos de desempenho \cite{Marotta2020}:
+\begin{alineascomponto}
+    \item \textbf{Processamento Centralizado de Renderização:} O servidor precisa processar as geometrias complexas, aplicar estilos visuais e montar o documento \gls{HTML} completo a cada interação do usuário, gerando elevado consumo de \gls{CPU} e memória;
+    \item \textbf{Tráfego Excessivo de Rede:} Pequenas interações do usuário no mapa exigem o recarregamento completo da página (\textit{full page refresh}), trafegando documentos \gls{HTML} redundantes em vez de apenas os vetores necessários;
+    \item \textbf{Acoplamento Forte:} Dificuldade de manutenção do código e impossibilidade de escalonar separadamente o motor cartográfico do portal administrativo.
+\end{alineascomponto}
+
+\subsection{Arquitetura Desacoplada: Separação entre Frontend (SPA) e Backend (API)}
+\label{sec:arquitetura-desacoplada}
+
+Para superar as restrições dos sistemas monolíticos, este trabalho adotou o modelo de arquitetura estritamente desacoplada. A premissa central dessa abordagem consiste na separação física e lógica entre a interface do usuário (\textit{front-end}) e os serviços de dados e regras de negócio (\textit{back-end}).
+
+O \textit{front-end} é desenvolvido como uma \textit{Single Page Application} (\gls{SPA}), sendo transferido para o navegador do cliente no primeiro acesso. A partir desse momento, a interface permanece ativa sem recarregamentos globais, requisitando ao \textit{back-end} estritamente os dados brutos necessários via chamadas assíncronas em segundo plano (\textit{AJAX/Fetch}). A Tabela \ref{tab:comparativo-arquitetura} sintetiza as diferenças entre os dois paradigmas.
+
+\begin{table}[htb]
+\captionsetup{width=15cm} 
+\Caption{\label{tab:comparativo-arquitetura} Comparativo entre arquitetura monolítica e desacoplada}
+\IBGEtab{}{
+    \begin{tabular}{p{3cm}p{5.5cm}p{5.5cm}}
+        \toprule
+        \textbf{Atributo} & \textbf{Arquitetura Monolítica} & \textbf{Arquitetura Desacoplada (API/SPA)} \\
+        \midrule \midrule
+        Acoplamento & Interface e regras unificadas & Separação total (Front e Back) \\
+        Processamento & Centrado no servidor & Distribuído (Cliente renderiza) \\
+        Escalabilidade & Complexa (exige duplicar tudo) & Independente por camada \\
+        Comunicação & Renderização no lado do servidor & Troca de dados via JSON/REST \\
+        Experiência (UX) & Recarregamento de página inteiro & Navegação fluida sem \textit{reload} \\
+        \bottomrule
+    \end{tabular}
+}{
+    \Fonte{Elaborado pelo autor.}
+}
+\end{table}
+
+\subsection{O Padrão REST e Protocolo HTTP para Transferência Geoespacial}
+\label{sec:padrao-rest}
+
+A integração entre o cliente \gls{SPA} e os serviços de \textit{back-end} é regida pelo estilo arquitetural \gls{REST} (\textit{Representational State Transfer}). O \gls{REST} utiliza o próprio protocolo \gls{HTTP} como camada de aplicação, valendo-se dos seus verbos semânticos padronizados para manipular recursos expostos em \gls{URI}s (\textit{Uniform Resource Identifiers}):
+\begin{alineascomponto}
+    \item \texttt{GET}: Leitura e consulta de recursos (ex.: listar camadas ativas ou metadados de um mapa);
+    \item \texttt{POST}: Criação de novos recursos (ex.: cadastro de novos usuários ou categorias);
+    \item \texttt{PUT / PATCH}: Atualização total ou parcial de registros existentes;
+    \item \texttt{DELETE}: Remoção de recursos da base de dados.
+\end{alineascomponto}
+
+\section{Ecossistema de Desenvolvimento Tecnológico}
+\label{sec:ecossistema-tecnologico}
+
+A seleção das ferramentas computacionais para a implementação do projeto "Sobral em Mapas" pautou-se em critérios como robustez técnica, estabilidade da comunidade \textit{open-source}, desempenho computacional e alinhamento com os objetivos de modernização da plataforma municipal.
+
+\subsection{Front-end: A Biblioteca React e o Paradigma Single Page Application}
+\label{sec:react-spa}
+
+O React é uma biblioteca JavaScript de código aberto, mantida pela Meta e pela comunidade global, desenvolvida especificamente para a construção de interfaces de usuário reativas e componentizadas.
+
+Diferentemente da manipulação direta do \gls{DOM} (\textit{Document Object Model}) do navegador — operação computacionalmente custosa —, o React introduz o conceito de \textit{Virtual DOM}. O \textit{Virtual DOM} mantém uma representação leve da árvore de elementos na memória. Quando ocorrem alterações no estado da aplicação (como a seleção de uma nova camada cartográfica pelo usuário), o React calcula a diferença exata entre o estado anterior e o novo (\textit{reconciliation algorithm}) e atualiza estritamente os nós afetados no \gls{DOM} real, otimizando de forma expressiva o desempenho de renderização gráfica.
+
+Além disso, a arquitetura baseada em componentes reutilizáveis permite modularizar a interface da plataforma "Sobral em Mapas" em estruturas isoladas (como a barra lateral de camadas, o painel de ferramentas, o controle de transparência e o container do mapa), facilitando a manutenção e a adaptação responsiva para telas de dispositivos móveis \cite{Cui2022}.
+
+\subsection{Back-end: O Framework PHP Laravel e a Arquitetura RESTful}
+\label{sec:laravel-backend}
+
+O Laravel é um dos \textit{frameworks} mais consolidados no ecossistema \gls{PHP}, projetado sob a arquitetura \gls{MVC} (\textit{Model-View-Controller}). No contexto desacoplado da plataforma, o Laravel atua estritamente como um servidor de \gls{API} \gls{REST}, eliminando a camada tradicional de visualização de páginas (\textit{View}) e retornando as requisições puramente em \gls{JSON}.
+
+Esse \textit{framework} contribui com funcionalidades essenciais à segurança e à lógica da aplicação:
+\begin{alineascomponto}
+    \item \textbf{ORM Eloquent:} Mapeamento Objeto-Relacional que abstrai operações complexas de banco de dados SQL em sintaxes orientadas a objetos;
+    \item \textbf{Mecanismos de Segurança:} Proteção integrada contra ataques de injeção de SQL (\textit{SQL Injection}), falsificação de solicitação entre sites (\textit{CSRF}) e validação rigorosa de dados de entrada;
+    \item \textbf{Autenticação Stateless:} Emissão e validação de chaves de acesso (\textit{tokens}) seguras para controlar o uso das rotas administrativas da plataforma municipal.
+\end{alineascomponto}
+
+\subsection{Infraestrutura Geoespacial: GeoServer e Banco de Dados PostGIS}
+\label{sec:geoserver-postgis}
+
+A gestão e a distribuição eficientes das bases espaciais exigem uma infraestrutura de dados robusta. No centro desse fluxo opera o GeoServer, um servidor de mapas de código aberto desenvolvido em Java e plenamente certificado em conformidade com as especificações do \gls{OGC} (\gls{WMS}, \gls{WFS}, \gls{WMTS}). O GeoServer processa os arquivos vetoriais e as tabelas geográficas, estiliza as feições por meio de regras \gls{SLD} (\textit{Styled Layer Descriptor}) e expõe os \textit{webservices} cartográficos para o consumo da aplicação.
+
+Por sua vez, o armazenamento persistente dos dados geográficos é provido pelo PostgreSQL equipado com a extensão espacial PostGIS. O PostGIS adiciona ao banco relacional tipos de dados espaciais nativos (como \texttt{GEOMETRY} e \texttt{GEOGRAPHY}) e índices de busca otimizados (R-Tree/GiST), permitindo a execução de consultas espaciais de alta performance, como cálculos de interseções, áreas e análises de vizinhança \cite{Cui2022}.
+
+\subsection{Estudo Comparativo de Bibliotecas Cartográficas Web}
+\label{sec:estudo-comparativo-bibliotecas}
+
+A seleção da biblioteca de mapeamento ideal para um projeto de \gls{WebGIS} municipal requer a avaliação criteriosa de requisitos operacionais, flexibilidade de customização de código, suporte a diferentes projeções e eventuais custos de licenciamento. A Tabela \ref{tab:comparativo-bibliotecas} apresenta uma análise comparativa abrangente entre as quatro principais tecnologias de mapeamento \textit{web} disponíveis atualmente no mercado.
+
+\begin{table}[htb]
+\captionsetup{width=15cm}
+\Caption{\label{tab:comparativo-bibliotecas} Matriz comparativa entre bibliotecas e APIs de mapeamento web}
+\IBGEtab{}{
+    \begin{tabular}{p{2.8cm} p{3.8cm} p{4.2cm} p{3.8cm}}
+        \toprule
+        \textbf{Biblioteca} & \textbf{Características Principais} & \textbf{Vantagens Principais} & \textbf{Limitações/Desvantagens} \\
+        \midrule \midrule
+        \textbf{OpenLayers} & Código aberto, suporte nativo avançado a padrões \gls{OGC} (\gls{WMS}, \gls{WFS}), reprojeção dinâmica e rico suporte a vetores. & Extrema flexibilidade, independência de fornecedor, suporte nativo a reprojeção e manipulação granular. & Maior curva de aprendizado inicial e maior verbosidade na configuração de código. \\
+        \midrule
+        \textbf{Leaflet} & Biblioteca \textit{open-source} ultraleve, arquitetura enxuta estendida por meio de um ecossistema de \textit{plugins}. & Simplicidade de uso, documentação acessível e baixíssimo tamanho de pacote. & Suporte nativo limitado a projeções complexas e a serviços avançados do \gls{OGC}. \\
+        \midrule
+        \textbf{Mapbox GL JS} & Foco em renderização acelerada via WebGL utilizando \textit{Vector Tiles} e estilização no lado do cliente. & Desempenho gráfico elevado em grandes massas de dados e transições visuais fluidas. & Alteração de licença para modelo proprietário e limitações em serviços \gls{OGC} tradicionais. \\
+        \midrule
+        \textbf{Google Maps API} & Plataforma comercial integrada ao ecossistema de mapas e dados globais da Google. & Vasta base cartográfica pré-existente e facilidade de integração de rotas e geocodificação. & Custos elevados em larga escala, modelo proprietário restritivo e pouca flexibilidade espacial. \\
+        \bottomrule
+    \end{tabular}
+}{
+    \Fonte{Elaborado pelo autor.}
+}
+\end{table}
+
+A partir do diagnóstico sintetizado na Tabela \ref{tab:comparativo-bibliotecas}, conclui-se que o OpenLayers se posiciona como a escolha mais assertiva para o escopo do projeto "Sobral em Mapas". A biblioteca combina total aderência aos serviços distribuídos pelo GeoServer municipal com a ausência de restrições comerciais. Diante dessa constatação, a subseção a seguir detalha a arquitetura interna de funcionamento da ferramenta escolhida.
+
+\subsection{Cliente Cartográfico: A Biblioteca OpenLayers}
+\label{sec:openlayers}
+
+Conforme justificado, o OpenLayers consiste em uma biblioteca JavaScript de alto desempenho, voltada especificamente para a exibição e manipulação interativa de dados cartográficos em navegadores \textit{web} \cite{Foerster2011}. Sua arquitetura modular baseia-se em um conjunto bem definido de classes principais, responsáveis por orquestrar a renderização espacial:
+\begin{alineascomponto}
+    \item \textbf{\texttt{ol/Map}:} Estrutura central encarregada de associar o mapa a um elemento container do \gls{HTML} e orquestrar as visualizações;
+    \item \textbf{\texttt{ol/View}:} Gerencia as propriedades geométricas de exibição do mapa, incluindo centro de coordenadas, nível de \textit{zoom}, rotação e sistema de referência espacial (projeção);
+    \item \textbf{\texttt{ol/layer}:} Define as categorias de camadas a serem sobrepostas na tela (como \texttt{TileLayer} para mosaicos gerados via WMS/WMTS e \texttt{VectorLayer} para feições carregadas via WFS);
+    \item \textbf{\texttt{ol/source}:} Provê a origem física dos dados e os protocolos de requisição que alimentam as referidas camadas (\texttt{OSM}, \texttt{TileWMS}, \texttt{VectorSource});
+    \item \textbf{\texttt{ol/interaction}:} Captura e processa eventos de entrada do usuário, viabilizando o dinamismo por meio de rotações, arrastes, seleção de elementos (\textit{select}) e edição geométrica (\textit{draw}).
+\end{alineascomponto}
+
+\section{Conteinerização e Infraestrutura de Implantação com Docker}
+\label{sec:docker-conteinerizacao}
+
+Historicamente, um dos maiores desafios da engenharia de \textit{software} reside no dilema do ambiente de execução — o clássico cenário no qual uma aplicação funciona perfeitamente na máquina do desenvolvedor, mas falha ao ser implantada no servidor de produção municipal. As divergências entre versões de bibliotecas, variáveis de ambiente e dependências do sistema operacional hospedeiro são as causas primárias dessa instabilidade.
+
+\subsection{Diferenças entre Virtualização por Máquinas Virtuais e Contêineres}
+\label{sec:vm-vs-docker}
+
+A tecnologia de conteinerização Docker revolucionou a implantação de \textit{software} ao introduzir uma forma leve de virtualização em nível de sistema operacional. Enquanto as Máquinas Virtuais (\gls{VM}) tradicionais exigem a inclusão de um sistema operacional convidado (\textit{Guest OS}) completo e um intermediador de \textit{hardware} (\textit{Hypervisor}), os contêineres Docker compartilham diretamente o \textit{kernel} do sistema operacional hospedeiro \cite{VinuezaMartinez2024}.
+
+A Tabela \ref{tab:comparativo-docker-vm} detalha as distinções técnicas e operacionais entre essas duas soluções de infraestrutura.
+
+\begin{table}[htb]
+\captionsetup{width=15cm}
+\Caption{\label{tab:comparativo-docker-vm} Comparativo entre Máquinas Virtuais e Contêineres Docker}
+\IBGEtab{}{
+    \begin{tabular}{p{4cm}p{5.5cm}p{5.5cm}}
+        \toprule
+        \textbf{Métrica de Avaliação} & \textbf{Máquinas Virtuais (\gls{VM})} & \textbf{Contêineres Docker} \\
+        \midrule \midrule
+        Nível de Virtualização & Virtualização de \textit{Hardware} & Virtualização de \textit{Sistema Operacional} \\
+        Sistema Operacional & Exige SO Convidado dedicado completo & Compartilha o \textit{Kernel} do SO Hospedeiro \\
+        Consumo de Recursos & Elevado (SRAM e Disco alocados rigidamente) & Leve (alocação dinâmica sob demanda) \\
+        Tempo de Inicialização & Ordem de minutos & Ordem de segundos \\
+        Tamanho de Imagem & Dezenas de Gigabytes (\gls{GB}) & Dezenas de Megabytes (\gls{MB}) \\
+        Isolamento de Ambiente & Isolamento absoluto por \textit{hardware} & Isolamento lógico por \textit{namespaces/cgroups} \\
+        \bottomrule
+    \end{tabular}
+}{
+    \Fonte{Elaborado pelo autor.}
+}
+\end{table}
+
+\subsection{Orquestração Multisserviços com Docker Compose}
+\label{sec:docker-compose}
+
+No âmbito do projeto "Sobral em Mapas", a aplicação depende da execução harmônica de múltiplos serviços interdependentes:
+\begin{alineascomponto}
+    \item \textbf{Contêiner Frontend:} Servidor \gls{HTTP} Nginx otimizado para entregar os arquivos estáticos compilados do React \gls{SPA};
+    \item \textbf{Contêiner Backend:} Ambiente de execução \gls{PHP}-FPM contendo o \textit{framework} Laravel e suas dependências de código;
+    \item \textbf{Contêiner Banco de Dados:} Instância do PostgreSQL munida da extensão espacial PostGIS;
+    \item \textbf{Contêiner Servidor de Mapas:} Instância em Java executando a aplicação GeoServer.
+\end{alineascomponto}
+
+Para orquestrar essa arquitetura multisserviços de maneira automatizada, utiliza-se a ferramenta Docker Compose. Por meio de um arquivo descritivo único (\texttt{docker-compose.yml}), o desenvolvedor declara as configurações de rede virtual interna, volumes de dados persistentes, portas de comunicação expostas e limites de recursos para cada contêiner. Isso possibilita a subida completa de toda a infraestrutura da plataforma municipal com um único comando declarativo (\texttt{docker compose up}).

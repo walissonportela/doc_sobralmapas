@@ -16,17 +16,8 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: 3-pos-textuais/referencias.bib
-Warning--I didn't find a database entry for "rakov2003lightning"
-Warning--I didn't find a database entry for "elat2015densidade"
-Warning--I didn't find a database entry for "LangtangenLogg2017"
-Warning--I didn't find a database entry for "secretaria1999"
-Warning--I didn't find a database entry for "NBR10520:2002"
-Warning--I didn't find a database entry for "Almeida2018"
-Warning--I didn't find a database entry for "Gondim2017"
-Warning--I didn't find a database entry for "manuais1989"
-Warning--I didn't find a database entry for "feitosa2016"
-Warning--I didn't find a database entry for "UFC2012"
-Warning--I didn't find a database entry for "NASA2016"
+Warning--I didn't find a database entry for "Foerster2011"
+Warning--I didn't find a database entry for "Cui2022"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -38,7 +29,7 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 10 entries,
             6714 wiz_defined-function locations,
-            1260 strings with 11186 characters,
+            1247 strings with 11019 characters,
 and the built_in function-call counts, 6738 in all, are:
 = -- 544
 > -- 224
@@ -77,4 +68,4 @@ warning$ -- 0
 while$ -- 39
 width$ -- 0
 write$ -- 91
-(There were 11 warnings)
+(There were 2 warnings)
