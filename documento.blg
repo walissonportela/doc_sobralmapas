@@ -16,8 +16,6 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: 3-pos-textuais/referencias.bib
-Warning--I didn't find a database entry for "Foerster2011"
-Warning--I didn't find a database entry for "Cui2022"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -27,45 +25,44 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 10 entries,
+You've used 29 entries,
             6714 wiz_defined-function locations,
-            1247 strings with 11019 characters,
-and the built_in function-call counts, 6738 in all, are:
-= -- 544
-> -- 224
-< -- 15
-+ -- 139
-- -- 66
-* -- 466
-:= -- 864
-add.period$ -- 17
-call.type$ -- 12
-change.case$ -- 87
-chr.to.int$ -- 27
-cite$ -- 5
-duplicate$ -- 253
-empty$ -- 567
-format.name$ -- 337
-if$ -- 1657
-int.to.chr$ -- 4
+            1364 strings with 14319 characters,
+and the built_in function-call counts, 39124 in all, are:
+= -- 4671
+> -- 617
+< -- 1060
++ -- 1333
+- -- 190
+* -- 2355
+:= -- 4811
+add.period$ -- 123
+call.type$ -- 31
+change.case$ -- 233
+chr.to.int$ -- 46
+cite$ -- 24
+duplicate$ -- 3919
+empty$ -- 1665
+format.name$ -- 933
+if$ -- 7856
+int.to.chr$ -- 7
 int.to.str$ -- 3
-missing$ -- 151
-newline$ -- 31
-num.names$ -- 25
-pop$ -- 160
+missing$ -- 472
+newline$ -- 133
+num.names$ -- 120
+pop$ -- 534
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 100
 quote$ -- 0
-skip$ -- 551
+skip$ -- 4288
 stack$ -- 1
-substring$ -- 221
-swap$ -- 132
-text.length$ -- 9
+substring$ -- 1590
+swap$ -- 1417
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2
+type$ -- 4
 warning$ -- 0
-while$ -- 39
+while$ -- 171
 width$ -- 0
-write$ -- 91
-(There were 2 warnings)
+write$ -- 390

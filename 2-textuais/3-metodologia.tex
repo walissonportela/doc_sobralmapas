@@ -1,199 +1,664 @@
 \chapter{Metodologia}
-\label{chap:metodologia}
+\label{cap:metodologia}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+Este capítulo apresenta os procedimentos metodológicos e as principais decisões adotadas no desenvolvimento da plataforma ``Sobral em Mapas''. São descritos a caracterização da pesquisa, o levantamento dos requisitos, a arquitetura da solução, a modelagem dos dados, o desenvolvimento do back-end e do front-end, a integração com o GeoServer, a configuração do ambiente de execução e os procedimentos de verificação das funcionalidades. A solução foi desenvolvida segundo uma arquitetura desacoplada, com separação entre a interface, as regras de negócio, a persistência dos dados administrativos e os serviços geoespaciais.
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\section{Caracterização da Pesquisa}
+\label{sec:caracterizacao-pesquisa}
 
-\section{Exemplo de alíneas}\label{sec:exemplo-de-algoritmos-e-figuras}
+Este trabalho caracteriza-se como uma pesquisa de natureza aplicada e predominantemente descritiva \cite{ProdanovFreitas2013}, direcionada ao desenvolvimento de uma solução computacional para organização, integração e disponibilização de informações geográficas relacionadas ao município de Sobral. O trabalho também possui caráter tecnológico, pois envolve a construção e a integração dos componentes necessários ao funcionamento da plataforma WebGIS.
 
-    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+O desenvolvimento foi conduzido de forma incremental. Inicialmente, foram identificadas as necessidades da plataforma e definidos seus requisitos e sua arquitetura. Em seguida, foram desenvolvidos o back-end, o front-end e os recursos cartográficos, posteriormente integrados ao banco de dados, aos serviços geoespaciais e ao ambiente de execução. Durante esse processo, ciclos de implementação, verificação e refinamento permitiram realizar ajustes progressivos nas funcionalidades e nos fluxos de comunicação.
 
-    %\begin{algorithm}[h!]
-    %	\SetSpacedAlgorithm
-    %	\caption{\label{exemplo-de-algoritmo}Como escrever algoritmos no \LaTeX2e}
-    %	\Entrada{o proprio texto}
-    %	\Saida{como escrever algoritmos com  Latex:}% \LaTeX2e }
-    %	\Inicio{
-    %		inicialização;
-    %		\Repita{fim do texto}{
-    %			leia o atual;
-    %			\Se{entendeu}{
-    %				vá para o proximo\;
-    %				próximo se torna o atual;}
-    %			\Senao{volte ao início da seção;}
-    %		}
-    %	}	
-    %\end{algorithm}
+A abordagem metodológica adotada pode ser sintetizada nas seguintes etapas:
 
-    Texto texto texto texto texto texto texto texto texto texto texto.
+\begin{alineascomponto}
 
-    %\begin{algorithm}[H]
-    %	\Entrada{o proprio texto}
-    %	\Saida{como escrever algoritmos com \LaTeX2e }
-    %	\Inicio{
-    %		inicialização\;
-    %		\Repita{fim do texto}{
-    %			leia o atual\;
-    %			\Se{entendeu}{
-    %				vá para o próximo\;
-    %				próximo se torna o atual\;}
-    %			\Senao{volte ao início da seção\;}
-    %		}
-    %	}
-    %	\caption{Exemplo de Algoritmo Versao 02}
-    %\end{algorithm}
+    \item levantamento e especificação dos requisitos da plataforma;
 
-    %\begin{algorithm}
-    %	\begin{algorithmic}
-    %	\Entrada{o proprio texto}
-    %	\Saida{como escrever algoritmos com \LaTeX2e }	
-    %	\end{algorithmic}
-    %\end{algorithm}
+    \item definição da arquitetura e modelagem dos dados administrativos;
 
-    Exemplo de alíneas com números:
+    \item desenvolvimento da API, dos mecanismos de autenticação e do gerenciamento dos dados;
 
-    \begin{alineascomnumero}
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-	    \item Texto texto texto texto texto texto texto texto texto texto texto texto .
-    \end{alineascomnumero}
+    \item desenvolvimento da interface web e dos recursos cartográficos;
 
-    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+    \item integração com os serviços geoespaciais disponibilizados pelo GeoServer;
 
-    Ou então figuras podem ser incorporadas de arquivos externos, como é o caso da \autoref{fig-grafico-1}. Se a figura que ser incluída se tratar de um diagrama, um gráfico ou uma ilustração que você mesmo produza, priorize o uso de imagens vetoriais no formato PDF. Com isso, o tamanho do arquivo final do trabalho será menor, e as imagens terão uma apresentação melhor, principalmente quando impressas, uma vez que imagens vetorias são perfeitamente escaláveis para qualquer dimensão. Nesse caso, se for utilizar o Microsoft Excel para produzir gráficos, ou o Microsoft Word para produzir ilustrações, exporte-os como PDF e os incorpore ao documento conforme o exemplo abaixo. No entanto, para manter a coerência no uso de software livre (já que você está usando LaTeX e abnTeX),  teste a ferramenta InkScape\index{InkScape}. ao CorelDraw\index{CorelDraw} ou ao Adobe Illustrator\index{Adobe! Illustrator}.  De todo modo, caso não seja possível  utilizar arquivos de imagens como PDF, utilize qualquer outro formato, como JPEG, GIF, BMP, etc.  Nesse caso, você pode tentar aprimorar as imagens incorporadas com o software livre \index{Gimp}Gimp. Ele é uma alternativa livre ao Adobe Photoshop\index{Adobe! Photoshop}.
+    \item configuração do ambiente de execução e conteinerização do back-end;
 
-\section{Usando Fórmulas Matemáticas}
+    \item verificação das funcionalidades e dos fluxos integrados da plataforma.
 
-Para escrever um símbolo matemático no texto, escreva símbolo entre cifrões, por exemplo, $\alpha$, $\beta$ e $\gamma$ são símbolo do alfabeto grego. Se você quiser inserir equações enumeradas, siga a estrutura de
-\begin{equation}
-    \label{eq:indices}
-	k_{n+1} = n^2 + k_n^2 - k_{n-1}.
-\end{equation}
-Observe a pontuação, pois a equação faz parte da frase e do parágrafo. Como a equação faz parte da frase, não se utiliza o \textit{label} numérico \ref{eq:indices}. 
+\end{alineascomponto}
 
-Quando for citar a Equação \ref{eq:indices} novamente no texto, utiliza-se o \textit{label} numérico. Repare que a palavra ``Equação'' foi escrita com ``E'' maiúsculo. 
+As etapas não foram executadas de maneira estritamente linear, uma vez que requisitos e componentes foram revisados durante a implementação e a integração. Esse processo possibilitou o refinamento progressivo da solução até a versão apresentada neste trabalho.
 
-Um exemplo de equações com frações é dado por
-\begin{equation}
-	\label{eq:fracao}
-		\begin{aligned}
-			x = a_0 + \cfrac{1}{a_1
-				+ \cfrac{1}{a_2
-					+ \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }.
-		\end{aligned}
-	\end{equation}
+\section{Visão Geral do Sistema}
+\label{sec:visao-geral}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-	\begin{equation}
-		\begin{aligned}
-			k_{n+1} = n^2 + k_n^2 - k_{n-1}.
-		\end{aligned}
-	\end{equation}
-	
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-	\begin{equation}
-	\label{eq:trigo}
-		\begin{aligned}
-			\cos (2\theta) = \cos^2 \theta - \sin^2 \theta
-		\end{aligned}.
-	\end{equation}
-	
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-	\begin{equation}
-	\label{eq:matriz}
-		\begin{aligned}
-			A_{m,n} =
-			\begin{pmatrix}
-			a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
-			a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
-			\vdots  & \vdots  & \ddots & \vdots  \\
-			a_{m,1} & a_{m,2} & \cdots & a_{m,n}
-			\end{pmatrix}
-		\end{aligned}.
-	\end{equation}
+A aplicação ``Sobral em Mapas'' constitui-se como uma plataforma WebGIS desenvolvida para o município de Sobral, com a finalidade de disponibilizar uma interface interativa para a visualização e a organização de informações geográficas de interesse público e administrativo. A solução foi concebida segundo uma arquitetura desacoplada, distribuindo suas principais responsabilidades entre componentes independentes que atuam de maneira integrada.
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-	\begin{equation}
-	\label{eq:sistema}
-		\begin{aligned}
-			f(n) = \left\{ 
-			\begin{array}{l l}
-			n/2 & \quad \text{if $n$ is even}\\
-			-(n+1)/2 & \quad \text{if $n$ is odd}
-			\end{array} \right.
-		\end{aligned}.
-	\end{equation}
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+De forma geral, a plataforma pode ser compreendida a partir de quatro componentes principais:
 
-%\section{Usando Algoritmos}
+\begin{alineascomponto}
 
-%\begin{algorithm}[h!]
-%	\SetSpacedAlgorithm
-%	\caption{\label{alg:algoritmo_de_colonica_de_formigas}Algoritmo de Otimização por Colônia de Formiga}
-%	\Entrada{Entrada do Algoritmo}
-%	\Saida{Saida do Algoritmo}
-%	\Inicio{
-%		Atribua os valores dos parâmetros\;
-%		Inicialize as trilhas de feromônios\;
-%		\Enqto{não atingir o critério de parada}{
-%			\Para{cada formiga}{
-%				Construa as Soluções\;
-%			}
-%			Aplique Busca Local (Opcional)\;
-%			Atualize o Feromônio\;
-%		}	
-%	}		
-%\end{algorithm}
+    \item \textbf{Cliente cartográfico (front-end):} desenvolvido como uma Single Page Application (SPA) em React, é responsável pela interface com o usuário, pela adaptação dos componentes a diferentes dispositivos e pela visualização cartográfica utilizando Leaflet e React-Leaflet;
 
-\section{Usando Código-fonte}
+    \item \textbf{Servidor de aplicação (back-end):} implementado com o framework PHP Laravel, disponibiliza uma API responsável pelas regras de negócio, autenticação, autorização, gerenciamento dos dados administrativos e intermediação das requisições aos serviços geoespaciais;
 
-Um exemplo de código-fonte, ou código de programação encontra-se no Apendice \ref{ap:A}
+    \item \textbf{Serviço de dados geoespaciais:} representado pelo GeoServer, é responsável pela publicação e disponibilização das camadas cartográficas por meio de serviços interoperáveis, especialmente o Web Map Service (WMS);
 
- 
-\section{Usando Teoremas, Proposições, etc}
+    \item \textbf{Camada de persistência:} composta pelo banco de dados MySQL, armazena as informações administrativas da aplicação, incluindo usuários, perfis, categorias, subcategorias, camadas e referências aos serviços WMS.
 
- Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\end{alineascomponto}
 
-\begin{teo}[Pitágoras]
-	Em todo triângulo retângulo o quadrado do comprimento da
-	hipotenusa é igual a soma dos quadrados dos comprimentos dos catetos. Usando o Apêndice \ref{ap:C}
-\end{teo}
+Essa organização estabelece uma separação entre a interface, o processamento das regras de negócio, o armazenamento das informações administrativas e a disponibilização dos dados geoespaciais. Dessa forma, busca-se reduzir o acoplamento entre os componentes e favorecer a manutenção, a evolução das funcionalidades e a integração com serviços externos.
+
+A Figura \ref{fig:arquitetura-geral} apresenta a visão geral dos componentes da plataforma e suas principais relações de comunicação.
+
+\begin{figure}[htb]
+    \centering
+    \caption{\label{fig:arquitetura-geral} Visão geral dos componentes da plataforma Sobral em Mapas}
+    \includegraphics[width=\textwidth]{figuras/arquitetura-geral.pdf}
+    \fonte{Elaborado pelo autor.}
+\end{figure}
+
+\section{Levantamento e Especificação de Requisitos}
+\label{sec:requisitos}
+
+A definição dos requisitos da plataforma foi realizada a partir dos objetivos estabelecidos para o ``Sobral em Mapas'', considerando as funcionalidades necessárias à consulta das informações geográficas, à interação com a interface cartográfica e ao gerenciamento administrativo dos elementos utilizados pelo sistema. Os requisitos foram consolidados ao longo do processo de desenvolvimento e refinados à medida que os diferentes componentes da aplicação eram implementados e integrados, permitindo adequações decorrentes das características da arquitetura adotada e das necessidades identificadas durante a construção da interface.
+
+Para fins de organização, os requisitos foram classificados em funcionais e não funcionais. Os requisitos funcionais descrevem os comportamentos e serviços disponibilizados pela plataforma aos seus usuários, enquanto os requisitos não funcionais estabelecem características e restrições relacionadas à arquitetura, segurança, interoperabilidade, manutenção, responsividade e execução do sistema.
 
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\subsection{Perfis de Interação com o Sistema}
+\label{sec:perfis-usuario}
 
-\begin{teo}[Fermat]
-	Não existem inteiros $n > 2$, e $x, y, z$ tais que $x^n + y^n = z$
-\end{teo}
+A plataforma disponibiliza funcionalidades públicas e administrativas, tornando necessário distinguir os diferentes níveis de interação e acesso ao sistema. As funcionalidades cartográficas de consulta podem ser utilizadas sem autenticação, enquanto determinadas operações dependem da existência de um usuário autenticado e do perfil associado à sua conta. Para fins de especificação dos requisitos, foram considerados três perfis principais:
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\begin{alineascomponto}
 
-\begin{prop}
-	Para demonstrar o Teorema de Pitágoras...
-\end{prop}
+    \item \textbf{Visitante:} corresponde ao perfil destinado aos usuários que não possuem privilégios administrativos. As funcionalidades públicas da plataforma, como a visualização do mapa, a consulta das camadas e a utilização das ferramentas cartográficas, permanecem acessíveis independentemente de autenticação, enquanto o cadastro permite identificar o usuário sem conceder acesso às operações administrativas;
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+    \item \textbf{Administrador:} corresponde ao usuário autenticado com permissão para acessar as funcionalidades administrativas relacionadas ao gerenciamento dos conteúdos da plataforma, incluindo categorias, subcategorias, camadas e serviços WMS;
 
-\begin{exem}
-	Este é um exemplo do uso do ambiente exem definido acima.
-\end{exem}
+    \item \textbf{Superadministrador:} representa o perfil com maior nível de acesso à plataforma, reunindo as funcionalidades administrativas e as operações relacionadas ao gerenciamento de usuários, à atribuição dos perfis de acesso e ao controle das condições de utilização das áreas protegidas do sistema.
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\end{alineascomponto}
+
+A distinção entre esses perfis permite separar as funcionalidades destinadas à consulta pública das operações capazes de modificar informações administrativas da aplicação. O controle das operações protegidas é realizado no lado servidor, evitando que as restrições de acesso dependam exclusivamente dos elementos apresentados pela interface.
 
 
-\begin{xdefinicao}
-	Definimos o produto de ...
-\end{xdefinicao}
+\subsection{Requisitos Funcionais}
+\label{sec:requisitos-funcionais}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+Os requisitos funcionais representam as principais operações disponibilizadas pela plataforma. Para evitar a fragmentação de funcionalidades pertencentes a um mesmo contexto de uso, recursos relacionados foram agrupados em requisitos mais abrangentes. A Tabela \ref{tab:requisitos-funcionais} apresenta os requisitos considerados durante o desenvolvimento.
 
-\section{Usando Questões} 
+\begin{table}[htb]
+    \captionsetup{width=15cm}
+    \Caption{\label{tab:requisitos-funcionais} Requisitos funcionais da plataforma Sobral em Mapas}
+    \IBGEtab{}{
+        \begin{tabular}{p{1.6cm}p{12.8cm}}
+            \toprule
+            \textbf{Código} & \textbf{Descrição} \\
+            \midrule \midrule
 
-Um exemplo de questionário encontra-se no Apêndice \ref{ap:B}.
+            RF01 &
+            Disponibilizar uma interface cartográfica interativa para visualização das informações geográficas relacionadas ao município de Sobral. \\
+            \midrule
 
-%Movido para o Apêndice
+            RF02 &
+            Recuperar e apresentar as camadas temáticas cadastradas no sistema, organizando-as de acordo com suas respectivas categorias e subcategorias. \\
+            \midrule
 
+            RF03 &
+            Permitir ao usuário pesquisar, ativar e desativar camadas geográficas, bem como consultar as informações de legenda associadas à sua representação cartográfica. \\
+            \midrule
+
+            RF04 &
+            Disponibilizar mecanismo de pesquisa de localização, permitindo localizar endereços ou pontos de interesse e reposicionar a visualização do mapa para a região encontrada. \\
+            \midrule
+
+            RF05 &
+            Disponibilizar ferramentas para medição de distâncias e áreas, permitindo ao usuário realizar interações diretamente sobre o mapa. \\
+            \midrule
+
+            RF06 &
+            Disponibilizar recursos auxiliares de interação com o mapa, incluindo favoritos, limpeza da visualização, modo de tela cheia e impressão ou exportação da área cartográfica. \\
+            \midrule
+
+            RF07 &
+            Disponibilizar um canal de contato por meio da própria plataforma, permitindo o envio de mensagens pelos usuários. \\
+            \midrule
+
+            RF08 &
+            Permitir o cadastro e a autenticação de usuários, considerando o perfil de acesso e a situação de aprovação associada à conta. \\
+            \midrule
+
+            RF09 &
+            Controlar o acesso às funcionalidades protegidas de acordo com o perfil e as permissões atribuídas ao usuário autenticado. \\
+            \midrule
+
+            RF10 &
+            Permitir o gerenciamento dos usuários da aplicação, incluindo informações cadastrais, perfil de acesso e situação de aprovação. \\
+            \midrule
+
+            RF11 &
+            Permitir o gerenciamento da organização temática da plataforma, contemplando as categorias e subcategorias utilizadas na classificação das camadas. \\
+            \midrule
+
+            RF12 &
+            Permitir o gerenciamento das camadas geográficas e dos serviços WMS associados, incluindo os metadados necessários à sua identificação, organização e disponibilização na interface cartográfica. \\
+
+            \bottomrule
+        \end{tabular}
+    }{
+        \Fonte{Elaborado pelo autor.}
+    }
+\end{table}
+
+Os requisitos RF01 a RF07 estão associados principalmente à utilização pública da plataforma e às ferramentas disponibilizadas na interface cartográfica, enquanto os requisitos RF08 a RF12 abrangem o cadastro e a autenticação dos usuários, o controle de acesso e o gerenciamento das informações administrativas necessárias ao funcionamento do sistema. Essa divisão não implica independência entre os dois conjuntos, uma vez que a interface pública depende das informações mantidas no ambiente administrativo, como categorias, subcategorias, camadas e referências aos serviços WMS. Assim, as alterações realizadas no gerenciamento desses elementos podem refletir diretamente na organização e na disponibilidade dos conteúdos apresentados aos usuários da plataforma.
+
+
+\subsection{Requisitos Não Funcionais}
+\label{sec:requisitos-nao-funcionais}
+
+Além das funcionalidades disponibilizadas, foram definidos requisitos relacionados à qualidade estrutural e às restrições técnicas da solução. Esses requisitos influenciaram principalmente as decisões arquiteturais e a escolha das tecnologias empregadas durante o desenvolvimento. A Tabela \ref{tab:requisitos-nao-funcionais} apresenta os principais requisitos não funcionais considerados.
+
+\begin{table}[htb]
+    \captionsetup{width=15cm}
+    \Caption{\label{tab:requisitos-nao-funcionais} Requisitos não funcionais da plataforma Sobral em Mapas}
+    \IBGEtab{}{
+        \begin{tabular}{p{1.6cm}p{12.8cm}}
+            \toprule
+            \textbf{Código} & \textbf{Descrição} \\
+            \midrule \midrule
+
+            RNF01 &
+            A interface deve possuir comportamento responsivo, adaptando seus principais componentes a computadores, tablets e dispositivos móveis. \\
+            \midrule
+
+            RNF02 &
+            A arquitetura deve manter separadas as responsabilidades do cliente web, do servidor de aplicação, da persistência dos dados administrativos e dos serviços geoespaciais. \\
+            \midrule
+
+            RNF03 &
+            A aplicação deve utilizar padrões interoperáveis para o consumo das informações geoespaciais, especialmente o serviço WMS disponibilizado pelo GeoServer. \\
+            \midrule
+
+            RNF04 &
+            As funcionalidades administrativas devem ser protegidas por mecanismos de autenticação e autorização implementados no lado servidor. \\
+            \midrule
+
+            RNF05 &
+            Os dados recebidos pela API devem ser submetidos a procedimentos de validação antes da execução das operações de persistência. \\
+            \midrule
+
+            RNF06 &
+            O front-end deve ser estruturado de maneira componentizada, favorecendo a reutilização dos elementos de interface e a manutenção do código-fonte. \\
+            \midrule
+
+            RNF07 &
+            A comunicação entre o cliente web e a API deve ocorrer por meio do protocolo HTTP/HTTPS, utilizando representações estruturadas em JSON nas operações de intercâmbio de dados administrativos e formatos apropriados nas respostas relacionadas aos serviços cartográficos. \\
+            \midrule
+
+            RNF08 &
+            O ambiente de execução do back-end deve possuir configuração reproduzível por meio de conteinerização com Docker. \\
+            \midrule
+
+            RNF09 &
+            A utilização das funcionalidades públicas da plataforma deve ocorrer diretamente por meio de navegador web, sem exigir a instalação de softwares especializados de geoprocessamento pelo usuário final. \\
+            \midrule
+
+            RNF10 &
+            A organização do sistema deve favorecer a manutenção e a evolução independente dos seus principais componentes, reduzindo dependências diretas entre a interface, a API e o serviço geoespacial. \\
+
+            \bottomrule
+        \end{tabular}
+    }{
+        \Fonte{Elaborado pelo autor.}
+    }
+\end{table}
+
+Os requisitos apresentados orientaram as decisões adotadas nas etapas posteriores do desenvolvimento. A separação entre cliente e servidor relaciona-se diretamente aos requisitos RNF02 e RNF10, enquanto a utilização do GeoServer e do WMS atende à necessidade de interoperabilidade estabelecida no RNF03. Da mesma forma, os mecanismos de autenticação e validação implementados no back-end estão associados aos requisitos RNF04 e RNF05. A correspondência entre os requisitos definidos e as funcionalidades efetivamente implementadas será retomada no capítulo de resultados, permitindo analisar o atendimento às necessidades estabelecidas durante a concepção da plataforma.
+
+
+
+\section{Arquitetura da Solução}
+\label{sec:arquitetura-solucao}
+
+A arquitetura do ``Sobral em Mapas'' foi organizada de maneira desacoplada, estabelecendo interfaces de comunicação entre o cliente React, a API Laravel, o banco de dados MySQL e os serviços geoespaciais disponibilizados pelo GeoServer. Essa abordagem permite que cada componente desempenhe suas funções específicas, favorecendo a manutenção e a evolução da plataforma, desde que os contratos de comunicação sejam preservados.
+
+A comunicação entre o front-end e o back-end ocorre por meio de requisições HTTP/HTTPS, utilizando principalmente representações JSON nas operações administrativas. O Laravel centraliza o processamento dessas operações e o acesso ao MySQL, além de intermediar as requisições WMS destinadas ao GeoServer. Dessa forma, o gerenciamento dos dados administrativos e a disponibilização das camadas cartográficas seguem fluxos distintos, embora integrados, preservando a separação de responsabilidades entre os componentes.
+
+\subsection{Fluxo de Comunicação entre os Componentes}
+\label{sec:fluxo-comunicacao}
+
+No carregamento da aplicação, o cliente solicita à API as informações necessárias à composição da interface, incluindo categorias, subcategorias e camadas. O Laravel consulta o MySQL e retorna esses registros ao front-end, permitindo construir dinamicamente os elementos apresentados ao usuário a partir das informações mantidas no ambiente administrativo.
+
+Quando uma camada é ativada, seus metadados permitem identificar o recurso geoespacial correspondente. O cliente realiza uma solicitação ao endpoint de proxy WMS do Laravel, que encaminha a requisição ao GeoServer e devolve ao navegador a representação cartográfica utilizada pelo Leaflet. Diferentemente das operações administrativas, esse fluxo envolve principalmente imagens cartográficas geradas pelo servidor de mapas.
+
+Nas operações administrativas, a comunicação entre cliente, API e banco de dados inclui mecanismos de autenticação, autorização e validação. Somente após essas verificações o servidor executa as alterações necessárias e retorna o resultado ao cliente, mantendo o controle das operações protegidas no back-end.
+
+A Figura \ref{fig:fluxo-comunicacao} apresenta o fluxo de disponibilização de uma camada cartográfica, destacando a comunicação entre o cliente, a API Laravel e o GeoServer.
+
+\begin{figure}[htb]
+    \centering
+    \caption{\label{fig:fluxo-comunicacao} Fluxo de comunicação para disponibilização de uma camada cartográfica}
+    \includegraphics[width=0.45\textwidth]{figuras/fluxo-comunicacao.pdf}
+    \fonte{Elaborado pelo autor.}
+\end{figure}
+
+
+\section{Modelagem dos Dados}
+\label{sec:modelagem-dados}
+
+A modelagem dos dados da plataforma foi definida a partir das necessidades administrativas identificadas durante o levantamento de requisitos e da arquitetura adotada para o sistema. Como as informações administrativas e os dados geoespaciais possuem responsabilidades distintas, o banco de dados MySQL é utilizado para armazenar os registros necessários ao gerenciamento da aplicação, enquanto os recursos geográficos são disponibilizados por meio dos serviços geoespaciais integrados à plataforma. Dessa forma, o banco administrativo concentra informações relacionadas aos usuários, aos perfis de acesso, à organização temática das camadas e às referências necessárias para identificação dos serviços WMS, sem assumir diretamente o armazenamento ou o processamento das geometrias apresentadas no mapa.
+
+As principais entidades consideradas nessa estrutura são \texttt{User}, \texttt{Profile}, \texttt{Category}, \texttt{Subcategory}, \texttt{Layer} e \texttt{WmsLink}. Seus relacionamentos representam tanto o controle de acesso quanto a organização hierárquica e a associação das camadas aos serviços geoespaciais utilizados pela aplicação. A Figura \ref{fig:modelo-entidade-relacionamento} apresenta, de forma simplificada, o modelo entidade-relacionamento das principais entidades do banco de dados administrativo.
+
+\begin{figure}[htb]
+    \centering
+    \caption{\label{fig:modelo-entidade-relacionamento} Modelo entidade-relacionamento das principais entidades da plataforma Sobral em Mapas}
+    \includegraphics[width=0.90\textwidth]{figuras/modelo-entidade-relacionamento.pdf}
+    \fonte{Elaborado pelo autor.}
+\end{figure}
+
+
+\subsection{Principais Entidades}
+\label{sec:principais-entidades}
+
+A entidade \texttt{User} representa os usuários cadastrados e reúne as informações necessárias à identificação, autenticação, perfil de acesso e situação de aprovação, enquanto \texttt{Profile} define os diferentes níveis de acesso da plataforma. As entidades \texttt{Category} e \texttt{Subcategory} organizam tematicamente as camadas, estabelecendo uma estrutura hierárquica e permitindo o controle de ativação desses agrupamentos.
+
+A entidade \texttt{Layer} representa as camadas cadastradas e concentra os principais metadados necessários à sua identificação e utilização, como nome, identificador técnico, sistema de referência, tipo de serviço, ordem de exibição, situação de publicação e referências à subcategoria e ao serviço WMS. Por sua vez, \texttt{WmsLink} armazena o nome, o endereço e a versão dos serviços WMS utilizados pela aplicação. Dessa forma, os registros administrativos mantêm as informações necessárias à associação das camadas aos recursos geoespaciais, sem armazenar diretamente as feições exibidas no mapa.
+
+A Tabela \ref{tab:entidades-principais} sintetiza as responsabilidades das principais entidades utilizadas na modelagem.
+
+\begin{table}[htb]
+    \captionsetup{width=15cm}
+    \Caption{\label{tab:entidades-principais} Principais entidades da plataforma Sobral em Mapas}
+    \IBGEtab{}{
+        \begin{tabular}{p{3.2cm}p{5cm}p{6.2cm}}
+            \toprule
+            \textbf{Entidade} &
+            \textbf{Responsabilidade} &
+            \textbf{Informações associadas} \\
+            \midrule \midrule
+
+            \texttt{User} &
+            Representar os usuários cadastrados na aplicação &
+            Identificação, autenticação, perfil de acesso e situação de aprovação \\
+            \midrule
+
+            \texttt{Profile} &
+            Definir os perfis de acesso utilizados pela plataforma &
+            Identificação e classificação do perfil de acesso \\
+            \midrule
+
+            \texttt{Category} &
+            Organizar as informações em grupos temáticos de nível superior &
+            Identificação e situação de ativação \\
+            \midrule
+
+            \texttt{Subcategory} &
+            Subdividir as categorias e organizar as camadas temáticas &
+            Identificação, situação de ativação e referência à categoria \\
+            \midrule
+
+            \texttt{Layer} &
+            Representar as camadas cadastradas na plataforma &
+            Identificação, metadados cartográficos, organização, visibilidade e referências à subcategoria e ao serviço WMS \\
+            \midrule
+
+            \texttt{WmsLink} &
+            Representar os serviços WMS cadastrados na aplicação &
+            Nome, endereço do serviço e versão utilizada \\
+
+            \bottomrule
+        \end{tabular}
+    }{
+        \Fonte{Elaborado pelo autor.}
+    }
+\end{table}
+
+
+\subsection{Relacionamentos entre as Entidades}
+\label{sec:relacionamentos-entidades}
+
+Os relacionamentos estabelecidos entre as entidades refletem o controle de acesso, a organização temática e a associação das camadas aos serviços geoespaciais. Cada registro de \texttt{User} está associado a um \texttt{Profile}, enquanto um mesmo perfil pode estar relacionado a diferentes usuários, estabelecendo uma relação de um para muitos. De maneira semelhante, uma \texttt{Category} pode reunir diversas \texttt{Subcategory}, enquanto cada subcategoria pertence a uma única categoria. Por sua vez, uma \texttt{Subcategory} pode agrupar diversas \texttt{Layer}, permitindo organizar hierarquicamente as informações cartográficas apresentadas pela plataforma.
+
+A entidade \texttt{Layer} também pode manter uma referência a um registro de \texttt{WmsLink}, possibilitando que várias camadas utilizem um mesmo serviço WMS. Dessa forma, as informações referentes ao endereço e à versão do serviço permanecem centralizadas, enquanto cada camada mantém apenas a associação necessária à fonte geoespacial correspondente. Essa organização possibilita que categorias, subcategorias, camadas e serviços WMS sejam administrados de forma independente, preservando seus relacionamentos. Consequentemente, o front-end pode obter essas informações por meio da API e construir dinamicamente os agrupamentos e recursos apresentados ao usuário sem exigir alterações diretas na estrutura da interface.
+
+
+\subsection{Separação entre Dados Administrativos e Dados Geoespaciais}
+\label{sec:separacao-dados}
+
+A separação entre dados administrativos e dados geoespaciais constitui uma das decisões centrais da modelagem adotada. O MySQL permanece responsável pelas informações necessárias à gestão da plataforma, incluindo usuários, perfis, organização temática, registros de camadas e referências aos serviços WMS, enquanto os dados utilizados para a representação cartográfica permanecem sob responsabilidade da infraestrutura geoespacial. Assim, um registro de \texttt{Layer} armazenado pela aplicação não corresponde ao conjunto de feições geográficas exibidas no mapa, funcionando principalmente como uma representação administrativa que reúne os metadados necessários à identificação e ao consumo do recurso correspondente.
+
+Essa abordagem mantém separadas as responsabilidades dos componentes, pois o Laravel gerencia o cadastro, a classificação, os estados de ativação e os metadados relacionados às camadas, enquanto o GeoServer permanece responsável pela publicação e pela disponibilização das informações espaciais. Desse modo, alterações na organização administrativa da plataforma podem ser realizadas sem interferir diretamente nas fontes geográficas e, simultaneamente, a estrutura mantida no MySQL fornece ao front-end as informações necessárias para organizar, localizar e disponibilizar as camadas cartográficas ao usuário.
+
+
+\section{Desenvolvimento do Back-end}
+\label{sec:desenvolvimento-backend}
+
+O back-end do ``Sobral em Mapas'' foi desenvolvido com Laravel e estruturado como uma API responsável pela comunicação entre a interface em React, o banco de dados MySQL e os serviços geoespaciais utilizados pela plataforma. Essa camada concentra o processamento das requisições, as regras de negócio, o acesso aos dados e os mecanismos de autenticação e autorização necessários ao funcionamento das áreas pública e administrativa.
+
+
+\subsection{Estrutura e Preparação do Banco de Dados}
+\label{sec:migrations-seeders}
+
+A estrutura do banco de dados administrativo foi construída e modificada por meio das \textit{migrations} do Laravel. Esse mecanismo permite representar a criação e a alteração das tabelas como arquivos versionados, facilitando a reprodução da estrutura em diferentes ambientes. As migrations também foram utilizadas para definir chaves estrangeiras, restrições e relacionamentos necessários à integridade dos dados.
+
+Inicialmente, foram criadas as tabelas relacionadas às categorias, subcategorias e camadas. Posteriormente, novas migrations ampliaram o esquema com os serviços WMS, seus relacionamentos com as camadas, os atributos de publicação e ativação, além das tabelas de usuários e perfis de acesso e do campo utilizado para representar a situação de aprovação dos cadastros. A preparação inicial dos dados utiliza os \textit{seeders} do Laravel. O \texttt{DatabaseSeeder} coordena a inserção de registros como perfis de acesso, usuários, categorias, subcategorias e camadas. Dessa forma, migrations e seeders atuam de maneira complementar: as primeiras definem e evoluem a estrutura do banco, enquanto os segundos fornecem os dados iniciais da aplicação.
+
+
+\subsection{Organização da API}
+\label{sec:organizacao-api}
+
+A organização do servidor utiliza os recursos do Laravel para definição de rotas, controladores, modelos e middlewares. As rotas são declaradas principalmente no arquivo \texttt{routes/api.php}, que associa cada endpoint à operação correspondente e define, quando necessário, mecanismos de autenticação, verificação de perfil e limitação de requisições.
+
+Embora o Laravel forneça uma estrutura relacionada ao padrão Model-View-Controller (MVC), no ``Sobral em Mapas'' ele é utilizado principalmente como servidor de API, uma vez que a camada visual é implementada em React. Os controladores processam as requisições, enquanto os modelos representam os registros persistidos no banco. Em algumas funcionalidades, também são utilizados serviços, repositórios e adaptadores para acesso aos dados e integração com recursos externos.
+
+Essa organização mantém o back-end estruturado de forma modular, ainda que determinadas operações sejam realizadas diretamente pelos controladores em conjunto com os modelos Eloquent. De forma geral, a requisição é associada a uma rota, passa pelos mecanismos intermediários necessários e é encaminhada ao controlador responsável. O resultado é então devolvido ao cliente por meio de uma resposta HTTP, predominantemente em formato JSON, acompanhada do código de estado correspondente.
+
+\subsection{Modelos e Persistência com Eloquent}
+\label{sec:eloquent-persistencia}
+
+O acesso ao banco de dados MySQL é realizado principalmente por meio do Eloquent, mecanismo de mapeamento objeto-relacional disponibilizado pelo Laravel. Com essa abordagem, as tabelas utilizadas pela aplicação são representadas por modelos e podem ser manipuladas por meio de métodos orientados a objetos, reduzindo a necessidade de utilização direta de instruções SQL nas operações usuais de consulta, inserção, atualização e exclusão.
+
+Entre os principais modelos utilizados pela plataforma encontram-se aqueles relacionados aos usuários, perfis de acesso, categorias, subcategorias, camadas e serviços WMS. Os relacionamentos definidos no banco também são representados no Eloquent, permitindo, por exemplo, recuperar um usuário juntamente com seu perfil, obter as subcategorias associadas a uma categoria ou consultar uma camada em conjunto com sua classificação temática e sua referência ao serviço WMS. Esse mecanismo contribui para a construção das estruturas de dados posteriormente devolvidas ao front-end.
+
+Um exemplo desse uso ocorre no carregamento da interface cartográfica, no qual a API consulta as camadas disponíveis juntamente com suas informações de organização e disponibiliza os resultados ao cliente. A mesma estrutura é utilizada no ambiente administrativo para criação, edição, ativação, desativação e remoção dos registros, mantendo o acesso ao banco concentrado no servidor e permitindo que as regras de validação e autorização sejam executadas antes da persistência das alterações.
+
+
+\subsection{Autenticação e Controle de Acesso}
+\label{sec:autenticacao-controle-acesso}
+
+A autenticação dos usuários foi implementada utilizando os recursos do Laravel em conjunto com o Laravel Sanctum. Durante o processo de login, as credenciais fornecidas pela interface são encaminhadas à API e verificadas pelo servidor; quando as condições necessárias são atendidas, é gerado um token associado ao usuário autenticado. Esse token passa a acompanhar as requisições destinadas às rotas protegidas, permitindo que o servidor identifique o responsável pela operação sem exigir o reenvio das credenciais originais.
+
+O controle de acesso complementa esse processo ao considerar o perfil associado ao usuário e a situação de aprovação do cadastro. A plataforma diferencia os usuários de acordo com níveis de permissão, permitindo restringir o acesso às funcionalidades administrativas conforme as responsabilidades atribuídas a cada perfil. Os usuários cadastrados pela interface pública permanecem inicialmente em situação pendente de aprovação, evitando que o próprio processo de cadastro resulte na atribuição automática de privilégios administrativos.
+
+As rotas protegidas utilizam middlewares para verificar a presença de uma autenticação válida e, quando necessário, o perfil autorizado para determinada operação. Dessa maneira, as verificações de acesso são executadas antes que a requisição alcance a funcionalidade responsável pelo processamento. A API também disponibiliza operações destinadas à identificação do usuário autenticado e à revogação do token de autenticação.
+
+
+\subsection{Validação e Tratamento das Requisições}
+\label{sec:validacao-requisicoes}
+
+Os dados recebidos pela API são submetidos às regras de validação disponibilizadas pelo Laravel antes que as operações de persistência sejam executadas. Essas verificações abrangem aspectos como o preenchimento dos campos obrigatórios, a validade dos endereços de e-mail, os requisitos mínimos definidos para senhas, a unicidade de determinados valores e a existência dos registros referenciados nos relacionamentos entre as entidades. Quando alguma das condições estabelecidas não é atendida, a operação é interrompida e o servidor devolve uma resposta indicando os problemas encontrados. Essa validação realizada no back-end complementa as verificações existentes na interface e impede que a consistência dos dados dependa exclusivamente do cliente.
+
+As respostas também utilizam códigos de estado HTTP para diferenciar situações de sucesso de ocorrências relacionadas a dados inválidos, credenciais incorretas, ausência de autenticação, falta de autorização ou inexistência do recurso solicitado. Nas funcionalidades administrativas, essas verificações atuam em conjunto com os mecanismos de autenticação e autorização. Dessa forma, mesmo uma requisição que apresente dados estruturalmente válidos somente pode resultar em alteração das informações persistidas quando estiver associada a um usuário autenticado e devidamente autorizado para a operação solicitada.
+
+
+\subsection{Principais Endpoints da API}
+\label{sec:endpoints-api}
+
+A comunicação entre o cliente e o servidor ocorre por meio dos endpoints disponibilizados pela API, que definem as operações necessárias ao funcionamento da interface pública e do ambiente administrativo. Além dos recursos de autenticação e cadastro, a API disponibiliza operações relacionadas ao carregamento das informações cartográficas, ao gerenciamento dos registros administrativos e à intermediação das requisições destinadas aos serviços WMS. A Tabela \ref{tab:principais-endpoints} apresenta alguns dos endpoints mais representativos da implementação.
+
+\begin{table}[htb]
+    \captionsetup{width=15cm}
+    \Caption{\label{tab:principais-endpoints} Principais endpoints da API}
+    \IBGEtab{}{
+        \begin{tabular}{p{2.2cm}p{5cm}p{7cm}}
+            \toprule
+            \textbf{Método} &
+            \textbf{Endpoint} &
+            \textbf{Finalidade} \\
+            \midrule \midrule
+
+            GET &
+            \texttt{/api/map-data} &
+            Recuperar categorias, subcategorias, camadas públicas e informações utilizadas na interface cartográfica. \\
+            \midrule
+
+            POST &
+            \texttt{/api/login} &
+            Verificar as credenciais e gerar o token utilizado nas requisições protegidas. \\
+            \midrule
+
+            POST &
+            \texttt{/api/register} &
+            Realizar o cadastro público de um novo usuário. \\
+            \midrule
+
+            GET &
+            \texttt{/api/me} &
+            Recuperar as informações associadas ao usuário autenticado. \\
+            \midrule
+
+            POST &
+            \texttt{/api/logout} &
+            Revogar o token de autenticação utilizado pelo usuário. \\
+            \midrule
+
+            GET &
+            \texttt{/api/proxy-wms} &
+            Intermediar as requisições destinadas aos serviços WMS utilizados pela aplicação. \\
+            \midrule
+
+            GET &
+            \texttt{/api/layer/legend} &
+            Obter a representação de legenda associada às camadas geoespaciais. \\
+            \midrule
+
+            POST &
+            \texttt{/api/contact} &
+            Receber as informações encaminhadas pelo formulário de contato. \\
+            \midrule
+
+            GET / POST / PUT / PATCH / DELETE &
+            \texttt{/api/admin/...} &
+            Executar as operações administrativas relacionadas aos usuários, categorias, subcategorias, camadas e serviços WMS. \\
+
+            \bottomrule
+        \end{tabular}
+    }{
+        \Fonte{Elaborado pelo autor.}
+    }
+\end{table}
+
+A definição desses endpoints estabelece uma interface de comunicação entre o cliente e o servidor, permitindo que a aplicação React consuma os recursos disponibilizados pelo Laravel sem acessar diretamente o banco de dados ou depender da forma como as operações são implementadas internamente. Essa separação também permite que componentes do back-end sejam modificados ao longo da evolução da plataforma sem exigir alterações equivalentes na interface, desde que os contratos necessários à comunicação sejam preservados.
+
+
+\section{Desenvolvimento do Front-end}
+\label{sec:desenvolvimento-frontend}
+
+O front-end do ``Sobral em Mapas'' foi desenvolvido com React e estruturado como uma Single Page Application (SPA), utilizando Vite como ambiente de desenvolvimento e construção. Essa camada concentra a apresentação da interface, a navegação entre as páginas, a interação com a API e os recursos cartográficos implementados com Leaflet e React-Leaflet.
+
+\subsection{Organização e Componentização da Interface}
+\label{sec:componentizacao-frontend}
+
+A organização do front-end foi estruturada em páginas, componentes reutilizáveis, serviços de comunicação, recursos de autenticação e elementos específicos da interface cartográfica. As páginas representam os principais contextos de navegação da aplicação, enquanto os componentes concentram partes menores e especializadas da interface. Na área pública, a página principal reúne o cabeçalho, o painel lateral de ferramentas e o mapa interativo, mantendo a visualização cartográfica como elemento central da aplicação.
+
+O ambiente administrativo possui uma organização própria, estruturada a partir de componentes responsáveis pela barra lateral, pelo cabeçalho e pelo conteúdo das páginas de gerenciamento. Sobre essa estrutura são disponibilizadas interfaces destinadas ao controle de usuários, solicitações de cadastro, categorias, subcategorias, camadas e serviços WMS. Formulários e operações recorrentes também foram implementados por meio de componentes reutilizáveis, incluindo janelas modais, diálogos de confirmação, mensagens de alerta, indicadores de carregamento e notificações temporárias.
+
+A navegação entre essas áreas é controlada pelo React Router. Além das rotas públicas, determinadas páginas são protegidas no cliente por um componente responsável por verificar a existência de um usuário autenticado e seu perfil antes de permitir a apresentação do conteúdo, enquanto a autorização efetiva das operações permanece sob responsabilidade do back-end. A interface também foi desenvolvida considerando diferentes dimensões de tela, utilizando os recursos responsivos do Tailwind CSS para adaptar componentes como cabeçalhos, painéis laterais, formulários e janelas modais.
+
+\subsection{Gerenciamento de Estado e Integração entre Componentes}
+\label{sec:estado-integracao-frontend}
+
+O gerenciamento das informações utilizadas pela interface foi realizado principalmente com os recursos disponibilizados pelo próprio React, utilizando mecanismos como \texttt{useState}, \texttt{useEffect}, \texttt{useMemo} e \texttt{useRef}. Dessa forma, os estados permanecem próximos aos componentes que dependem diretamente deles e são compartilhados quando necessários à comunicação entre diferentes partes da aplicação, evitando a adoção de uma biblioteca externa de gerenciamento global para funcionalidades controladas pela própria estrutura do React.
+
+Na página cartográfica, são mantidas informações relacionadas às camadas ativas, ao resultado selecionado durante uma pesquisa e às ferramentas que interagem diretamente com o mapa. A relação de camadas selecionadas é compartilhada entre o painel lateral e o componente cartográfico, permitindo que alterações realizadas nos controles da interface sejam refletidas imediatamente na visualização. Algumas operações também utilizam referências mantidas com \texttt{useRef}, possibilitando que ferramentas do painel acionem funções relacionadas à medição, limpeza dos elementos desenhados e preparação da área utilizada na impressão.
+
+O estado relacionado à autenticação possui tratamento compartilhado por meio da Context API do React. O \texttt{AuthContext} mantém as informações do usuário autenticado e disponibiliza funções utilizadas pelos diferentes componentes para atualizar esse estado. O armazenamento local do navegador também é utilizado para preservar informações relacionadas à autenticação e algumas preferências de utilização, como as camadas favoritas.
+
+\subsection{Comunicação com a API}
+
+\label{sec:integracao-api-frontend}
+
+A comunicação entre o front-end e o servidor Laravel é realizada principalmente por meio da biblioteca Axios. Para evitar a repetição das configurações necessárias em cada requisição, foi criada uma instância compartilhada do cliente HTTP, responsável por utilizar o endereço-base da API definido nas variáveis de ambiente e por acrescentar automaticamente o token de autenticação ao cabeçalho das solicitações protegidas quando este se encontra disponível.
+
+Sobre essa configuração foram organizados módulos de serviço destinados às principais funcionalidades administrativas, reunindo operações relacionadas à autenticação, usuários, categorias, camadas, dashboard e serviços WMS. Dessa maneira, páginas e componentes podem reutilizar as mesmas funções para consultar, criar ou atualizar registros, enquanto as configurações de comunicação HTTP permanecem centralizadas. Na interface pública, o endpoint \texttt{/api/map-data} fornece as camadas públicas e seus relacionamentos com categorias e subcategorias, permitindo que o painel lateral construa dinamicamente a organização apresentada ao usuário.
+
+O mesmo princípio é utilizado nas páginas administrativas, nas quais os dados preenchidos nos formulários são encaminhados aos endpoints correspondentes e as respostas recebidas são utilizadas para atualizar a interface ou informar o resultado da operação. Algumas funcionalidades utilizam serviços externos diretamente pelo navegador, como a pesquisa de endereços e locais por meio do Nominatim e as fontes empregadas como mapas-base. As camadas temáticas WMS, por outro lado, são acessadas por meio do proxy implementado no back-end, mantendo essa comunicação intermediada pelo Laravel.
+\subsection{Interface Cartográfica e Ferramentas de Interação}
+\label{sec:interface-cartografica}
+
+A principal área de interação da plataforma corresponde à interface cartográfica, implementada com Leaflet e integrada ao React por meio da biblioteca React-Leaflet. O mapa é construído a partir do componente \texttt{MapContainer} e utiliza camadas-base que fornecem contexto espacial à visualização, permitindo alternar entre diferentes representações, incluindo OpenStreetMap, imagens de satélite e mapa topográfico. Além dessas fontes, o limite territorial do município de Sobral é apresentado como um elemento vetorial em formato GeoJSON, funcionando como referência espacial durante a exploração das informações disponíveis.
+
+As camadas temáticas são incorporadas ao mapa por meio do componente \texttt{WMSTileLayer}. Para cada camada ativada pelo usuário, o front-end utiliza seu identificador técnico e as informações relacionadas ao serviço WMS para construir a requisição destinada ao endpoint \texttt{/api/proxy-wms}. Essa solicitação é recebida pelo Laravel e encaminhada ao serviço geoespacial correspondente, sendo a representação resultante devolvida ao cliente e utilizada pelo Leaflet na composição do mapa. Dessa forma, a ativação e a remoção das camadas ocorrem dinamicamente de acordo com as escolhas realizadas no painel lateral.
+
+Além da visualização dos dados temáticos, foram implementadas ferramentas de pesquisa de localização, medição de distâncias e áreas, gerenciamento de favoritos, limpeza dos elementos adicionados ao mapa, modo de tela cheia e impressão ou exportação da área cartográfica. A pesquisa utiliza um serviço de geocodificação para localizar endereços e pontos de interesse, enquanto as ferramentas de medição utilizam Leaflet Draw e Leaflet GeometryUtil para criação de linhas e polígonos. A funcionalidade de impressão permite selecionar uma região do mapa e gerar arquivos em formatos de imagem ou PDF por meio de bibliotecas auxiliares de captura e geração de documentos.
+
+\section{Integração com o GeoServer}
+\label{sec:integracao-geoserver}
+
+A disponibilização das informações cartográficas utilizadas pela plataforma é realizada por meio do GeoServer, responsável pela publicação das camadas geoespaciais e pelo fornecimento dos serviços necessários à sua visualização. Na arquitetura adotada, o Laravel mantém as informações administrativas relacionadas às camadas e atua como intermediário das requisições WMS, enquanto o GeoServer permanece responsável pela geração das representações cartográficas correspondentes.
+
+Essa separação permite que o back-end concentre funções relacionadas à organização temática, autenticação, controle de acesso e gerenciamento dos metadados, sem assumir o processamento dos dados espaciais. Dessa forma, as responsabilidades administrativas permanecem na aplicação Laravel, enquanto as operações específicas de publicação e representação geográfica são realizadas pela infraestrutura geoespacial.
+
+
+\subsection{Metadados das Camadas}
+\label{sec:metadados-camadas}
+
+Cada camada cadastrada na plataforma possui informações que permitem identificar o recurso correspondente disponibilizado pelo GeoServer. Esses metadados são mantidos no banco administrativo e incluem elementos relacionados à identificação da camada, à sua organização em categorias e subcategorias e à referência ao serviço WMS utilizado para obtenção da representação cartográfica.
+
+Durante o carregamento da aplicação, o front-end obtém essas informações por meio da API e as utiliza para construir dinamicamente o painel de seleção de camadas. Quando uma camada é ativada, seu identificador técnico e a referência ao serviço correspondente são utilizados na composição da solicitação enviada ao endpoint responsável pela intermediação do serviço WMS.
+
+Essa abordagem reduz a dependência de configurações fixas no código da interface, permitindo que alterações na organização temática ou nos metadados das camadas sejam realizadas no ambiente administrativo e posteriormente refletidas no cliente a partir das informações fornecidas pela API.
+
+
+\subsection{Consumo de Camadas por WMS}
+\label{sec:consumo-wms}
+
+A principal forma de integração com o GeoServer ocorre por meio do Web Map Service (WMS). Após a seleção de uma camada pelo usuário, o front-end utiliza os metadados recebidos anteriormente para realizar uma requisição ao endpoint \texttt{/api/proxy-wms} disponibilizado pelo Laravel. O back-end utiliza as informações recebidas para encaminhar a solicitação ao serviço WMS correspondente no GeoServer.
+
+O GeoServer processa a requisição e gera a representação cartográfica da área solicitada, que retorna ao cliente por intermédio do Laravel. No front-end, o Leaflet e o React-Leaflet utilizam essa resposta para incorporar a camada à composição do mapa, mantendo-a visível enquanto estiver incluída entre as camadas ativas da aplicação.
+
+De forma simplificada, esse processo pode ser representado pelas seguintes etapas:
+
+\begin{alineascomponto}
+
+    \item o front-end recebe da API os metadados das camadas cadastradas;
+
+    \item o usuário seleciona uma camada disponível na interface;
+
+    \item a aplicação identifica o recurso geoespacial correspondente;
+
+    \item o cliente realiza uma solicitação ao endpoint \texttt{/api/proxy-wms};
+
+    \item o Laravel encaminha a requisição WMS ao GeoServer;
+
+    \item o GeoServer processa a solicitação e retorna a representação cartográfica por meio do back-end;
+
+    \item o Leaflet incorpora a resposta à composição do mapa.
+
+\end{alineascomponto}
+
+Essa estratégia mantém o processamento cartográfico concentrado no serviço especializado e permite que o Laravel controle a intermediação entre a interface e o GeoServer, enquanto o navegador permanece responsável pela composição e pela interação com as camadas exibidas.
+
+
+\subsection{Responsabilidade sobre os Dados Geoespaciais}
+\label{sec:responsabilidade-dados-geoespaciais}
+
+A infraestrutura responsável pelo armazenamento e pela publicação dos dados geoespaciais é tratada como um serviço externo à aplicação administrativa desenvolvida neste trabalho. O ``Sobral em Mapas'' utiliza os serviços disponibilizados pelo GeoServer, sem controlar diretamente a estrutura interna empregada para armazenamento das bases geográficas. Dessa forma, para o funcionamento da aplicação, são necessárias principalmente as informações que permitem identificar e consumir os serviços publicados.
+
+A aplicação mantém os metadados e as referências necessárias à comunicação com o GeoServer, enquanto a manutenção, a atualização e a publicação das bases geográficas permanecem sob responsabilidade da infraestrutura geoespacial correspondente. Essa separação preserva a independência entre a aplicação administrativa e as fontes de dados espaciais, permitindo que alterações nos recursos geográficos sejam realizadas sem modificar diretamente a estrutura do sistema, desde que os serviços utilizados permaneçam disponíveis de forma compatível.
+
+
+\section{Conteinerização e Ambiente de Execução}
+\label{sec:conteinerizacao-ambiente}
+
+A execução do back-end depende de componentes como a versão do PHP, extensões utilizadas pelo framework, bibliotecas instaladas pelo Composer e configurações relacionadas ao banco de dados e aos serviços externos. Para reduzir diferenças entre os ambientes utilizados durante o desenvolvimento e a implantação, foi adotada a conteinerização do servidor de aplicação com Docker. A utilização de contêineres permite definir de forma reproduzível as principais dependências necessárias à execução da aplicação, reduzindo a necessidade de configurações manuais diretamente no sistema operacional da máquina utilizada como servidor.
+
+
+\subsection{Conteinerização do Back-end}
+\label{sec:conteinerizacao-backend}
+
+O back-end Laravel foi preparado para execução em um contêiner Docker, cuja configuração é descrita por meio de um arquivo \texttt{Dockerfile}. Esse arquivo define a imagem utilizada como base e as etapas necessárias à preparação do ambiente, incluindo a disponibilização do PHP, a instalação das dependências e a configuração necessária para execução da aplicação.
+
+As instruções utilizadas na construção do ambiente permanecem versionadas juntamente com o código-fonte, contribuindo para sua reprodução em diferentes máquinas e facilitando a manutenção do projeto. A conteinerização foi concentrada no back-end, mantendo o front-end e o serviço geoespacial independentes e coerentes com a arquitetura desacoplada da plataforma.
+
+Embora o Docker padronize as dependências necessárias à aplicação, determinadas configurações continuam dependentes da infraestrutura de destino, como credenciais, endereços externos e parâmetros de rede. Dessa forma, a conteinerização atua principalmente como mecanismo de padronização e reprodutibilidade do ambiente do servidor.
+
+
+\subsection{Configuração por Variáveis de Ambiente}
+\label{sec:variaveis-ambiente}
+
+Determinadas configurações variam de acordo com o ambiente em que a aplicação é executada e, por esse motivo, são mantidas fora da lógica principal do sistema. No Laravel, essas informações são definidas por meio de variáveis de ambiente, permitindo utilizar valores diferentes em desenvolvimento e produção sem alterar diretamente o código-fonte.
+
+Entre essas configurações encontram-se as informações de conexão com o banco de dados, o endereço da aplicação, os parâmetros utilizados para envio de mensagens eletrônicas e as referências necessárias aos serviços externos, incluindo os serviços geoespaciais utilizados pelo back-end. Essa estratégia também reduz a exposição de informações sensíveis no código versionado.
+
+No front-end, configurações dependentes do ambiente, como o endereço-base utilizado para comunicação com a API, também podem ser definidas por meio das variáveis utilizadas pelo Vite. Assim, cliente e servidor podem ser configurados de acordo com a infraestrutura em que são executados sem exigir alterações na lógica de seus componentes.
+
+
+\subsection{Ambientes de Desenvolvimento e Produção}
+\label{sec:ambientes-execucao}
+
+Durante o desenvolvimento, os componentes da plataforma podem ser executados de maneira independente. O front-end utiliza o servidor de desenvolvimento disponibilizado pelo Vite, enquanto a API Laravel é executada em seu próprio ambiente e o GeoServer permanece disponível como serviço geoespacial externo.
+
+Essa separação exige que os endereços utilizados na comunicação entre os componentes sejam configurados de acordo com o ambiente. Em desenvolvimento, o cliente pode utilizar um endereço local para acesso à API, enquanto em produção passa a utilizar o endereço público disponibilizado para o back-end. De maneira semelhante, o Laravel deve possuir acesso às referências dos serviços WMS necessárias à intermediação das requisições destinadas ao GeoServer.
+
+A separação entre esses ambientes reforça o desacoplamento arquitetural adotado no projeto, permitindo que front-end, back-end e infraestrutura geoespacial sejam configurados e atualizados de acordo com suas respectivas necessidades.
+
+
+\subsection{Implantação em Ambiente de Nuvem}
+\label{sec:implantacao-nuvem}
+
+A implantação da plataforma foi organizada de forma independente entre cliente e servidor. O front-end foi disponibilizado por meio da Vercel, a partir dos arquivos gerados pelo processo de \textit{build} do Vite, enquanto o back-end Laravel foi implantado no Railway.
+
+No ambiente de produção, o back-end utiliza variáveis de ambiente próprias para configurar informações como a conexão com o banco de dados, o endereço da aplicação e os parâmetros necessários aos serviços externos. Da mesma forma, o front-end utiliza o endereço público da API para realizar a comunicação com o servidor.
+
+O GeoServer permanece tratado como um serviço externo à infraestrutura diretamente controlada pela aplicação. Dessa forma, seu serviço WMS precisa permanecer acessível ao back-end hospedado no Railway, que realiza a intermediação das requisições destinadas às camadas geoespaciais.
+
+\section{Procedimentos de Verificação}
+\label{sec:procedimentos-verificacao}
+
+Após a implementação e a integração dos principais componentes da plataforma, foram realizados procedimentos de verificação com o objetivo de analisar o funcionamento das funcionalidades desenvolvidas e a comunicação entre o front-end, a API, o banco de dados e os serviços geoespaciais. Essa etapa ocorreu de forma incremental ao longo do desenvolvimento, permitindo que as funcionalidades fossem inicialmente verificadas de maneira isolada e, posteriormente, observadas em conjunto com os demais componentes. O procedimento concentrou-se na execução de cenários representativos de uso, verificando se as ações realizadas na interface produziam os comportamentos esperados e se as informações percorriam corretamente os diferentes elementos da arquitetura.
+
+A verificação funcional contemplou as principais operações da interface pública, incluindo o carregamento e a organização das camadas, sua ativação e desativação, a exibição de legendas, a pesquisa de localizações, as ferramentas de medição, os favoritos, a impressão, a limpeza do mapa, o modo de tela cheia e o formulário de contato. Também foi observado o comportamento da interface em diferentes dimensões de tela. No ambiente administrativo, foram verificados os fluxos de autenticação, aprovação e controle de acesso, bem como as operações de consulta, criação, atualização e remoção dos registros gerenciados pela aplicação. Nos fluxos de integração, foi analisada a comunicação entre React e Laravel para obtenção dos dados administrativos, a persistência das alterações no MySQL e o processo de disponibilização das camadas WMS por meio do endpoint de proxy, no qual o Laravel intermedeia a comunicação com o GeoServer.
+
+A Tabela \ref{tab:procedimentos-verificacao} sintetiza os principais aspectos considerados durante essa etapa.
+
+\begin{table}[htb]
+    \captionsetup{width=15cm}
+    \Caption{\label{tab:procedimentos-verificacao} Aspectos considerados na verificação da plataforma}
+    \IBGEtab{}{
+        \begin{tabular}{p{4cm}p{10.4cm}}
+            \toprule
+            \textbf{Aspecto} &
+            \textbf{Procedimento de verificação} \\
+            \midrule \midrule
+
+            Interface pública &
+            Execução das principais funcionalidades disponíveis ao usuário, observando o comportamento da navegação, dos painéis e das ferramentas cartográficas. \\
+            \midrule
+
+            Camadas cartográficas &
+            Ativação e desativação das camadas e verificação da obtenção das representações WMS por meio da intermediação realizada pelo back-end. \\
+            \midrule
+
+            Comunicação com a API &
+            Execução das requisições realizadas pelo cliente e verificação das respostas utilizadas na composição da interface. \\
+            \midrule
+
+            Persistência &
+            Realização de operações administrativas e verificação do armazenamento e da recuperação das informações no banco de dados. \\
+            \midrule
+
+            Autenticação e acesso &
+            Verificação dos fluxos de login, aprovação de usuários, autenticação por token e acesso às funcionalidades protegidas. \\
+            \midrule
+
+            Responsividade &
+            Observação do comportamento dos principais componentes da interface em diferentes dimensões de tela. \\
+            \midrule
+
+            Integração geral &
+            Execução de fluxos envolvendo front-end, API Laravel, banco de dados MySQL e serviços geoespaciais disponibilizados pelo GeoServer. \\
+
+            \bottomrule
+        \end{tabular}
+    }{
+        \Fonte{Elaborado pelo autor.}
+    }
+\end{table}
+
+Os resultados desses procedimentos são apresentados no capítulo de resultados e discussão, juntamente com as evidências das funcionalidades implementadas e sua relação com os requisitos definidos anteriormente. Dessa forma, a etapa de verificação fornece subsídios para analisar o atendimento aos requisitos funcionais e não funcionais e identificar eventuais limitações observadas na versão desenvolvida da plataforma.
+
+
+\section{Considerações do Capítulo}
+\label{sec:consideracoes-metodologia}
+
+Este capítulo apresentou os procedimentos metodológicos e as principais decisões adotadas no desenvolvimento do ``Sobral em Mapas''. Foram descritos a caracterização da pesquisa, os requisitos da plataforma, a arquitetura da solução e a modelagem dos dados administrativos, destacando-se a separação entre a interface em React, a API Laravel, o banco de dados MySQL e os serviços geoespaciais disponibilizados pelo GeoServer. Também foram detalhados os principais aspectos relacionados ao desenvolvimento do back-end e do front-end, incluindo persistência, autenticação, controle de acesso, comunicação com a API e implementação da interface cartográfica.
+
+Além disso, foram apresentados o processo de integração com o GeoServer por meio do serviço WMS, utilizando a intermediação do Laravel, e a utilização do Docker para padronização do ambiente de execução do back-end. Por fim, foram definidos os procedimentos empregados na verificação das funcionalidades e dos principais fluxos de comunicação da plataforma. Com base nessa metodologia, o capítulo seguinte apresenta e discute os resultados obtidos com a implementação do sistema, relacionando as funcionalidades desenvolvidas aos requisitos estabelecidos.

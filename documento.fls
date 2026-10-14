@@ -526,44 +526,35 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT .\2-textuais\3-metodologia.tex
 INPUT .\2-textuais\3-metodologia.tex
 INPUT .\2-textuais\3-metodologia.tex
 INPUT .\2-textuais\3-metodologia.tex
 INPUT 2-textuais\3-metodologia.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7v.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\arquitetura-geral.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\fluxo-comunicacao.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT .\figuras\modelo-entidade-relacionamento.pdf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
@@ -685,14 +676,10 @@ OUTPUT documento.lof
 OUTPUT documento.lot
 OUTPUT documento.toc
 INPUT documento.aux
+INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb

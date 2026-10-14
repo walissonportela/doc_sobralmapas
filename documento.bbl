@@ -8,32 +8,176 @@
 \bibitem[Alc{\^a}ntara \textit{et al.} 2015]{Alcantara2015}
 \abntrefinfo{Alc{\^a}ntara \textit{et al.}}{ALC{\^A}NTARA \textit{et
   al.}}{2015}
-{ALC{\^A}NTARA, G. C.~d.; SILVA, G. B. S.~d.; DRUCKER, D.~P.; VICT{\'O}RIA, D.
+{ALC{\^A}NTARA, G. C.~d.; SILVA, G. B. S.~d.; DRUCKER, D.~P.; VICTORIA, D.
   d.~C.; BOLFE, {\'E}.~L. Geoinfo e matopiba: Um webgis para a
-  dissemina{\c{c}}{\~a}o de informa{\c{c}}{\~o}es geoespaciais. In:  \textbf{I
-  Simp{\'o}sio Internacional de {\'A}guas, Solos e Geotecnologias (SASGEO)}.
-  Uberaba, MG: [s.n.], 2015.}
+  dissemina{\c{c}}{\~a}o de informa{\c{c}}{\~o}es geoespaciais. In:
+  \textbf{Anais do I Simp{\'o}sio Internacional de {\'A}guas, Solos e
+  Geotecnologias}. Uberaba, MG: [s.n.], 2015. Dispon{\'\i}vel em:
+  \url{https://www.alice.cnptia.embrapa.br/handle/doc/1028920}. Acesso em: 22
+  set. 2026.}
 
-\bibitem[Bastos e Camboim 2022]{BastosCamboim2022}
-\abntrefinfo{Bastos e Camboim}{BASTOS; CAMBOIM}{2022}
-{BASTOS, T.~L.; CAMBOIM, S.~P. Comparação e análise de métodos de
-  disponibilização e publicação de mapas topográficos na web.
-\textbf{Revista Brasileira de Cartografia}, v.~74, n.~3, p. 540--560, 2022.}
+\bibitem[Bass \textit{et al.} 2021]{Bass2021}
+\abntrefinfo{Bass \textit{et al.}}{BASS \textit{et al.}}{2021}
+{BASS, L.; CLEMENTS, P.; KAZMAN, R. \textbf{Software Architecture in Practice}.
+  4. ed. [S.l.]: Addison-Wesley Professional, 2021.
+ISBN 9780136886099.}
+
+\bibitem[Bastos e Camboim 2025]{BastosCamboim2022}
+\abntrefinfo{Bastos e Camboim}{BASTOS; CAMBOIM}{2025}
+{BASTOS, T.~L.; CAMBOIM, S.~P. Compara{\c{c}}{\~a}o e an{\'a}lise de
+  m{\'e}todos de disponibiliza{\c{c}}{\~a}o e publica{\c{c}}{\~a}o de mapas
+  topogr{\'a}ficos na web.
+\textbf{Revista Brasileira de Cartografia}, v.~77, 2025.
+Dispon{\'\i}vel em:
+  \url{https://seer.ufu.br/index.php/revistabrasileiracartografia/article/view/75024}.
+  Acesso em: 22 set. 2026.}
+
+\bibitem[Butler \textit{et al.} 2016]{RFC7946}
+\abntrefinfo{Butler \textit{et al.}}{BUTLER \textit{et al.}}{2016}
+{BUTLER, H.; DALY, M.; DOYLE, A.; GILLIES, S.; HAGEN, S.; SCHAUB, T.
+  \textbf{The GeoJSON Format}.
+[S.l.], 2016. Dispon{\'\i}vel em:
+  \url{https://www.rfc-editor.org/info/rfc7946}. Acesso em: 22 set. 2026.}
+
+\bibitem[{Docker} 2026]{DockerCompose}
+\abntrefinfo{{Docker}}{{Docker}}{2026a}
+{{Docker}. \textbf{Docker Compose}. 2026.
+Dispon{\'\i}vel em: \url{https://docs.docker.com/compose/}. Acesso em: 22 set.
+  2026.}
+
+\bibitem[{Docker} 2026]{DockerContainers}
+\abntrefinfo{{Docker}}{{Docker}}{2026b}
+{{Docker}. \textbf{What is a Container?} 2026.
+Dispon{\'\i}vel em:
+  \url{https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/}.
+  Acesso em: 22 set. 2026.}
+
+\bibitem[Fielding 2000]{Fielding2000}
+\abntrefinfo{Fielding}{FIELDING}{2000}
+{FIELDING, R.~T.
+\textbf{Architectural Styles and the Design of Network-based Software
+  Architectures}.
+Tese (Doutorado) --- University of California, Irvine, Irvine, California,
+  2000.
+Dispon{\'\i}vel em:
+  \url{https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm}. Acesso em:
+  22 set. 2026.}
+
+\bibitem[{GeoServer} 2026]{GeoServerDocs}
+\abntrefinfo{{GeoServer}}{{GeoServer}}{2026}
+{{GeoServer}. \textbf{GeoServer User Manual: Overview}. 2026.
+Dispon{\'\i}vel em:
+  \url{https://docs.geoserver.org/main/en/user/introduction/overview/}. Acesso
+  em: 22 set. 2026.}
+
+\bibitem[{International Organization for Standardization} 2018]{ISO9241112018}
+\abntrefinfo{{International Organization for Standardization}}{{International
+  Organization for Standardization}}{2018}
+{{International Organization for Standardization}. \textbf{ISO 9241-11:2018 --
+  Ergonomics of Human-System Interaction -- Part 11: Usability: Definitions and
+  Concepts}. Geneva: International Organization for Standardization, 2018.
+Dispon{\'\i}vel em: \url{https://www.iso.org/standard/63500.html}. Acesso em:
+  22 set. 2026.}
+
+\bibitem[{Laravel} 2026]{LaravelEloquent8}
+\abntrefinfo{{Laravel}}{{Laravel}}{2026a}
+{{Laravel}. \textbf{Eloquent: Getting Started -- Laravel 8.x}. 2026.
+Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x/eloquent}. Acesso em: 22
+  set. 2026.}
+
+\bibitem[{Laravel} 2026]{LaravelDocs8}
+\abntrefinfo{{Laravel}}{{Laravel}}{2026b}
+{{Laravel}. \textbf{Laravel 8.x Documentation}. 2026.
+Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x}. Acesso em: 22 set.
+  2026.}
+
+\bibitem[{Laravel} 2026]{LaravelSanctum8}
+\abntrefinfo{{Laravel}}{{Laravel}}{2026c}
+{{Laravel}. \textbf{Laravel Sanctum -- Laravel 8.x}. 2026.
+Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x/sanctum}. Acesso em: 22
+  set. 2026.}
+
+\bibitem[{Leaflet} 2026]{LeafletDocs}
+\abntrefinfo{{Leaflet}}{{Leaflet}}{2026}
+{{Leaflet}. \textbf{Leaflet API Reference}. 2026.
+Dispon{\'\i}vel em: \url{https://leafletjs.com/reference.html}. Acesso em: 22
+  set. 2026.}
 
 \bibitem[Marotta \textit{et al.} 2020]{Marotta2020}
 \abntrefinfo{Marotta \textit{et al.}}{MAROTTA \textit{et al.}}{2020}
 {MAROTTA, V. d.~S.; BRUMATTI, C. H.~T.; ALMEIDA, B.~B.; MARTINS, S. R. d.~M.;
-  DUARTE, D. C. d.~O.; COELHO, R. B.~C.; MARQUES, {\'E}.~T.; OLIVEIRA, I.~A.
-  Webgente: Desenvolvimento de um framework open source para um webgis
-  cadastral. In:  \textbf{14º Congresso de Cadastro Multifinalit{\'a}rio e
-  Gest{\~a}o Territorial (COBRAC)}. Florian{\'o}polis, SC: [s.n.], 2020.}
+  DUARTE, D. C. d.~O.; COELHO, R. B. C.~e.; MARQUES, {\'E}.~T.; OLIVEIRA,
+  J.~C.; OLIVEIRA, I.~A. Webgente: Desenvolvimento de um framework open source
+  para um webgis cadastral. In:  \textbf{Anais do 14º Congresso de Cadastro
+  Multifinalit{\'a}rio e Gest{\~a}o Territorial}. Florian{\'o}polis, SC:
+  Universidade Federal de Santa Catarina, 2020. Dispon{\'\i}vel em:
+  \url{https://ojs.sites.ufsc.br/index.php/cobrac/article/view/10720}. Acesso
+  em: 22 set. 2026.}
+
+\bibitem[Mell e Grance 2011]{MellGrance2011}
+\abntrefinfo{Mell e Grance}{MELL; GRANCE}{2011}
+{MELL, P.; GRANCE, T. \textbf{The NIST Definition of Cloud Computing}.
+Gaithersburg, Maryland, 2011.}
+
+\bibitem[{Open Geospatial Consortium} 2006]{OGCWMS}
+\abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2006}
+{{Open Geospatial Consortium}. \textbf{Web Map Service (WMS)}. 2006.
+OpenGIS Web Map Service Implementation Specification, vers{\~a}o 1.3.0,
+  documento OGC 06-042.
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wms/}. Acesso em: 22
+  set. 2026.}
+
+\bibitem[{Open Geospatial Consortium} 2010]{OGCWMTS}
+\abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2010}
+{{Open Geospatial Consortium}. \textbf{Web Map Tile Service (WMTS)}. 2010.
+OpenGIS Web Map Tile Service Implementation Standard, vers{\~a}o 1.0.0,
+  documento OGC 07-057r7.
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wmts/}. Acesso em: 22
+  set. 2026.}
+
+\bibitem[{Open Geospatial Consortium} 2014]{OGCWFS}
+\abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2014}
+{{Open Geospatial Consortium}. \textbf{Web Feature Service (WFS)}. 2014.
+OGC Web Feature Service 2.0 Interface Standard with Corrigendum, vers{\~a}o
+  2.0.2, documento OGC 09-025r2.
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wfs/}. Acesso em: 22
+  set. 2026.}
+
+\bibitem[{Oracle Corporation} 2026]{MySQL80}
+\abntrefinfo{{Oracle Corporation}}{{Oracle Corporation}}{2026}
+{{Oracle Corporation}. \textbf{MySQL 8.0 Reference Manual}. 2026.
+Dispon{\'\i}vel em: \url{https://dev.mysql.com/doc/refman/8.0/en/}. Acesso em:
+  22 set. 2026.}
+
+\bibitem[Prodanov e Freitas 2013]{ProdanovFreitas2013}
+\abntrefinfo{Prodanov e Freitas}{PRODANOV; FREITAS}{2013}
+{PRODANOV, C.~C.; FREITAS, E. C.~d. \textbf{Metodologia do Trabalho
+  Científico: Métodos e Técnicas da Pesquisa e do Trabalho Acadêmico}. 2.
+  ed. Novo Hamburgo, RS: Feevale, 2013.
+ISBN 9788577171583. Dispon{\'\i}vel em:
+  \url{https://www.feevale.br/institucional/editora-feevale/metodologia-do-trabalho-cientifico---2-edicao}.
+  Acesso em: 13 out. 2026.}
+
+\bibitem[{React} 2026]{ReactDocs}
+\abntrefinfo{{React}}{{React}}{2026}
+{{React}. \textbf{React Documentation: Quick Start}. 2026.
+Dispon{\'\i}vel em: \url{https://react.dev/learn}. Acesso em: 22 set. 2026.}
+
+\bibitem[{React-Leaflet} 2026]{ReactLeafletDocs}
+\abntrefinfo{{React-Leaflet}}{{React-Leaflet}}{2026}
+{{React-Leaflet}. \textbf{React-Leaflet Documentation}. 2026.
+Dispon{\'\i}vel em:
+  \url{https://react-leaflet.js.org/docs/start-introduction/}. Acesso em: 22
+  set. 2026.}
 
 \bibitem[Silva 2013]{Silva2013}
 \abntrefinfo{Silva}{SILVA}{2013}
 {SILVA, C. N.~d. O webgis como ferramenta no processo de ensino-aprendizagem de
   geografia e cartografia.
-\textbf{Revista GeoAmaz{\^o}nia}, Universidade Federal do Par{\'a}, v.~2, n.~2,
-  p. 19--32, 2013.}
+\textbf{Revista GeoAmaz{\^o}nia}, p. 19--32, 2013.
+Dispon{\'\i}vel em:
+  \url{https://periodicos.ufpa.br/index.php/geoamazonia/article/view/12351}.
+  Acesso em: 22 set. 2026.}
 
 \bibitem[Vinueza-Martinez \textit{et al.} 2024]{VinuezaMartinez2024}
 \abntrefinfo{Vinueza-Martinez \textit{et al.}}{VINUEZA-MARTINEZ \textit{et
