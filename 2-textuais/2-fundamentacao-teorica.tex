@@ -1,88 +1,128 @@
 \chapter{Fundamentação Teórica}
 \label{cap:fundamentacao-teorica}
 
-Este capítulo apresenta os fundamentos conceituais e tecnológicos relacionados ao desenvolvimento da plataforma ``Sobral em Mapas''. Inicialmente, são abordados os Sistemas de Informação Geográfica (SIG), as aplicações WebGIS e os padrões de interoperabilidade geoespacial, com destaque para os serviços WMS, WFS e WMTS. Em seguida, são discutidos conceitos de arquitetura de software e as tecnologias empregadas na solução, incluindo React, Leaflet, React-Leaflet, Laravel, MySQL e GeoServer. Por fim, são apresentados os fundamentos da conteinerização, da computação em nuvem, da responsividade e da usabilidade, que fornecem suporte às decisões descritas no capítulo de Metodologia.
+Este capítulo apresenta os fundamentos conceituais e tecnológicos relacionados ao desenvolvimento da plataforma ``Sobral em Mapas''. Inicialmente, são abordados os Sistemas de Informação Geográfica (SIG), as aplicações WebGIS e os padrões de interoperabilidade geoespacial, com destaque para os serviços WMS, WFS e WMTS. Em seguida, são discutidos conceitos de arquitetura de software e as tecnologias empregadas na solução, incluindo React, Leaflet, React-Leaflet, Laravel, MySQL e GeoServer. Por fim, são apresentados os fundamentos da conteinerização, da computação em nuvem, da responsividade e da usabilidade, seguidos de uma análise de trabalhos relacionados que contribuem para contextualizar a proposta desenvolvida.
+
 
 \section{Sistemas de Informação Geográfica}
 \label{sec:sig}
 
-Os Sistemas de Informação Geográfica (\gls{SIG}), do inglês \textit{Geographic Information Systems} (\gls{GIS}), podem ser definidos como sistemas computacionais utilizados para armazenar, organizar, manipular, analisar e representar informações associadas a posições geográficas \cite{Silva2013}. Diferentemente de sistemas de informação exclusivamente alfanuméricos, os \gls{SIG} incorporam a dimensão espacial dos dados, permitindo relacionar atributos descritivos às respectivas posições e geometrias no território. Dessa forma, elementos como vias, edificações, equipamentos públicos, unidades de saúde, escolas e áreas administrativas podem ser representados e analisados segundo sua localização.
+
+Os Sistemas de Informação Geográfica (SIG), conhecidos em inglês como \textit{Geographic Information Systems} (GIS), podem ser definidos como sistemas computacionais utilizados para armazenar, organizar, manipular, analisar e representar informações associadas a posições geográficas \cite{Silva2013}. \glsunset{SIG}\glsunset{GIS}
 
 A utilização de informações georreferenciadas permite estabelecer relações entre diferentes conjuntos de dados e identificar padrões que poderiam ser menos evidentes quando analisados apenas por meio de tabelas ou documentos textuais. Entre as operações normalmente associadas aos \gls{SIG} encontram-se a consulta espacial, a sobreposição de camadas, a identificação de feições e a realização de medições, tornando essas ferramentas relevantes tanto para atividades técnicas quanto para processos de planejamento e gestão territorial.
+
+
 
 \subsection{Dados Vetoriais e Matriciais}
 \label{sec:dados-geoespaciais}
 
-Os dados geográficos podem ser representados principalmente por meio de modelos vetoriais e matriciais. No modelo vetorial, os objetos são descritos utilizando pontos, linhas e polígonos. Pontos são adequados à representação de elementos cuja localização é mais relevante que sua extensão, como escolas ou unidades de saúde; linhas podem representar vias, redes ou trajetos; e polígonos podem delimitar bairros, áreas administrativas ou outras regiões territoriais. Além da geometria, as feições vetoriais podem possuir informações descritivas associadas, possibilitando relacionar atributos como nome, endereço, categoria ou outras características ao elemento representado.
+Os dados geográficos podem ser representados principalmente por meio de modelos vetoriais e matriciais. No modelo vetorial, os elementos geográficos são descritos utilizando pontos, linhas e polígonos. Os pontos são empregados na representação de elementos cuja localização é mais relevante que sua extensão, como escolas e unidades de saúde; as linhas podem representar vias, redes e trajetos; enquanto os polígonos permitem delimitar bairros, áreas administrativas e outras regiões territoriais. Além da geometria, as feições vetoriais podem possuir atributos descritivos associados, como nome, endereço e categoria, possibilitando relacionar características específicas aos elementos representados.
 
-O modelo matricial, também denominado \textit{raster}, representa o espaço através de uma matriz de células ou pixels. Imagens de satélite, fotografias aéreas e modelos digitais de elevação constituem exemplos desse tipo de representação. Em aplicações geográficas, os modelos vetorial e matricial são frequentemente utilizados de forma combinada, permitindo, por exemplo, apresentar mapas de base matriciais juntamente com camadas temáticas vetoriais referentes a equipamentos públicos, limites territoriais ou redes de transporte.
+A representação dessas geometrias baseia-se na organização de coordenadas espaciais, interpretadas conforme um sistema de referência. Um ponto pode ser definido por um par de coordenadas, como longitude e latitude, enquanto as linhas são formadas por sequências de posições conectadas. Os polígonos, por sua vez, utilizam sequências de coordenadas que delimitam contornos fechados, permitindo representar a extensão de determinada área geográfica. Essas estruturas podem ser armazenadas em formatos vetoriais, como o GeoJSON, que organiza geometrias e atributos descritivos em uma representação estruturada, facilitando seu intercâmbio entre aplicações e serviços geoespaciais \cite{RFC7946}.
+
+O modelo matricial, também denominado \textit{raster}, representa o espaço por meio de uma matriz de células ou pixels, aos quais são associados valores referentes às características da área representada. Imagens de satélite, fotografias aéreas e modelos digitais de elevação constituem exemplos desse tipo de representação. Em aplicações geográficas, os modelos vetorial e matricial são frequentemente utilizados de maneira complementar, permitindo combinar mapas de base matriciais com camadas temáticas referentes a equipamentos públicos, limites territoriais ou redes de transporte. A Figura \ref{fig:dados-vetoriais-matriciais} apresenta uma comparação entre essas formas de representação.
+
+\begin{figure}[htb]
+    \centering
+    \caption{Representação dos modelos de dados vetoriais e matriciais}
+    \includegraphics[width=0.70\textwidth]{figuras/dados-vetoriais-matriciais.png}
+    \label{fig:dados-vetoriais-matriciais}
+    \fonte{Imagem disponibilizada em \citeonline{Yusuf2016}.}
+\end{figure}
+
 
 \subsection{Sistemas de Referência Espacial}
 \label{sec:sistemas-referencia}
 
-Para que dados provenientes de diferentes fontes possam ser apresentados corretamente em uma mesma visualização cartográfica, é necessário estabelecer como suas coordenadas correspondem à superfície terrestre. Os sistemas de referência espacial definem os parâmetros utilizados para interpretar essas coordenadas e garantir a coerência entre diferentes conjuntos de dados.
+Para que dados provenientes de diferentes fontes possam ser apresentados corretamente em uma mesma visualização cartográfica, é necessário estabelecer como suas coordenadas correspondem à superfície terrestre. Os sistemas de referência espacial definem os parâmetros utilizados para interpretar essas coordenadas, considerando aspectos como o sistema de coordenadas, o datum geodésico e, quando aplicável, a projeção cartográfica. Nos sistemas de coordenadas geográficas, as posições são expressas por latitude e longitude, geralmente em graus, enquanto os sistemas projetados utilizam coordenadas planas, frequentemente representadas em metros \cite{QGISCoordenadas2025}. A Figura \ref{fig:coordenadas-geograficas} ilustra a organização das coordenadas geográficas a partir dos paralelos e meridianos terrestres.
 
-Quando referências espaciais distintas não são consideradas adequadamente, camadas que representam uma mesma região podem apresentar deslocamentos ou incompatibilidades. Em aplicações \gls{WebGIS}, bibliotecas cartográficas e servidores de mapas precisam interpretar corretamente essas referências para que diferentes fontes de informação sejam sobrepostas de maneira consistente.
+\begin{figure}[htb]
+    \centering
+    \caption{Representação das coordenadas geográficas de latitude e longitude}
+    \includegraphics[width=0.70\textwidth]{figuras/coordenadas-geograficas.png}
+    \label{fig:coordenadas-geograficas}
+    \fonte{Imagem disponibilizada em \citeonline{QGISCoordenadas2025}.}
+\end{figure}
+
+Quando referências espaciais distintas não são consideradas adequadamente, camadas que representam uma mesma região podem apresentar deslocamentos ou incompatibilidades. Nesse contexto, a identificação dos sistemas de referência e, quando necessário, a transformação de coordenadas são fundamentais para garantir o alinhamento das informações. Em aplicações \gls{WebGIS}, bibliotecas cartográficas e servidores de mapas precisam interpretar corretamente essas referências, permitindo que dados provenientes de diferentes fontes sejam sobrepostos de maneira consistente.
 
 \section{Sistemas de Informação Geográfica na Web}
 \label{sec:webgis}
 
-O avanço das tecnologias de Internet e dos navegadores possibilitou disponibilizar funcionalidades geográficas diretamente na \textit{web}, consolidando os Sistemas de Informação Geográfica baseados na \textit{web}, denominados \gls{WebGIS} \cite{Silva2013}. Essas aplicações permitem acessar mapas e informações espaciais sem exigir a instalação de programas especializados, oferecendo recursos como navegação, alteração do nível de \textit{zoom}, ativação de camadas e consulta de informações.
+O avanço das tecnologias de Internet e dos navegadores possibilitou a disponibilização de funcionalidades geográficas diretamente na web, consolidando os Sistemas de Informação Geográfica na Web, conhecidos como WebGIS \cite{Silva2013}. \glsunset{WebGIS} Essas aplicações permitem acessar mapas e informações espaciais por meio de navegadores, sem exigir a instalação de programas especializados, oferecendo recursos como navegação cartográfica, alteração do nível de \textit{zoom}, ativação de camadas temáticas e consulta de informações geográficas.
 
-As plataformas \gls{WebGIS} não substituem os programas tradicionais de geoprocessamento, que permanecem relevantes para tarefas especializadas de edição, produção cartográfica e análise espacial. Sua principal contribuição está na ampliação do acesso e do compartilhamento das informações \cite{BastosCamboim2022}. Além disso, essas plataformas podem distribuir responsabilidades entre componentes: operações de armazenamento e publicação de dados ocorrem no servidor, enquanto a navegação e as interações com a interface são realizadas no navegador \cite{VinuezaMartinez2024}.
+As plataformas \gls{WebGIS} não substituem os programas tradicionais de geoprocessamento, que permanecem relevantes para atividades especializadas de edição, produção cartográfica e análise espacial. Sua principal contribuição está na ampliação do acesso e do compartilhamento das informações geográficas \cite{BastosCamboim2022}. Além disso, essas plataformas podem distribuir responsabilidades entre diferentes componentes, de modo que o armazenamento e a publicação dos dados sejam realizados no ambiente servidor, enquanto a visualização cartográfica e as interações com a interface ocorrem no navegador do usuário \cite{VinuezaMartinez2024}.
 
 \subsection{WebGIS na Gestão Pública}
 \label{sec:webgis-gestao-publica}
 
-Na Administração Pública, as aplicações \gls{WebGIS} permitem reunir informações relativas à mobilidade, à saúde, à educação, à infraestrutura e à organização territorial em uma interface cartográfica comum. Essa integração pode apoiar atividades de consulta e planejamento municipal, além de ampliar o acesso aos dados por cidadãos, estudantes, pesquisadores e profissionais interessados no território \cite{Alcantara2015,Marotta2020}.
+Na Administração Pública, as aplicações \gls{WebGIS} permitem reunir informações relacionadas à mobilidade urbana, à saúde, à educação, à infraestrutura e à organização territorial em uma interface cartográfica comum. Essa integração pode apoiar atividades de consulta e planejamento municipal, além de ampliar o acesso às informações geográficas por cidadãos, estudantes, pesquisadores e profissionais interessados no território \cite{Alcantara2015,Marotta2020}.
 
-A utilidade dessas plataformas, entretanto, depende não apenas de sua interface, mas também da qualidade e da atualização das bases disponibilizadas, da consistência dos metadados e da manutenção dos serviços que fornecem as informações geográficas. Assim, a organização dos dados e a interoperabilidade entre componentes são aspectos fundamentais para seu funcionamento.
+Entretanto, a utilidade dessas plataformas depende não apenas das funcionalidades disponibilizadas pela interface, mas também da qualidade e da atualização das bases geográficas, da consistência dos metadados e da disponibilidade dos serviços responsáveis pelo fornecimento das informações. Nesse contexto, a organização dos dados e a interoperabilidade entre os componentes constituem aspectos fundamentais para garantir a continuidade e a confiabilidade das informações apresentadas.
+
+
 
 \section{Interoperabilidade e Padrões Geoespaciais}
 \label{sec:interoperabilidade}
 
-Uma plataforma geográfica pode integrar diferentes ferramentas responsáveis pelo armazenamento, processamento, publicação e visualização das informações. Para que esses componentes possam trocar dados de maneira consistente, torna-se necessário estabelecer mecanismos de interoperabilidade. No domínio geoespacial, o \textit{Open Geospatial Consortium} (\gls{OGC}) é responsável pelo desenvolvimento de diferentes padrões destinados à comunicação entre servidores, clientes cartográficos e ferramentas de geoprocessamento \cite{OGCWMS,OGCWFS,OGCWMTS}.
-
-A adoção desses padrões reduz a dependência entre implementações específicas, pois permite que um cliente utilize informações disponibilizadas por determinado servidor sem precisar conhecer os detalhes internos relacionados à tecnologia ou à forma de armazenamento empregada. Entre os principais serviços relacionados ao \gls{OGC} encontram-se o \textit{Web Map Service} (\gls{WMS}), o \textit{Web Feature Service} (\gls{WFS}) e o \textit{Web Map Tile Service} (\gls{WMTS}).
+Uma plataforma geográfica pode integrar diferentes ferramentas responsáveis pelo armazenamento, processamento e visualização das informações espaciais, tornando necessários mecanismos de interoperabilidade entre seus componentes. Nesse contexto, o \textit{Open Geospatial Consortium} (OGC) desenvolve padrões que permitem a comunicação entre servidores, clientes cartográficos e ferramentas de geoprocessamento, reduzindo a dependência entre tecnologias específicas \cite{OGCWMS,OGCWFS,OGCWMTS}. \glsunset{OGC} Entre os principais serviços padronizados pelo \gls{OGC}, destacam-se o WMS, o WFS e o WMTS, que apresentam diferentes formas de disponibilização das informações geoespaciais.
 
 \subsection{Web Map Service}
 \label{sec:wms}
 
-O \textit{Web Map Service} (\gls{WMS}) define uma interface padronizada para obtenção de representações cartográficas produzidas por um servidor \cite{OGCWMS}. O cliente envia informações referentes à camada solicitada, à área geográfica, às dimensões da imagem, ao sistema de referência e ao formato esperado. A partir desses parâmetros, o servidor processa os dados e retorna uma representação cartográfica, frequentemente nos formatos \texttt{PNG} ou \texttt{JPEG}.
-
-Entre os parâmetros utilizados pelo serviço encontra-se a \texttt{BBOX} (\textit{Bounding Box}), responsável por determinar a extensão geográfica que deverá ser representada. Uma característica relevante do \gls{WMS} é que o cliente recebe principalmente a representação visual da camada, e não necessariamente sua geometria completa. Dessa maneira, o processamento cartográfico e a definição da aparência das informações podem permanecer concentrados no servidor.
+O \textit{Web Map Service} (WMS) estabelece uma interface padronizada para obtenção de representações cartográficas produzidas por servidores de mapas \cite{OGCWMS}. \glsunset{WMS} Por meio da operação \texttt{GetMap}, o cliente solicita camadas geográficas, informando parâmetros como extensão territorial, dimensões da imagem, sistema de referência e formato de saída, geralmente \texttt{PNG} ou \texttt{JPEG}. Entre esses parâmetros, a \texttt{BBOX} (\textit{Bounding Box}) delimita a área geográfica solicitada. Diferentemente de serviços que disponibilizam as feições completas, o \gls{WMS} fornece principalmente sua representação visual, permitindo que dados originalmente vetoriais sejam processados e apresentados como imagens cartográficas.
 
 \subsection{Web Feature Service e GeoJSON}
 \label{sec:wfs}
 
-O \textit{Web Feature Service} (\gls{WFS}) apresenta uma abordagem diferente do \gls{WMS}. Em vez de fornecer apenas uma representação do mapa, o serviço permite acessar as próprias feições geográficas e seus atributos \cite{OGCWFS}. Pontos, linhas e polígonos podem ser transferidos ao cliente e utilizados em operações como seleção, filtragem, estilização ou análise.
-
-Entre os formatos empregados na representação de dados vetoriais está o \texttt{GeoJSON}, padronizado pelo RFC 7946. Esse formato utiliza a estrutura \gls{JSON} para descrever geometrias, feições e atributos, sendo compatível com diferentes bibliotecas cartográficas utilizadas em aplicações \textit{web} \cite{RFC7946}. O \texttt{GeoJSON} é um formato de dados, e não um serviço geoespacial: pode ser utilizado de maneira independente ou como representação retornada por determinados serviços, inclusive implementações de \gls{WFS}.
+O \textit{Web Feature Service} (WFS) permite acessar diretamente feições geográficas e seus atributos, diferentemente do \gls{WMS}, que disponibiliza principalmente representações cartográficas \cite{OGCWFS}. \glsunset{WFS} Dessa forma, pontos, linhas e polígonos podem ser consultados e transferidos ao cliente para operações de seleção, filtragem e análise espacial. Entre os formatos utilizados para representar essas informações encontra-se o \texttt{GeoJSON}, padronizado pelo RFC 7946, que emprega a estrutura \gls{JSON} para organizar geometrias e atributos descritivos \cite{RFC7946}. Entretanto, o \texttt{GeoJSON} constitui um formato de dados, e não um serviço geoespacial, podendo ser utilizado independentemente ou como resposta de determinadas implementações de \gls{WFS}.
 
 \subsection{Web Map Tile Service}
 \label{sec:wmts}
 
-O \textit{Web Map Tile Service} (\gls{WMTS}) disponibiliza representações cartográficas divididas em mosaicos de imagens, denominados \textit{tiles}, organizados de acordo com níveis de detalhe previamente definidos \cite{OGCWMTS}. Essa estratégia permite que o cliente solicite apenas os mosaicos necessários à área visualizada, favorecendo mecanismos de \textit{cache} e o reaproveitamento das imagens já produzidas.
+O \textit{Web Map Tile Service} (WMTS) disponibiliza representações cartográficas organizadas em mosaicos de imagens, denominados \textit{tiles}, distribuídos em matrizes associadas a níveis de escala predefinidos \cite{OGCWMTS}. \glsunset{WMTS} Essa organização permite solicitar apenas os mosaicos necessários à área visualizada, favorecendo o armazenamento e o reaproveitamento das imagens por mecanismos de \textit{cache}. Diferentemente do \gls{WMS}, que permite solicitar representações para extensões geográficas arbitrárias, o \gls{WMTS} utiliza matrizes e níveis de escala padronizados, facilitando a reutilização dos mosaicos cartográficos.
 
-Enquanto o \gls{WMS} é voltado à obtenção de representações cartográficas geradas pelo servidor, o \gls{WFS} permite acessar as próprias feições e o \gls{WMTS} utiliza uma estrutura de mosaicos previamente organizados. A Tabela \ref{tab:comparativo-ogc} sintetiza as principais diferenças entre esses serviços.
+A Tabela \ref{tab:comparativo-ogc} sintetiza as principais características dos serviços apresentados.
 
-\begin{table}[htb]
+\begin{table}[!htbp]
     \captionsetup{width=15cm}
     \Caption{\label{tab:comparativo-ogc} Comparativo entre serviços geoespaciais}
     \IBGEtab{}{
-        \begin{tabular}{p{3.3cm}p{3.6cm}p{3.6cm}p{3.6cm}}
+        \begin{tabular}{p{3.0cm}p{3.6cm}p{3.6cm}p{3.6cm}}
             \toprule
             \textbf{Característica} & \textbf{WMS} & \textbf{WFS} & \textbf{WMTS} \\
             \midrule \midrule
-            Conteúdo fornecido & Imagem cartográfica & Feições e atributos & Mosaicos de imagens \\
+
+            Conteúdo fornecido &
+            Imagens cartográficas &
+            Feições e atributos &
+            Mosaicos de imagens \\
             \midrule
-            Geometria disponível & Não diretamente & Sim & Não diretamente \\
+
+            Geometrias disponíveis &
+            Não diretamente &
+            Sim &
+            Não diretamente \\
             \midrule
-            Processamento & Predominantemente no servidor & Pode ocorrer também no cliente & Baseado em mosaicos previamente organizados \\
+
+            Forma de consulta &
+            Área geográfica e camadas &
+            Feições e filtros &
+            Matrizes e níveis de escala \\
             \midrule
-            Uso comum & Camadas temáticas & Consulta e manipulação vetorial & Mapas de base e camadas com cache \\
+
+            Processamento &
+            Renderização no servidor &
+            Processamento também no cliente &
+            Mosaicos e mecanismos de cache \\
             \midrule
-            Interatividade & Principalmente visual & Maior interação com as feições & Principalmente navegação \\
+
+            Aplicações comuns &
+            Camadas temáticas &
+            Consulta de dados vetoriais &
+            Mapas de base e mosaicos \\
+
             \bottomrule
         \end{tabular}
     }{
@@ -90,39 +130,58 @@ Enquanto o \gls{WMS} é voltado à obtenção de representações cartográficas
     }
 \end{table}
 
-Embora esses padrões ofereçam formas distintas de acesso às informações espaciais, a integração das camadas temáticas do ``Sobral em Mapas'' utiliza principalmente o \gls{WMS}, consumido a partir dos serviços publicados pelo GeoServer. O formato \texttt{GeoJSON} também está presente na interface para representar o limite territorial de Sobral, sem que isso implique a utilização de \gls{WFS} na implementação descrita.
+Embora esses padrões ofereçam diferentes formas de acesso às informações geográficas, o ``Sobral em Mapas'' utiliza principalmente o \gls{WMS} para consumir as camadas temáticas publicadas pelo GeoServer. O formato \texttt{GeoJSON}, por sua vez, é empregado na representação do limite territorial do município, sem a necessidade de utilização do \gls{WFS} na implementação desenvolvida.
+
 
 \section{Arquitetura de Software em Aplicações Web}
 \label{sec:arquitetura-software}
 
-A arquitetura de \textit{software} define a organização dos principais componentes de um sistema e a maneira como esses componentes distribuem responsabilidades e se comunicam \cite{Bass2021}. As decisões arquiteturais influenciam aspectos como manutenção, evolução, implantação e integração da aplicação. Entretanto, diferentes abordagens podem ser adequadas conforme as características e os requisitos do sistema.
+A arquitetura de software estabelece a organização dos principais componentes de um sistema, definindo suas responsabilidades e formas de comunicação \cite{Bass2021}. Essas decisões influenciam aspectos como manutenção, evolução, implantação e integração, sendo necessário considerar as características e os requisitos de cada aplicação na escolha da abordagem arquitetural.
 
 \subsection{Arquitetura Monolítica e Arquitetura Desacoplada}
 \label{sec:arquiteturas-web}
 
-Em uma arquitetura monolítica, os diferentes módulos da aplicação fazem parte de uma unidade principal de desenvolvimento e implantação. Essa abordagem pode reduzir a complexidade inicial em sistemas menores, uma vez que diferentes funcionalidades permanecem concentradas em uma mesma aplicação. Entretanto, conforme o sistema cresce, o aumento das dependências internas pode tornar determinadas alterações e implantações mais complexas.
+Na arquitetura monolítica, os diferentes módulos do sistema são reunidos em uma aplicação principal, geralmente desenvolvida e implantada como uma unidade. Essa abordagem pode simplificar a organização inicial de projetos menores, pois concentra funcionalidades e reduz a necessidade de comunicação entre serviços independentes. Entretanto, conforme a aplicação cresce, o aumento das dependências internas pode dificultar determinadas alterações e processos de implantação.
 
-Uma arquitetura desacoplada, por outro lado, separa diferentes responsabilidades em componentes que se comunicam por meio de interfaces bem definidas. Em aplicações \textit{web}, essa divisão ocorre frequentemente entre o \textit{front-end}, responsável pela apresentação e pela interação com o usuário, e o \textit{back-end}, responsável pelas regras de negócio, persistência e segurança. Em aplicações geoespaciais, um terceiro componente pode ser incorporado: o servidor de mapas, responsável especificamente pela publicação das informações cartográficas.
+A arquitetura desacoplada, por sua vez, distribui responsabilidades entre componentes que se comunicam por interfaces bem definidas. Em aplicações web, essa separação ocorre frequentemente entre o \textit{front-end}, responsável pela interface e interação com o usuário, e o \textit{back-end}, que concentra regras de negócio, persistência e segurança. Em sistemas geoespaciais, essa organização pode incluir um servidor de mapas, responsável pela publicação das informações cartográficas.
 
-A separação entre componentes permite empregar tecnologias adequadas a cada responsabilidade e pode facilitar a manutenção e a implantação independente, desde que os contratos de comunicação sejam preservados. Entretanto, também introduz necessidades de configuração e integração entre os serviços. A Tabela \ref{tab:comparativo-arquitetura} apresenta características gerais das duas abordagens.
+A separação das responsabilidades pode favorecer a manutenção e a evolução dos componentes, desde que os contratos de comunicação sejam preservados. Por outro lado, exige maior atenção à configuração e à integração entre os serviços. A Tabela \ref{tab:comparativo-arquitetura} apresenta uma comparação entre as duas abordagens.
 
 \begin{table}[htb]
     \captionsetup{width=15cm}
     \Caption{\label{tab:comparativo-arquitetura} Comparação entre arquitetura monolítica e desacoplada}
     \IBGEtab{}{
-        \begin{tabular}{p{3.5cm}p{5.4cm}p{5.4cm}}
+        \begin{tabular}{p{3.0cm}p{5.1cm}p{5.1cm}}
             \toprule
-            \textbf{Característica} & \textbf{Monolítica} & \textbf{Desacoplada} \\
+            \textbf{Característica} &
+            \textbf{Monolítica} &
+            \textbf{Desacoplada} \\
             \midrule \midrule
-            Organização & Componentes reunidos em uma aplicação principal & Componentes distribuídos entre aplicações ou serviços \\
+
+            Organização &
+            Componentes reunidos em uma aplicação &
+            Responsabilidades distribuídas entre componentes \\
             \midrule
-            Implantação & Geralmente realizada como uma unidade & Pode ocorrer de forma independente \\
+
+            Implantação &
+            Geralmente realizada como uma unidade &
+            Pode ocorrer de forma independente \\
             \midrule
-            Comunicação & Predominantemente interna & Realizada por interfaces e protocolos \\
+
+            Comunicação &
+            Predominantemente interna &
+            Realizada por interfaces e protocolos \\
             \midrule
-            Evolução & Alterações podem afetar diferentes módulos & Componentes podem evoluir de forma independente \\
+
+            Manutenção &
+            Alterações podem envolver diferentes módulos &
+            Favorece a separação das modificações \\
             \midrule
-            Infraestrutura & Pode apresentar menor complexidade inicial & Pode exigir maior configuração entre serviços \\
+
+            Infraestrutura &
+            Pode apresentar menor complexidade inicial &
+            Pode exigir maior configuração e integração \\
+
             \bottomrule
         \end{tabular}
     }{
@@ -133,75 +192,83 @@ A separação entre componentes permite empregar tecnologias adequadas a cada re
 \subsection{Single Page Application}
 \label{sec:spa}
 
-Uma \textit{Single Page Application} (\gls{SPA}) é uma abordagem de desenvolvimento na qual a aplicação carrega inicialmente sua estrutura principal e atualiza posteriormente partes específicas da interface de maneira dinâmica. Dessa forma, diversas interações podem ocorrer sem que o navegador precise solicitar um novo documento \gls{HTML} completo a cada ação realizada pelo usuário.
+Uma \textit{Single Page Application} (SPA) é uma abordagem de desenvolvimento na qual a aplicação carrega inicialmente sua estrutura principal e atualiza dinamicamente partes da interface, sem exigir o recarregamento completo da página a cada interação. \glsunset{SPA} Esse comportamento permite construir interfaces interativas, nas quais diferentes componentes podem apresentar informações e responder às ações dos usuários de maneira integrada.
 
-Em aplicações cartográficas, esse comportamento permite que elementos como mapa, painéis, controles e ferramentas permaneçam ativos enquanto diferentes dados são carregados ou atualizados. A adoção de uma \gls{SPA}, entretanto, não elimina a comunicação com o servidor, pois o cliente continua realizando requisições para obter informações, autenticar usuários e executar operações relacionadas às regras de negócio.
+Em aplicações cartográficas, a utilização de uma \gls{SPA} permite manter o mapa, os painéis e as ferramentas ativos enquanto camadas e informações são atualizadas. Entretanto, essa abordagem não elimina a comunicação com o servidor, pois a aplicação continua realizando requisições para recuperar dados, autenticar usuários e executar operações relacionadas às regras de negócio.
 
 \subsection{APIs e Arquitetura REST}
 \label{sec:api-rest}
 
-A comunicação entre diferentes componentes de uma arquitetura desacoplada pode ocorrer por meio de Interfaces de Programação de Aplicações, ou APIs. Uma API estabelece um conjunto de operações e contratos que podem ser utilizados por outras aplicações. Em sistemas \textit{web}, essa comunicação utiliza frequentemente o protocolo \gls{HTTP} e representações estruturadas em \gls{JSON}.
+A comunicação entre componentes de uma arquitetura desacoplada pode ocorrer por meio de Interfaces de Programação de Aplicações (APIs), que estabelecem operações e contratos para a troca de informações entre sistemas. Em aplicações web, essa comunicação utiliza frequentemente o protocolo \gls{HTTP} e formatos estruturados, como \gls{JSON}, permitindo que diferentes tecnologias compartilhem dados por interfaces padronizadas.
 
-O \gls{REST}, do inglês \textit{Representational State Transfer}, é um estilo arquitetural para sistemas distribuídos apresentado por \citeonline{Fielding2000}. Entre suas características estão a separação entre cliente e servidor, a organização das informações como recursos e a comunicação sem dependência de um estado de sessão mantido entre requisições.
+O \textit{Representational State Transfer} (REST) é um estilo arquitetural para sistemas distribuídos apresentado por \citeonline{Fielding2000}. \glsunset{REST} Entre seus princípios destacam-se a separação entre cliente e servidor, a identificação de recursos e a comunicação sem a manutenção obrigatória de estado de sessão entre as requisições. Esses princípios orientam a organização de APIs voltadas à manipulação e à consulta de recursos.
 
-Em APIs construídas sobre \gls{HTTP}, métodos como \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{PATCH} e \texttt{DELETE} são frequentemente utilizados para representar operações realizadas sobre recursos. Os códigos de estado do protocolo informam o resultado dessas operações: respostas da família \texttt{2xx} representam normalmente solicitações processadas com sucesso, códigos \texttt{4xx} indicam situações relacionadas à requisição ou ao acesso ao recurso, enquanto códigos \texttt{5xx} representam falhas ocorridas durante o processamento no servidor.
+Nas APIs baseadas em \gls{HTTP}, métodos como \texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{PATCH} e \texttt{DELETE} são utilizados para representar diferentes operações. As respostas também empregam códigos de estado, sendo a família \texttt{2xx} associada geralmente ao sucesso da solicitação, \texttt{4xx} a problemas relacionados à requisição ou ao acesso, e \texttt{5xx} a falhas no processamento pelo servidor.
+
 
 \section{Tecnologias de Desenvolvimento da Plataforma}
 \label{sec:tecnologias}
 
-O desenvolvimento de uma plataforma \gls{WebGIS} envolve ferramentas com responsabilidades complementares, desde a construção da interface cartográfica até o processamento das requisições, o armazenamento dos registros administrativos e a publicação dos dados espaciais. Esta seção apresenta as tecnologias relacionadas a esses componentes.
+O desenvolvimento de uma plataforma \gls{WebGIS} envolve tecnologias responsáveis pela interface cartográfica, pelo processamento das requisições, pelo armazenamento das informações administrativas e pela publicação dos dados geoespaciais. Esta seção apresenta as principais ferramentas relacionadas a essas responsabilidades.
 
 \subsection{React, Leaflet e React-Leaflet}
 \label{sec:frontend-tecnologias}
 
-React é uma biblioteca JavaScript utilizada para construção de interfaces baseadas em componentes \cite{ReactDocs}. A componentização permite dividir a aplicação em elementos menores e reutilizáveis, cada um responsável por determinada parte da interface. Esses componentes podem manter informações de estado que variam durante a utilização do sistema, como camadas selecionadas, painéis abertos, filtros ou informações do usuário.
-
-Para a construção da interface cartográfica, Leaflet fornece recursos relacionados à criação de mapas, camadas, objetos vetoriais, eventos e controles \cite{LeafletDocs}. A biblioteca permite integrar diferentes fontes de dados, incluindo mapas de base e serviços geoespaciais remotos, além de possuir suporte para camadas \gls{WMS}, possibilitando incorporar à visualização representações disponibilizadas por servidores externos.
-
-React-Leaflet estabelece a integração entre os componentes React e os recursos oferecidos pelo Leaflet \cite{ReactLeafletDocs}. Dessa forma, elementos cartográficos podem ser controlados de acordo com os estados e propriedades utilizados pela aplicação. O ecossistema Leaflet também pode ser ampliado por meio de extensões, como ferramentas destinadas ao desenho de geometrias e à realização de medições sobre o mapa.
+React é uma biblioteca JavaScript utilizada na construção de interfaces baseadas em componentes reutilizáveis \cite{ReactDocs}. Essa abordagem permite organizar funcionalidades e gerenciar estados da aplicação, como camadas selecionadas, painéis abertos e informações do usuário. Para a visualização cartográfica, Leaflet disponibiliza recursos de navegação, gerenciamento de camadas, representação de geometrias e integração com serviços geoespaciais, incluindo o \gls{WMS} \cite{LeafletDocs}. O React-Leaflet, por sua vez, integra esses recursos aos componentes React, permitindo controlar elementos do mapa por meio dos estados da aplicação \cite{ReactLeafletDocs}. Essa integração também pode ser ampliada com extensões destinadas a desenhos, medições e outras interações cartográficas.
 
 \subsection{Laravel, Eloquent e Laravel Sanctum}
 \label{sec:backend-tecnologias}
 
-No lado servidor, Laravel é um \textit{framework} desenvolvido em \gls{PHP} que fornece estruturas para organização de aplicações \textit{web}, incluindo definição de rotas, tratamento de requisições, validação, autenticação e acesso ao banco de dados \cite{LaravelDocs8}. Embora possa ser utilizado em aplicações tradicionais baseadas no padrão \gls{MVC}, Laravel também pode atuar como servidor de uma API consumida por um \textit{front-end} independente.
-
-O Eloquent é o mecanismo de Mapeamento Objeto-Relacional disponibilizado pelo Laravel \cite{LaravelEloquent8}. Sua finalidade é permitir que tabelas do banco de dados sejam representadas por modelos e que relacionamentos entre entidades sejam manipulados através do código da aplicação, reduzindo a necessidade de escrever diretamente todas as operações de persistência em SQL.
-
-Outro aspecto relevante em aplicações com áreas administrativas é a segurança. A autenticação identifica o usuário responsável por determinada solicitação, enquanto a autorização define quais funcionalidades podem ser acessadas por ele. Laravel Sanctum disponibiliza mecanismos de autenticação voltados a aplicações e APIs, incluindo o uso de \textit{tokens} associados aos usuários \cite{LaravelSanctum8}, permitindo proteger rotas e diferenciar operações públicas de funcionalidades restritas.
+Laravel é um \textit{framework} PHP que oferece recursos para organização de aplicações web, incluindo rotas, validação, autenticação e acesso a bancos de dados \cite{LaravelDocs8}. Além de aplicações tradicionais, permite desenvolver APIs destinadas à comunicação com interfaces independentes, mantendo o processamento das regras de negócio no servidor.
+O Eloquent é o mecanismo de Mapeamento Objeto-Relacional do Laravel, responsável por representar tabelas e relacionamentos do banco de dados por meio de modelos \cite{LaravelEloquent8}. Complementarmente, Laravel Sanctum fornece mecanismos de autenticação para aplicações e APIs, incluindo o uso de \textit{tokens} associados aos usuários \cite{LaravelSanctum8}. Em conjunto com as regras de autorização implementadas no servidor, esses recursos permitem controlar o acesso às funcionalidades administrativas.
 
 \subsection{Banco de Dados MySQL}
 \label{sec:mysql}
 
-MySQL é um Sistema Gerenciador de Banco de Dados Relacional utilizado no armazenamento estruturado de informações \cite{MySQL80}. Nesse modelo, os dados são organizados em tabelas e os relacionamentos entre diferentes entidades podem ser estabelecidos por meio de chaves primárias e estrangeiras.
-
-Em uma plataforma \gls{WebGIS}, o banco administrativo pode armazenar informações como usuários, perfis, categorias, camadas e metadados, enquanto os dados geográficos propriamente ditos podem ser disponibilizados por serviços externos especializados. Essa separação evita que o navegador precise acessar diretamente o banco de dados e mantém as operações de persistência sob responsabilidade do servidor da aplicação.
+MySQL é um Sistema Gerenciador de Banco de Dados Relacional que organiza informações em tabelas relacionadas por chaves primárias e estrangeiras \cite{MySQL80}. Em uma plataforma \gls{WebGIS}, pode armazenar usuários, perfis, categorias, subcategorias e metadados das camadas, enquanto os dados geográficos podem permanecer em fontes externas especializadas. Essa separação distingue a persistência administrativa da publicação cartográfica.
 
 \subsection{GeoServer}
 \label{sec:geoserver}
 
-GeoServer é um servidor de mapas de código aberto utilizado para publicação e compartilhamento de informações geoespaciais por meio de padrões interoperáveis \cite{GeoServerDocs}. O servidor permite organizar dados em camadas e disponibilizá-los por meio de serviços como \gls{WMS} e \gls{WFS}, permitindo que diferentes clientes solicitem essas informações através de protocolos padronizados.
+GeoServer é um servidor de mapas de código aberto que permite publicar informações geoespaciais por meio de padrões interoperáveis, como \gls{WMS} e \gls{WFS} \cite{GeoServerDocs}. Sua utilização separa a disponibilização cartográfica das operações administrativas da aplicação, permitindo que a API gerencie usuários e metadados enquanto os serviços geoespaciais fornecem as camadas. Quando essa infraestrutura é externa, a integração depende da disponibilidade e da configuração dos recursos publicados.
 
-A utilização de um servidor de mapas permite separar a publicação das informações geográficas da lógica administrativa da aplicação. Enquanto a API mantém usuários, permissões, categorias e metadados, o GeoServer disponibiliza as camadas por interfaces padronizadas. Quando essa infraestrutura é externa, a aplicação cliente não precisa conhecer a organização física das bases, mas depende da disponibilidade e da compatibilidade dos serviços publicados.
+A Tabela \ref{tab:responsabilidades-tecnologias} sintetiza as responsabilidades das principais tecnologias apresentadas.
 
-A Tabela \ref{tab:responsabilidades-tecnologias} resume o papel das principais tecnologias apresentadas nesta seção.
-
-\begin{table}[htb]
+\begin{table}[!htbp]
     \captionsetup{width=15cm}
     \Caption{\label{tab:responsabilidades-tecnologias} Principais tecnologias e responsabilidades em uma arquitetura WebGIS}
     \IBGEtab{}{
-        \begin{tabular}{p{4cm}p{5cm}p{5cm}}
+        \begin{tabular}{p{3.5cm}p{4.8cm}p{4.8cm}}
             \toprule
-            \textbf{Tecnologia} & \textbf{Responsabilidade principal} & \textbf{Contexto de utilização} \\
+            \textbf{Tecnologia} &
+            \textbf{Responsabilidade principal} &
+            \textbf{Contexto de utilização} \\
             \midrule \midrule
-            React & Construção e organização da interface & Componentização e controle dos estados da aplicação \\
+
+            React &
+            Construção da interface &
+            Componentes e gerenciamento de estados \\
             \midrule
-            Leaflet / React-Leaflet & Visualização e interação cartográfica & Mapas, camadas e integração com serviços geoespaciais \\
+
+            Leaflet / React-Leaflet &
+            Visualização cartográfica &
+            Mapas, camadas e ferramentas de interação \\
             \midrule
-            Laravel & Regras de negócio e API & Validação, autenticação e processamento das requisições \\
+
+            Laravel &
+            Processamento da API &
+            Regras de negócio, validação e autenticação \\
             \midrule
-            MySQL & Persistência dos dados administrativos & Usuários, categorias, configurações e metadados \\
+
+            MySQL &
+            Persistência administrativa &
+            Usuários, categorias e metadados \\
             \midrule
-            GeoServer & Publicação dos dados geográficos & Disponibilização de camadas e serviços padronizados \\
+
+            GeoServer &
+            Publicação geoespacial &
+            Camadas e serviços OGC \\
+
             \bottomrule
         \end{tabular}
     }{
@@ -212,24 +279,32 @@ A Tabela \ref{tab:responsabilidades-tecnologias} resume o papel das principais t
 \section{Conteinerização e Computação em Nuvem}
 \label{sec:infraestrutura}
 
-Aplicações \textit{web} dependem de bibliotecas, interpretadores, extensões e configurações que podem variar entre os ambientes de desenvolvimento e produção. Essas diferenças podem ocasionar comportamentos inesperados, tornando importante padronizar as dependências necessárias à execução do sistema.
+Aplicações \textit{web} dependem de bibliotecas e configurações que podem variar entre os ambientes de desenvolvimento e produção, ocasionando incompatibilidades. Nesse contexto, a conteinerização permite padronizar ambientes ao reunir aplicações e dependências em contêineres isolados. Docker é uma plataforma utilizada para construir e executar esses ambientes, com instruções definidas em um arquivo \texttt{Dockerfile} \cite{DockerContainers}. Já o Docker Compose permite configurar a execução conjunta de serviços, incluindo redes, volumes e portas \cite{DockerCompose}.
 
-A conteinerização permite empacotar a aplicação e suas dependências em ambientes isolados. Docker é uma plataforma utilizada para construir e executar aplicações em contêineres \cite{DockerContainers}, cujas instruções de preparação podem ser definidas em um arquivo \texttt{Dockerfile}. Quando é necessário executar diversos serviços conjuntamente, Docker Compose permite descrevê-los de forma declarativa, incluindo redes, volumes e portas \cite{DockerCompose}.
-
-Em arquiteturas desacopladas, cliente, API, banco de dados e serviços externos não precisam estar hospedados na mesma infraestrutura. A computação em nuvem oferece recursos disponibilizados por provedores externos \cite{MellGrance2011}, possibilitando hospedar os componentes de forma independente. No ``Sobral em Mapas'', essa distinção é relevante para a padronização do ambiente do \textit{back-end} e para a implantação separada do \textit{front-end} e da API, cujas configurações são detalhadas na Metodologia.
+Em arquiteturas desacopladas, os componentes podem ser hospedados em infraestruturas distintas. A computação em nuvem disponibiliza recursos computacionais por meio de provedores externos \cite{MellGrance2011}, permitindo distribuir a execução de interfaces, APIs e outros serviços. No ``Sobral em Mapas'', esses conceitos fundamentam a padronização do ambiente do \textit{back-end} e a implantação independente do \textit{front-end} e da API, conforme detalhado na Metodologia.
 
 \section{Responsividade e Usabilidade em Aplicações WebGIS}
 \label{sec:usabilidade}
 
-Aplicações \textit{web} são acessadas por dispositivos com diferentes dimensões de tela e modalidades de interação. O desenvolvimento responsivo busca adaptar a disposição dos elementos para que as funcionalidades permaneçam acessíveis em computadores, tablets e dispositivos móveis. Nas plataformas cartográficas, esse cuidado é especialmente importante, pois o mapa ocupa grande parte do espaço disponível e precisa coexistir com menus, painéis e ferramentas de navegação.
+Aplicações \textit{web} são acessadas por dispositivos com diferentes dimensões de tela e modalidades de interação, exigindo adaptações na interface. O desenvolvimento responsivo busca manter as funcionalidades acessíveis em computadores, tablets e dispositivos móveis. Nas plataformas \gls{WebGIS}, esse aspecto é especialmente relevante, pois o mapa precisa coexistir com menus, painéis e ferramentas de navegação, preservando condições adequadas de visualização e interação.
 
-A organização da interface também influencia sua usabilidade. De acordo com a ISO 9241-11, esse conceito relaciona-se à utilização de um sistema por usuários específicos para alcançar determinados objetivos com efetividade, eficiência e satisfação em um contexto de uso \cite{ISO9241112018}. Em um \gls{WebGIS}, aspectos como clareza dos controles, facilidade de localização das ferramentas e apresentação das camadas podem influenciar a compreensão e a utilização da plataforma.
+A organização da interface também está relacionada à usabilidade, definida pela ISO 9241-11 em termos de efetividade, eficiência e satisfação de usuários específicos em determinado contexto de uso \cite{ISO9241112018}. Em aplicações cartográficas, a clareza dos controles, a identificação das ferramentas e a organização das camadas podem favorecer a interação. Esses princípios orientam a estruturação da interface, sem pressupor uma avaliação formal de usabilidade.
 
-A verificação funcional e a avaliação de usabilidade, embora relacionadas à qualidade da aplicação, possuem finalidades distintas. A primeira observa se as operações executam os comportamentos esperados; a segunda procura compreender a interação dos usuários com essas funcionalidades, podendo empregar tarefas e instrumentos específicos de coleta de dados. No ``Sobral em Mapas'', os procedimentos descritos na Metodologia concentram-se na verificação das funcionalidades e na observação do comportamento responsivo, sem caracterizar um estudo formal de usabilidade com participantes.
+
+\section{Trabalhos Relacionados}
+\label{sec:trabalhos-relacionados}
+
+O desenvolvimento de plataformas WebGIS tem sido abordado em diferentes pesquisas, especialmente no contexto da disponibilização de informações geoespaciais e da integração entre tecnologias cartográficas. Nesse sentido, \citeonline{Alcantara2015} apresentam a plataforma Geoinfo, desenvolvida no âmbito da Embrapa, utilizando a região do Matopiba como exemplo de aplicação. A solução contempla a organização e a disseminação de dados vetoriais e matriciais, evidenciando o potencial das plataformas WebGIS para a categorização e a integração de informações geoespaciais.
+
+Em uma abordagem voltada à gestão territorial municipal, \citeonline{Marotta2020} descrevem o desenvolvimento do WebGENTE, uma plataforma WebGIS destinada à visualização de informações cadastrais do município de Bom Despacho. A solução utiliza Leaflet e GeoServer, disponibilizando recursos de consulta, pesquisa por atributos e controle de acesso conforme os níveis de usuário. O estudo demonstra a aplicação de tecnologias abertas na construção de interfaces cartográficas voltadas à disponibilização de dados municipais, apresentando semelhanças com a proposta do ``Sobral em Mapas''.
+
+Sob uma perspectiva relacionada à publicação cartográfica, \citeonline{BastosCamboim2022} comparam diferentes abordagens para disponibilização de mapas topográficos na web, considerando os serviços WMS, arquivos GeoJSON e mosaicos vetoriais (\textit{Vector Tiles}). A pesquisa analisa aspectos como desempenho, volume de dados transferidos, interatividade e qualidade gráfica, evidenciando diferenças entre as alternativas avaliadas. Essas contribuições são relevantes para compreender as possibilidades de integração geoespacial e contextualizar a utilização do WMS na plataforma desenvolvida.
+
+Embora compartilhem características relacionadas à visualização e à disponibilização de informações geográficas, os trabalhos apresentam objetivos e contextos de aplicação distintos. O ``Sobral em Mapas'' concentra-se no desenvolvimento de uma plataforma municipal que integra ferramentas de consulta cartográfica, gerenciamento administrativo de usuários e metadados das camadas, além do consumo de serviços WMS disponibilizados por uma infraestrutura geoespacial externa. Dessa forma, a proposta enfatiza a aplicação de princípios de Engenharia de Software na organização de uma arquitetura desacoplada, associando a interface pública aos mecanismos administrativos necessários à disponibilização das informações.
 
 \section{Considerações do Capítulo}
 \label{sec:consideracoes-fundamentacao}
 
-Os conceitos discutidos neste capítulo fornecem a base para compreender a estrutura e o funcionamento do ``Sobral em Mapas''. Os \gls{SIG} e as plataformas \gls{WebGIS} fundamentam a representação e a disponibilização das informações espaciais, enquanto os padrões do \gls{OGC}, especialmente o \gls{WMS}, explicam a comunicação com serviços geoespaciais. Os conceitos de arquitetura desacoplada, \gls{SPA} e APIs apoiam a separação de responsabilidades entre os componentes do sistema.
+Os conceitos apresentados neste capítulo fundamentam a estrutura e o funcionamento do ``Sobral em Mapas''. Os Sistemas de Informação Geográfica e as plataformas \gls{WebGIS} explicam a representação e a disponibilização das informações espaciais, enquanto os padrões do \gls{OGC}, especialmente o \gls{WMS}, fundamentam a comunicação com serviços geoespaciais. Além disso, a arquitetura desacoplada, as \gls{SPA} e as APIs orientam a distribuição de responsabilidades entre os componentes da aplicação.
 
-As tecnologias React, Leaflet, React-Leaflet, Laravel, MySQL e GeoServer oferecem os recursos empregados na interface, no gerenciamento administrativo e na publicação cartográfica. Docker e computação em nuvem complementam a organização dos ambientes de execução, enquanto responsividade e usabilidade orientam a análise da interface. Com base nesses fundamentos, o capítulo seguinte apresenta a Metodologia, contemplando os requisitos, a arquitetura, o desenvolvimento e os procedimentos de verificação da plataforma.
+As tecnologias React, Leaflet, React-Leaflet, Laravel, MySQL e GeoServer sustentam a construção da interface, o gerenciamento administrativo e a disponibilização cartográfica. A conteinerização e a computação em nuvem complementam a organização dos ambientes de execução, enquanto a responsividade e a usabilidade orientam a estruturação da interface. Com base nesses fundamentos e na análise dos trabalhos relacionados, o capítulo seguinte apresenta a Metodologia, abrangendo os requisitos, a arquitetura da solução, o desenvolvimento e os procedimentos de verificação da plataforma.

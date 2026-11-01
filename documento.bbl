@@ -108,9 +108,10 @@ Dispon{\'\i}vel em: \url{https://leafletjs.com/reference.html}. Acesso em: 22
 {MAROTTA, V. d.~S.; BRUMATTI, C. H.~T.; ALMEIDA, B.~B.; MARTINS, S. R. d.~M.;
   DUARTE, D. C. d.~O.; COELHO, R. B. C.~e.; MARQUES, {\'E}.~T.; OLIVEIRA,
   J.~C.; OLIVEIRA, I.~A. Webgente: Desenvolvimento de um framework open source
-  para um webgis cadastral. In:  \textbf{Anais do 14º Congresso de Cadastro
-  Multifinalit{\'a}rio e Gest{\~a}o Territorial}. Florian{\'o}polis, SC:
-  Universidade Federal de Santa Catarina, 2020. Dispon{\'\i}vel em:
+  para um webgis cadastral. In:  \textbf{Anais do 15{\textordmasculine}
+  Congresso de Cadastro Multifinalit{\'a}rio e Gest{\~a}o Territorial}.
+  Florian{\'o}polis, SC: Universidade Federal de Santa Catarina, 2020.
+  Dispon{\'\i}vel em:
   \url{https://ojs.sites.ufsc.br/index.php/cobrac/article/view/10720}. Acesso
   em: 22 set. 2026.}
 
@@ -158,6 +159,14 @@ ISBN 9788577171583. Dispon{\'\i}vel em:
   \url{https://www.feevale.br/institucional/editora-feevale/metodologia-do-trabalho-cientifico---2-edicao}.
   Acesso em: 13 out. 2026.}
 
+\bibitem[{QGIS PROJECT} 2025]{QGISCoordenadas2025}
+\abntrefinfo{{QGIS PROJECT}}{{QGIS PROJECT}}{2025}
+{{QGIS PROJECT}. \textbf{Coordinate Reference Systems}. 2025.
+A Gentle Introduction to GIS. Documentacao QGIS 3.44.
+Dispon{\'\i}vel em:
+  \url{https://docs.qgis.org/3.44/en/docs/gentle\_gis\_introduction/coordinate\_reference\_systems.html}.
+  Acesso em: 16 out. 2026.}
+
 \bibitem[{React} 2026]{ReactDocs}
 \abntrefinfo{{React}}{{React}}{2026}
 {{React}. \textbf{React Documentation: Quick Start}. 2026.
@@ -187,5 +196,12 @@ Dispon{\'\i}vel em:
   architecture: Bibliometric analysis of the current status and research
   trends.
 \textbf{Sustainability}, MDPI, v.~16, n.~15, p.~6439, 2024.}
+
+\bibitem[Yusuf 2016]{Yusuf2016}
+\abntrefinfo{Yusuf}{YUSUF}{2016}
+{YUSUF, U. \textbf{Working with Vector and Raster Data in Python}. 2016.
+Dispon{\'\i}vel em:
+  \url{https://umar-yusuf.blogspot.com/2016/05/working-with-vector-and-raster-data-in.html}.
+  Acesso em: 16 out. 2026.}
 
 \end{thebibliography}

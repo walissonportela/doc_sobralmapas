@@ -88,10 +88,11 @@ A plataforma disponibiliza funcionalidades públicas e administrativas, tornando
 A distinção entre esses perfis permite separar as funcionalidades destinadas à consulta pública das operações capazes de modificar informações administrativas da aplicação. O controle das operações protegidas é realizado no lado servidor, evitando que as restrições de acesso dependam exclusivamente dos elementos apresentados pela interface.
 
 
+
 \subsection{Requisitos Funcionais}
 \label{sec:requisitos-funcionais}
 
-Os requisitos funcionais representam as principais operações disponibilizadas pela plataforma. Para evitar a fragmentação de funcionalidades pertencentes a um mesmo contexto de uso, recursos relacionados foram agrupados em requisitos mais abrangentes. A Tabela \ref{tab:requisitos-funcionais} apresenta os requisitos considerados durante o desenvolvimento.
+Os requisitos funcionais descrevem as principais operações disponibilizadas pela plataforma. Para evitar a fragmentação de funcionalidades pertencentes a um mesmo contexto de uso, recursos relacionados foram agrupados em requisitos mais abrangentes, contemplando tanto as ferramentas de consulta e interação cartográfica quanto as operações administrativas. A Tabela \ref{tab:requisitos-funcionais} apresenta os requisitos considerados durante o desenvolvimento.
 
 \begin{table}[htb]
     \captionsetup{width=15cm}
@@ -103,51 +104,43 @@ Os requisitos funcionais representam as principais operações disponibilizadas 
             \midrule \midrule
 
             RF01 &
-            Disponibilizar uma interface cartográfica interativa para visualização das informações geográficas relacionadas ao município de Sobral. \\
+            Disponibilizar uma interface cartográfica interativa para visualização das informações geográficas do município de Sobral, apresentando as camadas temáticas organizadas por categorias e subcategorias. \\
             \midrule
 
             RF02 &
-            Recuperar e apresentar as camadas temáticas cadastradas no sistema, organizando-as de acordo com suas respectivas categorias e subcategorias. \\
+            Permitir pesquisar, ativar e desativar camadas geográficas, bem como consultar as legendas associadas à sua representação cartográfica. \\
             \midrule
 
             RF03 &
-            Permitir ao usuário pesquisar, ativar e desativar camadas geográficas, bem como consultar as informações de legenda associadas à sua representação cartográfica. \\
+            Disponibilizar mecanismo de pesquisa de localização, permitindo localizar endereços ou pontos de interesse e reposicionar a visualização do mapa. \\
             \midrule
 
             RF04 &
-            Disponibilizar mecanismo de pesquisa de localização, permitindo localizar endereços ou pontos de interesse e reposicionar a visualização do mapa para a região encontrada. \\
+            Disponibilizar ferramentas de medição de distâncias e áreas por meio de interações diretamente sobre o mapa. \\
             \midrule
 
             RF05 &
-            Disponibilizar ferramentas para medição de distâncias e áreas, permitindo ao usuário realizar interações diretamente sobre o mapa. \\
+            Disponibilizar recursos auxiliares de interação cartográfica, incluindo favoritos, limpeza da visualização, modo de tela cheia e impressão ou exportação do mapa. \\
             \midrule
 
             RF06 &
-            Disponibilizar recursos auxiliares de interação com o mapa, incluindo favoritos, limpeza da visualização, modo de tela cheia e impressão ou exportação da área cartográfica. \\
+            Disponibilizar um formulário de contato para o envio de mensagens pelos usuários da plataforma. \\
             \midrule
 
             RF07 &
-            Disponibilizar um canal de contato por meio da própria plataforma, permitindo o envio de mensagens pelos usuários. \\
+            Permitir o cadastro e a autenticação de usuários, controlando o acesso às funcionalidades restritas conforme o perfil e a situação de aprovação da conta. \\
             \midrule
 
             RF08 &
-            Permitir o cadastro e a autenticação de usuários, considerando o perfil de acesso e a situação de aprovação associada à conta. \\
+            Permitir o gerenciamento dos usuários da aplicação, incluindo informações cadastrais, perfis de acesso e situação de aprovação. \\
             \midrule
 
             RF09 &
-            Controlar o acesso às funcionalidades protegidas de acordo com o perfil e as permissões atribuídas ao usuário autenticado. \\
+            Permitir o gerenciamento das categorias e subcategorias utilizadas na organização temática das camadas geográficas. \\
             \midrule
 
             RF10 &
-            Permitir o gerenciamento dos usuários da aplicação, incluindo informações cadastrais, perfil de acesso e situação de aprovação. \\
-            \midrule
-
-            RF11 &
-            Permitir o gerenciamento da organização temática da plataforma, contemplando as categorias e subcategorias utilizadas na classificação das camadas. \\
-            \midrule
-
-            RF12 &
-            Permitir o gerenciamento das camadas geográficas e dos serviços WMS associados, incluindo os metadados necessários à sua identificação, organização e disponibilização na interface cartográfica. \\
+            Permitir o gerenciamento dos cadastros e metadados das camadas geográficas, incluindo sua identificação, classificação e referências aos serviços WMS utilizados pela plataforma. \\
 
             \bottomrule
         \end{tabular}
@@ -156,13 +149,13 @@ Os requisitos funcionais representam as principais operações disponibilizadas 
     }
 \end{table}
 
-Os requisitos RF01 a RF07 estão associados principalmente à utilização pública da plataforma e às ferramentas disponibilizadas na interface cartográfica, enquanto os requisitos RF08 a RF12 abrangem o cadastro e a autenticação dos usuários, o controle de acesso e o gerenciamento das informações administrativas necessárias ao funcionamento do sistema. Essa divisão não implica independência entre os dois conjuntos, uma vez que a interface pública depende das informações mantidas no ambiente administrativo, como categorias, subcategorias, camadas e referências aos serviços WMS. Assim, as alterações realizadas no gerenciamento desses elementos podem refletir diretamente na organização e na disponibilidade dos conteúdos apresentados aos usuários da plataforma.
+Os requisitos RF01 a RF06 estão associados principalmente às funcionalidades públicas da plataforma, enquanto o RF07 contempla o cadastro, a autenticação e o controle de acesso dos usuários. Por sua vez, os requisitos RF08 a RF10 abrangem o gerenciamento das informações administrativas necessárias ao funcionamento do sistema. Essa organização evidencia a relação entre a interface pública e o ambiente administrativo, uma vez que categorias, subcategorias, camadas e referências aos serviços WMS são gerenciadas pela aplicação e utilizadas na composição dos conteúdos cartográficos disponibilizados aos usuários.
 
 
 \subsection{Requisitos Não Funcionais}
 \label{sec:requisitos-nao-funcionais}
 
-Além das funcionalidades disponibilizadas, foram definidos requisitos relacionados à qualidade estrutural e às restrições técnicas da solução. Esses requisitos influenciaram principalmente as decisões arquiteturais e a escolha das tecnologias empregadas durante o desenvolvimento. A Tabela \ref{tab:requisitos-nao-funcionais} apresenta os principais requisitos não funcionais considerados.
+Além das funcionalidades disponibilizadas, foram definidos requisitos não funcionais relacionados à organização arquitetural, à segurança, à interoperabilidade, à responsividade e às condições de execução da plataforma. Esses requisitos orientaram as decisões técnicas e a estruturação dos componentes utilizados durante o desenvolvimento. A Tabela \ref{tab:requisitos-nao-funcionais} apresenta os principais requisitos não funcionais considerados.
 
 \begin{table}[htb]
     \captionsetup{width=15cm}
@@ -174,7 +167,7 @@ Além das funcionalidades disponibilizadas, foram definidos requisitos relaciona
             \midrule \midrule
 
             RNF01 &
-            A interface deve possuir comportamento responsivo, adaptando seus principais componentes a computadores, tablets e dispositivos móveis. \\
+            A interface deve apresentar comportamento responsivo, adaptando seus principais componentes a computadores, tablets e dispositivos móveis. \\
             \midrule
 
             RNF02 &
@@ -182,7 +175,7 @@ Além das funcionalidades disponibilizadas, foram definidos requisitos relaciona
             \midrule
 
             RNF03 &
-            A aplicação deve utilizar padrões interoperáveis para o consumo das informações geoespaciais, especialmente o serviço WMS disponibilizado pelo GeoServer. \\
+            A plataforma deve utilizar padrões interoperáveis para o consumo de informações geoespaciais, especialmente o serviço WMS disponibilizado pelo GeoServer. \\
             \midrule
 
             RNF04 &
@@ -190,15 +183,15 @@ Além das funcionalidades disponibilizadas, foram definidos requisitos relaciona
             \midrule
 
             RNF05 &
-            Os dados recebidos pela API devem ser submetidos a procedimentos de validação antes da execução das operações de persistência. \\
+            Os dados recebidos pela API devem ser validados antes da execução das operações de persistência. \\
             \midrule
 
             RNF06 &
-            O front-end deve ser estruturado de maneira componentizada, favorecendo a reutilização dos elementos de interface e a manutenção do código-fonte. \\
+            O front-end deve ser organizado em componentes reutilizáveis, favorecendo a manutenção e a evolução da interface. \\
             \midrule
 
             RNF07 &
-            A comunicação entre o cliente web e a API deve ocorrer por meio do protocolo HTTP/HTTPS, utilizando representações estruturadas em JSON nas operações de intercâmbio de dados administrativos e formatos apropriados nas respostas relacionadas aos serviços cartográficos. \\
+            A comunicação entre o front-end e o back-end deve utilizar HTTP/HTTPS, empregando JSON para os dados administrativos e respostas compatíveis com as requisições cartográficas intermediadas pela API. \\
             \midrule
 
             RNF08 &
@@ -206,11 +199,11 @@ Além das funcionalidades disponibilizadas, foram definidos requisitos relaciona
             \midrule
 
             RNF09 &
-            A utilização das funcionalidades públicas da plataforma deve ocorrer diretamente por meio de navegador web, sem exigir a instalação de softwares especializados de geoprocessamento pelo usuário final. \\
+            As funcionalidades públicas devem ser acessíveis diretamente por navegador web, sem exigir a instalação de softwares especializados de geoprocessamento. \\
             \midrule
 
             RNF10 &
-            A organização do sistema deve favorecer a manutenção e a evolução independente dos seus principais componentes, reduzindo dependências diretas entre a interface, a API e o serviço geoespacial. \\
+            As configurações específicas dos ambientes de desenvolvimento e produção devem ser gerenciadas por variáveis de ambiente, evitando alterações diretas no código-fonte durante a implantação. \\
 
             \bottomrule
         \end{tabular}
@@ -219,8 +212,7 @@ Além das funcionalidades disponibilizadas, foram definidos requisitos relaciona
     }
 \end{table}
 
-Os requisitos apresentados orientaram as decisões adotadas nas etapas posteriores do desenvolvimento. A separação entre cliente e servidor relaciona-se diretamente aos requisitos RNF02 e RNF10, enquanto a utilização do GeoServer e do WMS atende à necessidade de interoperabilidade estabelecida no RNF03. Da mesma forma, os mecanismos de autenticação e validação implementados no back-end estão associados aos requisitos RNF04 e RNF05. A correspondência entre os requisitos definidos e as funcionalidades efetivamente implementadas será retomada no capítulo de resultados, permitindo analisar o atendimento às necessidades estabelecidas durante a concepção da plataforma.
-
+Os requisitos não funcionais orientaram as decisões arquiteturais e tecnológicas adotadas durante o desenvolvimento. A separação entre os componentes da plataforma relaciona-se ao RNF02, enquanto a integração com o GeoServer por meio do WMS atende ao requisito de interoperabilidade definido no RNF03. Os mecanismos de autenticação, autorização e validação das requisições estão associados aos requisitos RNF04 e RNF05. Além disso, a componentização da interface, a conteinerização do back-end e a configuração dos ambientes contribuem para atender aos requisitos RNF06, RNF08 e RNF10. A correspondência entre os requisitos estabelecidos e os resultados observados durante a verificação da plataforma será retomada no capítulo de Resultados e Discussão.
 
 
 \section{Arquitetura da Solução}

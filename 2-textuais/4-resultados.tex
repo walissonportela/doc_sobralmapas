@@ -1,71 +1,24 @@
-\chapter{Resultados}
-\label{chap:resultados}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+\chapter{Resultados e Discussão}
+\label{cap:resultados-discussao}
 
-\section{Resultados do Experimento A}
-\label{sec:resultados-do-experimento-a}
+Este capítulo apresenta os resultados obtidos com o desenvolvimento da plataforma WebGIS ``Sobral em Mapas'', abordando as funcionalidades implementadas, a organização da interface e a integração entre os componentes da solução. São apresentados os principais recursos disponibilizados, sua relação com os objetivos estabelecidos e os aspectos observados durante o desenvolvimento. Além disso, são discutidos o atendimento aos requisitos, as limitações identificadas e, posteriormente, os resultados da avaliação com usuários.
 
-Procure deixar as figuras dos resultados o maior possível preenchendo a largura do texto do documento que possui $16~cm$.
+\section{Apresentação Geral da Plataforma}
+\label{sec:apresentacao-geral-plataforma}
 
-\begin{figure}[h!]
-        \captionsetup{width=16cm}
-		\Caption{\label{fig:tensaoimpedanciahumana} Gráfico de tensão considerando a impedância humana}
-		%\centering
-		\UFCfig{}{
-			\fbox{\includegraphics[width=16cm]{figuras/tensaoimpedanciahumana}}
-		}{
-			\Fonte{elaborado pelo autor (2016).}
-		}	
+O ``Sobral em Mapas'' consiste em uma plataforma WebGIS destinada à disponibilização e à consulta de informações geoespaciais do município de Sobral, no Ceará. A aplicação reúne recursos de visualização cartográfica, gerenciamento de camadas temáticas e ferramentas de interação com o mapa, permitindo a exploração de informações territoriais em um ambiente web. Além disso, contempla funcionalidades administrativas para o gerenciamento dos dados e dos usuários, diferenciando as operações de consulta das atividades de manutenção do sistema. A Figura~\ref{fig:interface-principal} apresenta a interface principal da plataforma.
+
+\begin{figure}[!htbp]
+    \centering
+    \caption{Interface principal da plataforma Sobral em Mapas}
+    \includegraphics[width=1.05\textwidth]{figuras/interface-principal.png}
+    \label{fig:interface-principal}
+    \fonte{Elaborado pelo autor.}
 \end{figure}
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+A interface principal apresenta o mapa como elemento central, acompanhado por um cabeçalho de navegação, uma barra lateral de ferramentas e painéis de interação. Essa organização facilita o acesso às funcionalidades de consulta, seleção de camadas e utilização de ferramentas cartográficas, preservando a área destinada à visualização do território. A plataforma também dispõe de uma interface responsiva, adaptada a diferentes tamanhos de tela.
 
-\begin{figure}[h!]
-	\captionsetup{width=16cm}
-	\Caption{\label{fig-grafico-1}Produção anual das dissertações de mestrado e teses de doutorado entre os anos de 1990 e 2008}		
-	\IBGEtab{}{
-		\fbox{\includegraphics[width=16cm]{figuras/figura-3}}
-	}{
-	\Fonte{elaborado pelo autor (2016).}
-}
-\end{figure}
+A disponibilização das informações cartográficas é realizada por meio da integração entre a interface desenvolvida em React, com a biblioteca Leaflet, e os serviços geoespaciais fornecidos pelo GeoServer. Paralelamente, a API Laravel e o banco de dados MySQL oferecem suporte às operações administrativas e à organização das informações da plataforma. Essa integração permite reunir diferentes recursos em um ambiente unificado, conforme a arquitetura apresentada no capítulo de Metodologia.
 
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-
-\section{Resultados do Experimento B}
-\label{sec:resultados-do-experimento-b}
-
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto ..
-
-\begin{table}[h!]	
-	%\centering
-	\captionsetup{width=11.3cm}%ATENÇÃO: Ajuste a largura do título
-	\Caption{\label{tab:notas} Notas dos participantes nas avaliações A, B e C}	
-	\IBGEtab{}{
-		\begin{tabular}{crrr}
-			\toprule
-			Identificação dos participantes & Avaliação A & Avaliação B &                        Avaliação C \\
-			\midrule \midrule
-			Participante 1 & 7 & 9 & 10\\
-			Participante 2 & 8 & 2 & 1\\
-			Participante 3 & 5 & 10 & 6 \\
-			Participante 4 & 3 & 1 & 4\\
-			Participante 5 & 2 & 4 & 1\\
-			Participante 6 & 0 & 7 & 2\\
-			\bottomrule
-		\end{tabular}
-	}{
-	\Fonte{elaborado pelo autor (2016).}
-}
-\end{table}
-
- Texto texto Referenciando a \autoref{tab:notas}  texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-
-Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
-
-Texto texto  Referenciando a \autoref{tab:notas}  texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto.
+Dessa forma, a plataforma desenvolvida constitui um ambiente web voltado à consulta e ao gerenciamento de informações geográficas. Nas seções seguintes, são apresentados os principais recursos implementados, acompanhados de capturas de tela que demonstram seu funcionamento e permitem relacionar os resultados aos requisitos definidos para o sistema.

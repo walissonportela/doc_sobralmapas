@@ -500,6 +500,20 @@ INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT .\2-textuais\2-fundamentacao-teorica.tex
 INPUT 2-textuais\2-fundamentacao-teorica.tex
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\dados-vetoriais-matriciais.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
+INPUT .\figuras\coordenadas-geograficas.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
@@ -560,24 +574,13 @@ INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
 INPUT 2-textuais\4-resultados.tex
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\tensaoimpedanciahumana.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
-INPUT .\figuras\figura-3.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
+INPUT .\figuras\interface-principal.png
 INPUT .\2-textuais\5-conclusao.tex
 INPUT .\2-textuais\5-conclusao.tex
 INPUT .\2-textuais\5-conclusao.tex
