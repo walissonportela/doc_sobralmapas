@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  1 NOV 2026 05:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  5 NOV 2026 14:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1402,53 +1402,53 @@ Cap\'{\i }tulo 2.
 <figuras/dados-vetoriais-matriciais.png, id=385, 291.0875pt x 174.6525pt>
 File: figuras/dados-vetoriais-matriciais.png Graphic file (type png)
 <use figuras/dados-vetoriais-matriciais.png>
-Package pdftex.def Info: figuras/dados-vetoriais-matriciais.png  used on input line 29.
+Package pdftex.def Info: figuras/dados-vetoriais-matriciais.png  used on input line 25.
 (pdftex.def)             Requested size: 318.66948pt x 191.21758pt.
  [21 <./figuras/dados-vetoriais-matriciais.png>]
 <figuras/coordenadas-geograficas.png, id=397, 709.65125pt x 435.6275pt>
 File: figuras/coordenadas-geograficas.png Graphic file (type png)
 <use figuras/coordenadas-geograficas.png>
-Package pdftex.def Info: figuras/coordenadas-geograficas.png  used on input line 43.
+Package pdftex.def Info: figuras/coordenadas-geograficas.png  used on input line 40.
 (pdftex.def)             Requested size: 318.66948pt x 195.62508pt.
- [22 <./figuras/coordenadas-geograficas.png (PNG copy)>] [23]
+ [22 <./figuras/coordenadas-geograficas.png (PNG copy)>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [24]
+ [23]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
 
-Underfull \hbox (badness 1983) in paragraph at lines 130--130
+Underfull \hbox (badness 1983) in paragraph at lines 134--134
 []|\T1/ptm/m/n/10 (+20) Geometrias dis-po-ní-
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 130--130
+Underfull \hbox (badness 6001) in paragraph at lines 134--134
 []|\T1/ptm/m/n/10 (+20) Processamento tam-bém
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 130--130
+Underfull \hbox (badness 1983) in paragraph at lines 134--134
 []|\T1/ptm/m/n/10 (+20) Geometrias dis-po-ní-
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 130--130
+Underfull \hbox (badness 6001) in paragraph at lines 134--134
 []|\T1/ptm/m/n/10 (+20) Processamento tam-bém
  []
 
-[25]
-Overfull \hbox (5.10732pt too wide) in paragraph at lines 189--189
+[24] [25]
+Overfull \hbox (5.10732pt too wide) in paragraph at lines 193--193
 [] [] 
  []
 
 [26] [27] [28]
-Overfull \hbox (6.53004pt too wide) in paragraph at lines 276--276
+Overfull \hbox (6.53004pt too wide) in paragraph at lines 290--290
 [] [] 
  []
 
@@ -1459,7 +1459,7 @@ Cap\'{\i }tulo 3.
 ]
 
 pdfTeX warning: pdflatex (file ./figuras/arquitetura-geral.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/arquitetura-geral.pdf, id=563, 889.3225pt x 743.77875pt>
+<figuras/arquitetura-geral.pdf, id=565, 889.3225pt x 743.77875pt>
 File: figuras/arquitetura-geral.pdf Graphic file (type pdf)
 <use figuras/arquitetura-geral.pdf>
 Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 61.
@@ -1467,7 +1467,7 @@ Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 61.
 [33] [34 <./figuras/arquitetura-geral.pdf>] [35] [36] [37]
 
 pdfTeX warning: pdflatex (file ./figuras/fluxo-comunicacao.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/fluxo-comunicacao.pdf, id=1458, 346.29375pt x 788.9475pt>
+<figuras/fluxo-comunicacao.pdf, id=1460, 346.29375pt x 788.9475pt>
 File: figuras/fluxo-comunicacao.pdf Graphic file (type pdf)
 <use figuras/fluxo-comunicacao.pdf>
 Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 239.
@@ -1475,7 +1475,7 @@ Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 239.
 [38]
 
 pdfTeX warning: pdflatex (file ./figuras/modelo-entidade-relacionamento.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/modelo-entidade-relacionamento.pdf, id=1464, 1062.97125pt x 787.94376pt>
+<figuras/modelo-entidade-relacionamento.pdf, id=1466, 1062.97125pt x 787.94376pt>
 File: figuras/modelo-entidade-relacionamento.pdf Graphic file (type pdf)
 <use figuras/modelo-entidade-relacionamento.pdf>
 Package pdftex.def Info: figuras/modelo-entidade-relacionamento.pdf  used on input line 254.
@@ -1492,7 +1492,7 @@ Overfull \hbox (21.06198pt too wide) in paragraph at lines 490--491
 
 [49] [50] [51] [52] [53] [54]) (2-textuais/4-resultados.tex [55]
 Cap\'{\i }tulo 4.
-<figuras/interface-principal.png, id=2063, 1444.64719pt x 713.66624pt>
+<figuras/interface-principal.png, id=2065, 1444.64719pt x 713.66624pt>
 File: figuras/interface-principal.png Graphic file (type png)
 <use figuras/interface-principal.png>
 Package pdftex.def Info: figuras/interface-principal.png  used on input line 15.
@@ -1512,13 +1512,13 @@ Cap\'{\i }tulo 5.
 bibitemlist
 [59
 
-]) [60] (3-pos-textuais/apendices/apendice-a.tex
+] [60]) [61] (3-pos-textuais/apendices/apendice-a.tex
 \bfseries AP\^ENDICE A.
-) (3-pos-textuais/apendices/apendice-b.tex [61
+) (3-pos-textuais/apendices/apendice-b.tex [62
 
 ]
 \bfseries AP\^ENDICE B.
-) (3-pos-textuais/apendices/apendice-c.tex [62
+) (3-pos-textuais/apendices/apendice-c.tex [63
 
 ]
 \bfseries AP\^ENDICE C.
@@ -1530,14 +1530,14 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (figuras/main.cpp) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-)) (3-pos-textuais/apendices/apendice-d.tex [63
+)) (3-pos-textuais/apendices/apendice-d.tex [64
 
 ]
 \bfseries AP\^ENDICE D.
 
 
 pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3-pos-textuais/apendices/PID4416093.pdf, id=2156, 614.295pt x 794.97pt>
+<3-pos-textuais/apendices/PID4416093.pdf, id=2164, 614.295pt x 794.97pt>
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf  used on input line 7.
@@ -1548,7 +1548,7 @@ pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF i
 
 
 pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3-pos-textuais/apendices/PID4416093.pdf, id=2158, page=1, 614.295pt x 794.97pt>
+<3-pos-textuais/apendices/PID4416093.pdf, id=2166, page=1, 614.295pt x 794.97pt>
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
@@ -1557,7 +1557,7 @@ File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[64
+[65
 
 ]
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
@@ -1572,20 +1572,20 @@ File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [65
+ [66
 
  <./3-pos-textuais/apendices/PID4416093.pdf>]) (3-pos-textuais/anexos/anexo-a.tex
 \bfseries ANEXO A.
-) (3-pos-textuais/anexos/anexo-b.tex [66
+) (3-pos-textuais/anexos/anexo-b.tex [67
 
 ]
 \bfseries ANEXO B.
-<3-pos-textuais/anexos/Sikasil.pdf, id=2197, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2205, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf  used on input line 9.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<3-pos-textuais/anexos/Sikasil.pdf, id=2199, page=1, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2207, page=1, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
@@ -1594,7 +1594,7 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-[67
+[68
 
 ]
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
@@ -1609,10 +1609,10 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [68
+ [69
 
  <./3-pos-textuais/anexos/Sikasil.pdf>]
-<3-pos-textuais/anexos/Sikasil.pdf, id=2219, page=2, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2227, page=2, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 2>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page2 used on input line 9.
@@ -1625,7 +1625,7 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 2>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page2 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [69
+ [70
 
  <./3-pos-textuais/anexos/Sikasil.pdf>]) (documento.ind)
 \tf@lof=\write7
@@ -1644,15 +1644,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 36218 strings out of 467867
- 646018 string characters out of 5428402
- 1478044 words of memory out of 5000000
- 63878 multiletter control sequences out of 15000+600000
- 692863 words of font info for 384 fonts, out of 8000000 for 9000
+ 36233 strings out of 467867
+ 646237 string characters out of 5428402
+ 1479473 words of memory out of 5000000
+ 63882 multiletter control sequences out of 15000+600000
+ 693345 words of font info for 390 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,120p,2547b,1494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{glo:PDF} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:OGC} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:HTTP} has been referenced but does not exist, replaced by a fixed one
@@ -1665,9 +1668,6 @@ pdfTeX warning (dest): name{glo:WFS} has been referenced but does not exist, rep
 
 
 pdfTeX warning (dest): name{glo:JSON} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:OGC} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:SPA} has been referenced but does not exist, replaced by a fixed one
@@ -1691,9 +1691,9 @@ pdfTeX warning (dest): name{glo:WMS} has been referenced but does not exist, rep
 pdfTeX warning (dest): name{glo:WebGIS} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (70 pages, 3624926 bytes).
+Output written on documento.pdf (71 pages, 3627189 bytes).
 PDF statistics:
- 2673 PDF objects out of 2984 (max. 8388607)
- 242 named destinations out of 1000 (max. 500000)
+ 2681 PDF objects out of 2984 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
  66286 words of extra memory for PDF output out of 74296 (max. 10000000)
 

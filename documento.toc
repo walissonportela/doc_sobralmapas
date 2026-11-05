@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {2.5.3}Banco de Dados MySQL}{28}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}GeoServer}{28}{subsection.2.5.4}%
 \contentsline {section}{\numberline {2.6}Conteinerização e Computação em Nuvem}{29}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Responsividade e Usabilidade em Aplicações WebGIS}{29}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Responsividade e Usabilidade em Aplicações WebGIS}{30}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{30}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Considerações do Capítulo}{31}{section.2.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
@@ -80,34 +80,34 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{58}{chapter.5}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{59}{section*.29}%
-\contentsline {chapter}{AP\^ENDICES}{61}{section*.29}%
+\contentsline {chapter}{AP\^ENDICES}{62}{section*.29}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{61}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{62}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{62}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{63}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{63}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{64}{appendix.C}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{64}{appendix.D}%
-\contentsline {chapter}{ANEXOS}{66}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{65}{appendix.D}%
+\contentsline {chapter}{ANEXOS}{67}{appendix.D}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{66}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{67}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{67}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{68}{appendix.anexochapback.2}%
