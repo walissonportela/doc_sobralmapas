@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  5 NOV 2026 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  5 NOV 2026 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1399,13 +1399,13 @@ Cap\'{\i }tulo 2.
 [20
 
 ]
-<figuras/dados-vetoriais-matriciais.png, id=385, 291.0875pt x 174.6525pt>
+<figuras/dados-vetoriais-matriciais.png, id=389, 291.0875pt x 174.6525pt>
 File: figuras/dados-vetoriais-matriciais.png Graphic file (type png)
 <use figuras/dados-vetoriais-matriciais.png>
 Package pdftex.def Info: figuras/dados-vetoriais-matriciais.png  used on input line 25.
 (pdftex.def)             Requested size: 318.66948pt x 191.21758pt.
  [21 <./figuras/dados-vetoriais-matriciais.png>]
-<figuras/coordenadas-geograficas.png, id=397, 709.65125pt x 435.6275pt>
+<figuras/coordenadas-geograficas.png, id=401, 709.65125pt x 435.6275pt>
 File: figuras/coordenadas-geograficas.png Graphic file (type png)
 <use figuras/coordenadas-geograficas.png>
 Package pdftex.def Info: figuras/coordenadas-geograficas.png  used on input line 40.
@@ -1456,43 +1456,53 @@ Overfull \hbox (6.53004pt too wide) in paragraph at lines 290--290
 Cap\'{\i }tulo 3.
 [32
 
-]
+] [33]
 
 pdfTeX warning: pdflatex (file ./figuras/arquitetura-geral.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/arquitetura-geral.pdf, id=565, 889.3225pt x 743.77875pt>
+<figuras/arquitetura-geral.pdf, id=573, 1035.87pt x 732.7375pt>
 File: figuras/arquitetura-geral.pdf Graphic file (type pdf)
 <use figuras/arquitetura-geral.pdf>
-Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 61.
-(pdftex.def)             Requested size: 455.24411pt x 380.74078pt.
-[33] [34 <./figuras/arquitetura-geral.pdf>] [35] [36] [37]
+Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 62.
+(pdftex.def)             Requested size: 500.77129pt x 354.22566pt.
+[34 <./figuras/arquitetura-geral.pdf>] [35] [36] [37] [38]
 
 pdfTeX warning: pdflatex (file ./figuras/fluxo-comunicacao.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/fluxo-comunicacao.pdf, id=1460, 346.29375pt x 788.9475pt>
+<figuras/fluxo-comunicacao.pdf, id=1575, 614.295pt x 809.0225pt>
 File: figuras/fluxo-comunicacao.pdf Graphic file (type pdf)
 <use figuras/fluxo-comunicacao.pdf>
-Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 239.
-(pdftex.def)             Requested size: 204.85846pt x 466.72697pt.
-[38]
+Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 243.
+(pdftex.def)             Requested size: 409.71692pt x 539.59802pt.
+
 
 pdfTeX warning: pdflatex (file ./figuras/modelo-entidade-relacionamento.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/modelo-entidade-relacionamento.pdf, id=1466, 1062.97125pt x 787.94376pt>
+<figuras/modelo-entidade-relacionamento.pdf, id=1577, 1062.97125pt x 813.0375pt>
 File: figuras/modelo-entidade-relacionamento.pdf Graphic file (type pdf)
 <use figuras/modelo-entidade-relacionamento.pdf>
-Package pdftex.def Info: figuras/modelo-entidade-relacionamento.pdf  used on input line 254.
-(pdftex.def)             Requested size: 409.71692pt x 303.71396pt.
-[39 <./figuras/fluxo-comunicacao.pdf>] [40 <./figuras/modelo-entidade-relacionamento.pdf>] [41] [42]
-Overfull \hbox (5.87405pt too wide) in paragraph at lines 351--352
-[]\T1/ptm/m/n/12 (-20) Embora o La-ra-vel for-neça uma es-tru-tura re-la-ci-o-nada ao pa-drão Model-View-Controller
+Package pdftex.def Info: figuras/modelo-entidade-relacionamento.pdf  used on input line 259.
+(pdftex.def)             Requested size: 409.71692pt x 313.38638pt.
+[39] [40 <./figuras/fluxo-comunicacao.pdf>] [41 <./figuras/modelo-entidade-relacionamento.pdf>] [42] [43] [44] [45] [46]
+Underfull \hbox (badness 1424) in paragraph at lines 470--470
+[]|\T1/ptm/m/n/10 (+20) GET / POST /
  []
 
-[43] [44] [45] [46] [47] [48]
-Overfull \hbox (21.06198pt too wide) in paragraph at lines 490--491
-[]\T1/ptm/m/n/12 (-20) As ca-ma-das te-má-ti-cas são in-cor-po-ra-das ao mapa por meio do com-po-nente \T1/cmtt/m/n/12 WMSTileLayer\T1/ptm/m/n/12 (-20) .
+
+Underfull \hbox (badness 1424) in paragraph at lines 470--470
+[]|\T1/ptm/m/n/10 (+20) GET / POST /
  []
 
-[49] [50] [51] [52] [53] [54]) (2-textuais/4-resultados.tex [55]
+
+Underfull \hbox (badness 1424) in paragraph at lines 470--470
+[]|\T1/ptm/m/n/10 (+20) GET / POST /
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 470--470
+[]|\T1/ptm/m/n/10 (+20) GET / POST /
+ []
+
+[47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]) (2-textuais/4-resultados.tex [58]
 Cap\'{\i }tulo 4.
-<figuras/interface-principal.png, id=2065, 1444.64719pt x 713.66624pt>
+<figuras/interface-principal.png, id=2204, 1444.64719pt x 713.66624pt>
 File: figuras/interface-principal.png Graphic file (type png)
 <use figuras/interface-principal.png>
 Package pdftex.def Info: figuras/interface-principal.png  used on input line 15.
@@ -1502,23 +1512,23 @@ Overfull \hbox (22.76358pt too wide) in paragraph at lines 15--17
  [][] 
  []
 
-[56
+[59
 
- <./figuras/interface-principal.png>]) (2-textuais/5-conclusao.tex [57]
+ <./figuras/interface-principal.png>]) (2-textuais/5-conclusao.tex [60]
 Cap\'{\i }tulo 5.
-) (documento.bbl [58
+) (documento.bbl [61
 
 ]
 bibitemlist
-[59
+[62
 
-] [60]) [61] (3-pos-textuais/apendices/apendice-a.tex
+] [63]) [64] (3-pos-textuais/apendices/apendice-a.tex
 \bfseries AP\^ENDICE A.
-) (3-pos-textuais/apendices/apendice-b.tex [62
+) (3-pos-textuais/apendices/apendice-b.tex [65
 
 ]
 \bfseries AP\^ENDICE B.
-) (3-pos-textuais/apendices/apendice-c.tex [63
+) (3-pos-textuais/apendices/apendice-c.tex [66
 
 ]
 \bfseries AP\^ENDICE C.
@@ -1530,14 +1540,14 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (figuras/main.cpp) (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-)) (3-pos-textuais/apendices/apendice-d.tex [64
+)) (3-pos-textuais/apendices/apendice-d.tex [67
 
 ]
 \bfseries AP\^ENDICE D.
 
 
 pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3-pos-textuais/apendices/PID4416093.pdf, id=2164, 614.295pt x 794.97pt>
+<3-pos-textuais/apendices/PID4416093.pdf, id=2304, 614.295pt x 794.97pt>
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf  used on input line 7.
@@ -1548,7 +1558,7 @@ pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF i
 
 
 pdfTeX warning: pdflatex (file ./3-pos-textuais/apendices/PID4416093.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<3-pos-textuais/apendices/PID4416093.pdf, id=2166, page=1, 614.295pt x 794.97pt>
+<3-pos-textuais/apendices/PID4416093.pdf, id=2306, page=1, 614.295pt x 794.97pt>
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
@@ -1557,7 +1567,7 @@ File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[65
+[68
 
 ]
 File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
@@ -1572,20 +1582,20 @@ File: 3-pos-textuais/apendices/PID4416093.pdf Graphic file (type pdf)
 <use 3-pos-textuais/apendices/PID4416093.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/apendices/PID4416093.pdf , page1 used on input line 7.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [66
+ [69
 
  <./3-pos-textuais/apendices/PID4416093.pdf>]) (3-pos-textuais/anexos/anexo-a.tex
 \bfseries ANEXO A.
-) (3-pos-textuais/anexos/anexo-b.tex [67
+) (3-pos-textuais/anexos/anexo-b.tex [70
 
 ]
 \bfseries ANEXO B.
-<3-pos-textuais/anexos/Sikasil.pdf, id=2205, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2344, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf  used on input line 9.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<3-pos-textuais/anexos/Sikasil.pdf, id=2207, page=1, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2346, page=1, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
@@ -1594,7 +1604,7 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-[68
+[71
 
 ]
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
@@ -1609,10 +1619,10 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 1>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page1 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [69
+ [72
 
  <./3-pos-textuais/anexos/Sikasil.pdf>]
-<3-pos-textuais/anexos/Sikasil.pdf, id=2227, page=2, 597.23125pt x 845.1575pt>
+<3-pos-textuais/anexos/Sikasil.pdf, id=2367, page=2, 597.23125pt x 845.1575pt>
 File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 2>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page2 used on input line 9.
@@ -1625,7 +1635,7 @@ File: 3-pos-textuais/anexos/Sikasil.pdf Graphic file (type pdf)
 <use 3-pos-textuais/anexos/Sikasil.pdf, page 2>
 Package pdftex.def Info: 3-pos-textuais/anexos/Sikasil.pdf , page2 used on input line 9.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [70
+ [73
 
  <./3-pos-textuais/anexos/Sikasil.pdf>]) (documento.ind)
 \tf@lof=\write7
@@ -1644,11 +1654,11 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 36233 strings out of 467867
- 646237 string characters out of 5428402
- 1479473 words of memory out of 5000000
- 63882 multiletter control sequences out of 15000+600000
- 693345 words of font info for 390 fonts, out of 8000000 for 9000
+ 36257 strings out of 467867
+ 646479 string characters out of 5428402
+ 1478647 words of memory out of 5000000
+ 63886 multiletter control sequences out of 15000+600000
+ 693992 words of font info for 400 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,120p,2547b,1494s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -1691,9 +1701,9 @@ pdfTeX warning (dest): name{glo:WMS} has been referenced but does not exist, rep
 pdfTeX warning (dest): name{glo:WebGIS} has been referenced but does not exist, replaced by a fixed one
 
  <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (71 pages, 3627189 bytes).
+Output written on documento.pdf (74 pages, 3804560 bytes).
 PDF statistics:
- 2681 PDF objects out of 2984 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
- 66286 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2832 PDF objects out of 2984 (max. 8388607)
+ 249 named destinations out of 1000 (max. 500000)
+ 66302 words of extra memory for PDF output out of 74296 (max. 10000000)
 

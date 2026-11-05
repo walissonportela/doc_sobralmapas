@@ -42,72 +42,74 @@
 \contentsline {section}{\numberline {3.2}Visão Geral do Sistema}{33}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Levantamento e Especificação de Requisitos}{34}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Perfis de Interação com o Sistema}{35}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Requisitos Funcionais}{35}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Requisitos Não Funcionais}{36}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Arquitetura da Solução}{37}{section.3.4}%
+\contentsline {subsection}{\numberline {3.3.2}Requisitos Funcionais}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Requisitos Não Funcionais}{37}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Arquitetura da Solução}{38}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Fluxo de Comunicação entre os Componentes}{38}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Modelagem dos Dados}{38}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Principais Entidades}{40}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.5}Modelagem dos Dados}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Principais Entidades}{39}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Relacionamentos entre as Entidades}{41}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Separação entre Dados Administrativos e Dados Geoespaciais}{42}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Desenvolvimento do Back-end}{42}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Estrutura e Preparação do Banco de Dados}{42}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.6}Desenvolvimento do Back-end}{43}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Estrutura e Preparação do Banco de Dados}{43}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Organização da API}{43}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Modelos e Persistência com Eloquent}{43}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Autenticação e Controle de Acesso}{44}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Validação e Tratamento das Requisições}{45}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Principais Endpoints da API}{45}{subsection.3.6.6}%
-\contentsline {section}{\numberline {3.7}Desenvolvimento do Front-end}{46}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Organização e Componentização da Interface}{46}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Gerenciamento de Estado e Integração entre Componentes}{47}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Comunicação com a API}{48}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Interface Cartográfica e Ferramentas de Interação}{48}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Integração com o GeoServer}{49}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Metadados das Camadas}{50}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Consumo de Camadas por WMS}{50}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Responsabilidade sobre os Dados Geoespaciais}{51}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Conteinerização e Ambiente de Execução}{51}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Conteinerização do Back-end}{52}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Configuração por Variáveis de Ambiente}{52}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Ambientes de Desenvolvimento e Produção}{53}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Implantação em Ambiente de Nuvem}{53}{subsection.3.9.4}%
-\contentsline {section}{\numberline {3.10}Procedimentos de Verificação}{53}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Considerações do Capítulo}{55}{section.3.11}%
+\contentsline {subsection}{\numberline {3.6.3}Modelos e Persistência com Eloquent}{44}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Gerenciamento de Camadas e Arquivos GeoJSON}{44}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Autenticação e Controle de Acesso}{45}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Validação e Tratamento das Requisições}{46}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Principais Endpoints da API}{47}{subsection.3.6.7}%
+\contentsline {section}{\numberline {3.7}Desenvolvimento do Front-end}{48}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Organização e Componentização da Interface}{48}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Gerenciamento de Estado e Integração entre Componentes}{49}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Comunicação com a API}{49}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Interface Cartográfica e Ferramentas de Interação}{50}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Integração com Fontes de Dados Geoespaciais}{51}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Metadados das Camadas}{52}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Consumo de Camadas por WMS}{52}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Integração de Arquivos GeoJSON}{53}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Responsabilidade sobre os Dados Geoespaciais}{53}{subsection.3.8.4}%
+\contentsline {section}{\numberline {3.9}Conteinerização e Ambiente de Execução}{54}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Conteinerização do Back-end}{54}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Configuração por Variáveis de Ambiente}{55}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Ambientes de Desenvolvimento e Produção}{55}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Implantação em Ambiente de Nuvem}{56}{subsection.3.9.4}%
+\contentsline {section}{\numberline {3.10}Procedimentos de Verificação}{56}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Considerações do Capítulo}{58}{section.3.11}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e Discussão}}{56}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Apresentação Geral da Plataforma}{56}{section.4.1}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e Discussão}}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Apresentação Geral da Plataforma}{59}{section.4.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{58}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{61}{chapter.5}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{59}{section*.29}%
-\contentsline {chapter}{AP\^ENDICES}{62}{section*.29}%
+\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{62}{section*.29}%
+\contentsline {chapter}{AP\^ENDICES}{65}{section*.29}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{62}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{65}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{63}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{66}{appendix.B}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{64}{appendix.C}%
+\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{67}{appendix.C}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{65}{appendix.D}%
-\contentsline {chapter}{ANEXOS}{67}{appendix.D}%
+\contentsline {appendix}{\chapternumberline {D}\normalfont \textit {IEEE CEFC 2016}}{68}{appendix.D}%
+\contentsline {chapter}{ANEXOS}{70}{appendix.D}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{67}{appendix.anexochapback.1}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{70}{appendix.anexochapback.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{68}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{71}{appendix.anexochapback.2}%

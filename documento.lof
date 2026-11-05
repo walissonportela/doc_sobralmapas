@@ -2,6 +2,6 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Representação dos modelos de dados vetoriais e matriciais}}{21}{figure.caption.13}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Representação das coordenadas geográficas de latitude e longitude}}{22}{figure.caption.14}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Visão geral dos componentes da plataforma Sobral em Mapas}}{34}{figure.caption.18}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Fluxo de comunicação para disponibilização de uma camada cartográfica}}{39}{figure.caption.21}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Modelo entidade-relacionamento das principais entidades da plataforma Sobral em Mapas}}{40}{figure.caption.22}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Interface principal da plataforma Sobral em Mapas}}{56}{figure.caption.26}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Fluxo de comunicação para disponibilização de camadas WMS e GeoJSON}}{40}{figure.caption.21}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Modelo entidade-relacionamento das principais entidades da plataforma Sobral em Mapas}}{41}{figure.caption.22}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Interface principal da plataforma Sobral em Mapas}}{59}{figure.caption.26}%

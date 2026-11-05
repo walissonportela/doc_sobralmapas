@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex documento"] 1793897197.69827 "documento.aux" "documento.bbl" "documento" 1793898587.28291 0
+["bibtex documento"] 1793920540.39541 "documento.aux" "documento.bbl" "documento" 1793920544.38355 0
   "./3-pos-textuais/referencias.bib" 1793897196 14133 3160cf2e9da282190655d9f5db6fbae6 ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "documento.aux" 1793898586 63523 0897e78be183b7c45e47871e0726d5a9 "pdflatex"
+  "documento.aux" 1793920543 65218 d4132b546c5f197258df9f67550cc059 "pdflatex"
   (generated)
   "documento.bbl"
   "documento.blg"
   (rewritten before read)
-["makeindex documento.idx"] 1791951097.27356 "documento.idx" "documento.ind" "documento" 1793898587.28235 0
-  "documento.idx" 1793898584 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex documento.idx"] 1791951097.27356 "documento.idx" "documento.ind" "documento" 1793920544.38268 0
+  "documento.idx" 1793920541 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "documento.ilg"
   "documento.ind"
   (rewritten before read)
-["pdflatex"] 1793898583.68148 "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" "documento.pdf" "documento" 1793898587.28355 0
+["pdflatex"] 1793920540.67106 "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" "documento.pdf" "documento" 1793920544.38485 0
   "1-pre-textuais/abstract.tex" 1793519884 2085 ac35013de98c4163526475488882a42a ""
   "1-pre-textuais/agradecimentos.tex" 1775085269 2265 82ea50666c4dce12e8d1a2d7913ba0de ""
   "1-pre-textuais/dedicatoria.tex" 1775085269 263 fac4ba2ad65ac88df6a60156cf6be291 ""
@@ -25,7 +25,7 @@
   "1-pre-textuais/resumo.tex" 1793519684 2371 25bd8259cc7537e1e3d7c0bccd7e456a ""
   "2-textuais/1-introducao.tex" 1793521433 10317 495f584cb7e596d8373fab96217acbc6 ""
   "2-textuais/2-fundamentacao-teorica.tex" 1793898582 30659 be738293299037328cdc25c6bccf1970 ""
-  "2-textuais/3-metodologia.tex" 1792200342 62149 217e52afcb93e2a3b06a8699ace9b1e1 ""
+  "2-textuais/3-metodologia.tex" 1793920535 69724 9a4e24d15ebd9ad8fb49a70789324eb6 ""
   "2-textuais/4-resultados.tex" 1791954411 2960 0637e6305af736173c214291e739f2fa ""
   "2-textuais/5-conclusao.tex" 1775085270 384 8343fa70a72435ca57076aa09e1c1292 ""
   "3-pos-textuais/anexos/Sikasil.pdf" 1775085270 68098 fe52b7c1635848229b737e39714d65d4 ""
@@ -239,22 +239,22 @@
   "C:/Users/walis/AppData/Roaming/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" 1790059085 10949 37aec51d409b40099ef933722ac724e0 ""
-  "documento.aux" 1793898586 63523 0897e78be183b7c45e47871e0726d5a9 "pdflatex"
-  "documento.bbl" 1793897197 9887 5acc2ba53cefc5db495b4ea41b862af1 "bibtex documento"
+  "documento.aux" 1793920543 65218 d4132b546c5f197258df9f67550cc059 "pdflatex"
+  "documento.bbl" 1793920540 9887 5acc2ba53cefc5db495b4ea41b862af1 "bibtex documento"
   "documento.gls" 0 -1 0 ""
   "documento.glsdefs" 1786592293 398 74c743572a537185e509ee29475d98f7 ""
   "documento.ind" 1791951097 0 d41d8cd98f00b204e9800998ecf8427e "makeindex documento.idx"
-  "documento.lof" 1793898586 902 b71b1946d6e2b5718698d779a82baeb8 "pdflatex"
-  "documento.lot" 1793898586 1050 b543acd48d2ab1218c88772f9152df68 "pdflatex"
+  "documento.lof" 1793920543 899 58e475737dc4722feb483ad95e07f0da "pdflatex"
+  "documento.lot" 1793920543 1050 ed5f22e27a6ad5fdee9297532ad49dfb "pdflatex"
   "documento.tex" 1790059085 10949 37aec51d409b40099ef933722ac724e0 ""
-  "documento.toc" 1793898586 10040 7c1d07526059efd8cc2121214c7a70cc "pdflatex"
-  "figuras/arquitetura-geral.pdf" 1791929699 913882 b60a9c295d493fec3a40f3b4c084b447 ""
+  "documento.toc" 1793920543 10274 b9d76390ad610d0e25000b1bd83669c1 "pdflatex"
+  "figuras/arquitetura-geral.pdf" 1793901087 1023748 a2626f794651e38841e21162817e6fd4 ""
   "figuras/coordenadas-geograficas.png" 1792204144 530858 3c2fcfeb97ff396ff69bebdd3c97f310 ""
   "figuras/dados-vetoriais-matriciais.png" 1792203554 22310 38ffcaf67709a867a5183d7f48b6937f ""
-  "figuras/fluxo-comunicacao.pdf" 1791929776 168043 ba1364cc8ce5b2f5793864e9d8ade113 ""
+  "figuras/fluxo-comunicacao.pdf" 1793903580 214828 36ab1d572179de369c6f293d6996e4e8 ""
   "figuras/interface-principal.png" 1791951077 1111885 5704e48f52f761e03989ae57bbe4465b ""
   "figuras/main.cpp" 1775085270 102 b003a016e7ec66473170c40e37a1ff34 ""
-  "figuras/modelo-entidade-relacionamento.pdf" 1791520220 305574 698b467084441d45587144bf3aca327e ""
+  "figuras/modelo-entidade-relacionamento.pdf" 1793912576 321578 0edb96e7e0672564fce010122be118fd ""
   "lib/logo-ufc.png" 1775085270 225873 32fd369c8efe2bf0dd14386f14a216f5 ""
   "lib/preambulo.tex" 1775085270 6194 39ce58b4c601040b7656bb4261362639 ""
   "lib/ufctex.sty" 1775085270 43848 139016bd33ba2a9be4d2a4fb9cc57cbe ""
