@@ -1,17 +1,17 @@
+
 \chapter{Conclusões e Trabalhos Futuros}
 \label{chap:conclusoes-e-trabalhos-futuros}
 
-Parte final do texto na qual se apresentam as conclusões apoiadas no desenvolvimento do assunto. É a recapitulação sintética dos resultados obtidos. Pode apresentar recomendações e sugestões para pesquisas futuras.
+Este trabalho teve como objetivo o desenvolvimento da plataforma WebGIS ``Sobral em Mapas'', destinada à organização, ao gerenciamento e à visualização de informações geoespaciais do município de Sobral, no Ceará. Para alcançar esse propósito, foram aplicados conceitos e práticas de Engenharia de Software, abrangendo o levantamento de requisitos, a definição da arquitetura, a modelagem dos dados e a implementação dos componentes necessários ao funcionamento da solução. O desenvolvimento resultou em uma aplicação web que reúne recursos cartográficos e administrativos, permitindo a consulta e o gerenciamento de informações territoriais em um ambiente integrado.
 
-%\label{sec:contribuicoes-do-trabalho}
+A plataforma foi estruturada a partir de uma arquitetura desacoplada, utilizando React e Leaflet na interface, Laravel no processamento das requisições e MySQL no armazenamento dos dados administrativos. Entre as funcionalidades implementadas, destacam-se a organização temática das camadas, a visualização e a consulta de informações geográficas, as ferramentas de medição e impressão, além dos mecanismos de autenticação e gerenciamento administrativo. Esses recursos demonstram a aplicação das tecnologias selecionadas na construção de uma solução voltada à disponibilização de dados geoespaciais.
 
+Um dos principais resultados obtidos foi a ampliação dos mecanismos de integração cartográfica, inicialmente baseados no consumo de serviços WMS do GeoServer, para contemplar também arquivos GeoJSON. Essa adaptação permitiu incorporar dados vetoriais armazenados pela aplicação e disponibilizar funcionalidades de criação, edição e pré-visualização de geometrias no ambiente administrativo. Assim, a plataforma passou a oferecer diferentes alternativas para o gerenciamento e a representação das informações geográficas, reduzindo sua dependência exclusiva da infraestrutura externa de serviços WMS.
 
+Apesar dos avanços alcançados, foram identificadas limitações relacionadas à disponibilidade dos serviços geoespaciais externos e às características do armazenamento e processamento dos arquivos geográficos. A utilização de conjuntos de dados extensos também representa um aspecto que merece atenção, especialmente quanto ao desempenho da visualização no navegador. Essas condições evidenciam a importância de aprimorar a infraestrutura e realizar verificações complementares em diferentes ambientes e situações de utilização.
 
-%\label{sec:limitacoes}
+Como trabalhos futuros, propõe-se a implementação de um assistente virtual baseado no framework Rasa, utilizando Python para o processamento de linguagem natural e o gerenciamento de interações conversacionais. Esse recurso poderá auxiliar os usuários na navegação pela plataforma, na localização de funcionalidades e na consulta de informações sobre os dados geoespaciais disponíveis. Também se pretende concluir o aprimoramento do sistema de envio de mensagens eletrônicas, inicialmente verificado com o Mailtrap, por meio da configuração de um serviço adequado ao ambiente de produção e da implementação de notificações relacionadas ao contato e às solicitações administrativas.
 
+Outras possibilidades de evolução incluem o aperfeiçoamento da persistência dos arquivos GeoJSON em nuvem, a otimização do carregamento de camadas com grandes volumes de dados e a ampliação dos formatos geográficos aceitos, como a importação de arquivos KML. Também poderão ser desenvolvidos recursos adicionais de personalização da simbologia e das legendas, ferramentas de análise espacial e melhorias de acessibilidade e responsividade. Além disso, a realização de avaliações complementares com diferentes perfis de usuários poderá contribuir para identificar dificuldades de interação e orientar novos aperfeiçoamentos na interface.
 
-
-
-
-
-
+Dessa forma, o desenvolvimento do ``Sobral em Mapas'' demonstra a possibilidade de integrar tecnologias web e recursos de geoprocessamento em uma plataforma voltada à consulta e à administração de informações territoriais. Embora ainda existam oportunidades de aprimoramento, a solução desenvolvida estabelece uma base tecnológica que poderá ser ampliada e adaptada conforme novas necessidades sejam identificadas, contribuindo para a continuidade de iniciativas relacionadas à organização e à disponibilização de dados geoespaciais.

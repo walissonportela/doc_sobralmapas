@@ -315,7 +315,12 @@ INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
 OUTPUT documento.glo
+OUTPUT documento.acn
 OUTPUT documento.idx
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\psnfss\t1ptm.fd
@@ -438,12 +443,6 @@ INPUT .\1-pre-textuais\agradecimentos.tex
 INPUT .\1-pre-textuais\agradecimentos.tex
 INPUT .\1-pre-textuais\agradecimentos.tex
 INPUT 1-pre-textuais\agradecimentos.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\1-pre-textuais\epigrafe.tex
 INPUT .\1-pre-textuais\epigrafe.tex
 INPUT .\1-pre-textuais\epigrafe.tex
@@ -454,6 +453,9 @@ INPUT .\1-pre-textuais\resumo.tex
 INPUT .\1-pre-textuais\resumo.tex
 INPUT .\1-pre-textuais\resumo.tex
 INPUT 1-pre-textuais\resumo.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\1-pre-textuais\abstract.tex
 INPUT .\1-pre-textuais\abstract.tex
 INPUT .\1-pre-textuais\abstract.tex
@@ -465,17 +467,9 @@ INPUT documento.lof
 INPUT .\documento.lot
 INPUT .\documento.lot
 INPUT documento.lot
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT .\1-pre-textuais\lista-de-simbolos.tex
-INPUT 1-pre-textuais\lista-de-simbolos.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT .\documento.acr
+INPUT .\documento.acr
+INPUT documento.acr
 INPUT .\documento.toc
 INPUT .\documento.toc
 INPUT documento.toc
@@ -549,6 +543,7 @@ INPUT .\2-textuais\3-metodologia.tex
 INPUT 2-textuais\3-metodologia.tex
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT .\figuras\arquitetura-geral.pdf
 INPUT .\figuras\arquitetura-geral.pdf
@@ -569,6 +564,9 @@ INPUT .\figuras\modelo-entidade-relacionamento.pdf
 INPUT .\figuras\modelo-entidade-relacionamento.pdf
 INPUT .\figuras\modelo-entidade-relacionamento.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
 INPUT .\2-textuais\4-resultados.tex
@@ -581,6 +579,72 @@ INPUT .\figuras\interface-principal.png
 INPUT .\figuras\interface-principal.png
 INPUT .\figuras\interface-principal.png
 INPUT .\figuras\interface-principal.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\organizacao-camadas.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\visualizacao-geoespacial.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\medicao-impressao.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\gerenciamento-camadas.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\cadastro-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\editor-geojson.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT .\figuras\implantacao-vercel.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-railway.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT .\figuras\implantacao-docker.png
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\2-textuais\5-conclusao.tex
 INPUT .\2-textuais\5-conclusao.tex
 INPUT .\2-textuais\5-conclusao.tex
@@ -618,7 +682,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT .\figuras\main.cpp
 INPUT .\figuras\main.cpp
 INPUT figuras\main.cpp
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
@@ -627,22 +690,6 @@ INPUT .\3-pos-textuais\apendices\apendice-d.tex
 INPUT .\3-pos-textuais\apendices\apendice-d.tex
 INPUT .\3-pos-textuais\apendices\apendice-d.tex
 INPUT 3-pos-textuais\apendices\apendice-d.tex
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
-INPUT .\3-pos-textuais\apendices\PID4416093.pdf
 INPUT .\3-pos-textuais\anexos\anexo-a.tex
 INPUT .\3-pos-textuais\anexos\anexo-a.tex
 INPUT .\3-pos-textuais\anexos\anexo-a.tex
@@ -685,10 +732,6 @@ INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ect
 INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\urw\symbol\usyr.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb
