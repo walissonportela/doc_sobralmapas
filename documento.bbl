@@ -13,7 +13,7 @@
   dissemina{\c{c}}{\~a}o de informa{\c{c}}{\~o}es geoespaciais. In:
   \textbf{Anais do I Simp{\'o}sio Internacional de {\'A}guas, Solos e
   Geotecnologias}. Uberaba, MG: [s.n.], 2015. Dispon{\'\i}vel em:
-  \url{https://www.alice.cnptia.embrapa.br/handle/doc/1028920}. Acesso em: 22
+  \url{https://www.alice.cnptia.embrapa.br/handle/doc/1028920}. Acesso em: 04
   set. 2026.}
 
 \bibitem[Bass \textit{et al.} 2021]{Bass2021}
@@ -27,30 +27,30 @@ ISBN 9780136886099.}
 {BASTOS, T.~L.; CAMBOIM, S.~P. Compara{\c{c}}{\~a}o e an{\'a}lise de
   m{\'e}todos de disponibiliza{\c{c}}{\~a}o e publica{\c{c}}{\~a}o de mapas
   topogr{\'a}ficos na web.
-\textbf{Revista Brasileira de Cartografia}, v.~77, 2025.
+\textbf{Revista Brasileira de Cartografia}, v.~77, n.~0a, 2025.
 Dispon{\'\i}vel em:
   \url{https://seer.ufu.br/index.php/revistabrasileiracartografia/article/view/75024}.
-  Acesso em: 22 set. 2026.}
+  Acesso em: 11 set. 2026.}
 
 \bibitem[Butler \textit{et al.} 2016]{RFC7946}
 \abntrefinfo{Butler \textit{et al.}}{BUTLER \textit{et al.}}{2016}
 {BUTLER, H.; DALY, M.; DOYLE, A.; GILLIES, S.; HAGEN, S.; SCHAUB, T.
   \textbf{The GeoJSON Format}.
 [S.l.], 2016. Dispon{\'\i}vel em:
-  \url{https://www.rfc-editor.org/info/rfc7946}. Acesso em: 22 set. 2026.}
+  \url{https://www.rfc-editor.org/info/rfc7946}. Acesso em: 24 out. 2026.}
 
-\bibitem[{Docker} 2026]{DockerCompose}
-\abntrefinfo{{Docker}}{{Docker}}{2026a}
-{{Docker}. \textbf{Docker Compose}. 2026.
-Dispon{\'\i}vel em: \url{https://docs.docker.com/compose/}. Acesso em: 22 set.
+\bibitem[{Docker} s.d.]{DockerCompose}
+\abntrefinfo{{Docker}}{{Docker}}{s.d.a}
+{{Docker}. \textbf{Docker Compose}. s.d.
+Dispon{\'\i}vel em: \url{https://docs.docker.com/compose/}. Acesso em: 17 set.
   2026.}
 
-\bibitem[{Docker} 2026]{DockerContainers}
-\abntrefinfo{{Docker}}{{Docker}}{2026b}
-{{Docker}. \textbf{What is a Container?} 2026.
+\bibitem[{Docker} s.d.]{DockerContainers}
+\abntrefinfo{{Docker}}{{Docker}}{s.d.b}
+{{Docker}. \textbf{What is a Container?} s.d.
 Dispon{\'\i}vel em:
   \url{https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/}.
-  Acesso em: 22 set. 2026.}
+  Acesso em: 30 jul. 2026.}
 
 \bibitem[Fielding 2000]{Fielding2000}
 \abntrefinfo{Fielding}{FIELDING}{2000}
@@ -61,14 +61,14 @@ Tese (Doutorado) --- University of California, Irvine, Irvine, California,
   2000.
 Dispon{\'\i}vel em:
   \url{https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm}. Acesso em:
-  22 set. 2026.}
+  13 ago. 2026.}
 
-\bibitem[{GeoServer} 2026]{GeoServerDocs}
-\abntrefinfo{{GeoServer}}{{GeoServer}}{2026}
-{{GeoServer}. \textbf{GeoServer User Manual: Overview}. 2026.
+\bibitem[{GeoServer} s.d.]{GeoServerDocs}
+\abntrefinfo{{GeoServer}}{{GeoServer}}{s.d.}
+{{GeoServer}. \textbf{GeoServer User Manual: Overview}. s.d.
 Dispon{\'\i}vel em:
   \url{https://docs.geoserver.org/main/en/user/introduction/overview/}. Acesso
-  em: 22 set. 2026.}
+  em: 27 jul. 2026.}
 
 \bibitem[{INSTITUTO DE PESQUISA E PLANEJAMENTO DE FORTALEZA}
   s.d.]{IpplanFortalezaMapas}
@@ -76,6 +76,8 @@ Dispon{\'\i}vel em:
   PESQUISA E PLANEJAMENTO DE FORTALEZA}}{s.d.}
 {{INSTITUTO DE PESQUISA E PLANEJAMENTO DE FORTALEZA}. \textbf{Fortaleza em
   Mapas}. s.d.
+Plataforma Fortaleza em Mapas, desenvolvida no {\^a}mbito do planejamento
+  municipal.
 Dispon{\'\i}vel em:
   \url{https://www.ipplan.fortaleza.ce.gov.br/o-que-fazemos/dados-e-evidencias/fortaleza-em-mapas}.
   Acesso em: 05 nov. 2026.}
@@ -87,43 +89,30 @@ Dispon{\'\i}vel em:
   Ergonomics of Human-System Interaction -- Part 11: Usability: Definitions and
   Concepts}. Geneva: International Organization for Standardization, 2018.
 Dispon{\'\i}vel em: \url{https://www.iso.org/standard/63500.html}. Acesso em:
-  22 set. 2026.}
+  25 set. 2026.}
 
-\bibitem[{Laravel} 2026]{LaravelEloquent8}
-\abntrefinfo{{Laravel}}{{Laravel}}{2026a}
-{{Laravel}. \textbf{Eloquent: Getting Started -- Laravel 8.x}. 2026.
-Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x/eloquent}. Acesso em: 22
-  set. 2026.}
-
-\bibitem[{Laravel} 2026]{LaravelDocs8}
-\abntrefinfo{{Laravel}}{{Laravel}}{2026b}
-{{Laravel}. \textbf{Laravel 8.x Documentation}. 2026.
-Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x}. Acesso em: 22 set.
+\bibitem[{Laravel} s.d.]{LaravelDocs8}
+\abntrefinfo{{Laravel}}{{Laravel}}{s.d.}
+{{Laravel}. \textbf{Laravel 8.x Documentation}. s.d.
+Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x}. Acesso em: 16 jul.
   2026.}
 
-\bibitem[{Laravel} 2026]{LaravelSanctum8}
-\abntrefinfo{{Laravel}}{{Laravel}}{2026c}
-{{Laravel}. \textbf{Laravel Sanctum -- Laravel 8.x}. 2026.
-Dispon{\'\i}vel em: \url{https://laravel.com/docs/8.x/sanctum}. Acesso em: 22
-  set. 2026.}
-
-\bibitem[{Leaflet} 2026]{LeafletDocs}
-\abntrefinfo{{Leaflet}}{{Leaflet}}{2026}
-{{Leaflet}. \textbf{Leaflet API Reference}. 2026.
-Dispon{\'\i}vel em: \url{https://leafletjs.com/reference.html}. Acesso em: 22
-  set. 2026.}
+\bibitem[{Leaflet} s.d.]{LeafletDocs}
+\abntrefinfo{{Leaflet}}{{Leaflet}}{s.d.}
+{{Leaflet}. \textbf{Leaflet API Reference: Version 1.9.4}. s.d.
+Dispon{\'\i}vel em: \url{https://leafletjs.com/reference-1.9.4.html}. Acesso
+  em: 10 jul. 2026.}
 
 \bibitem[Marotta \textit{et al.} 2020]{Marotta2020}
 \abntrefinfo{Marotta \textit{et al.}}{MAROTTA \textit{et al.}}{2020}
 {MAROTTA, V. d.~S.; BRUMATTI, C. H.~T.; ALMEIDA, B.~B.; MARTINS, S. R. d.~M.;
   DUARTE, D. C. d.~O.; COELHO, R. B. C.~e.; MARQUES, {\'E}.~T.; OLIVEIRA,
   J.~C.; OLIVEIRA, I.~A. Webgente: Desenvolvimento de um framework open source
-  para um webgis cadastral. In:  \textbf{Anais do 15{\textordmasculine}
-  Congresso de Cadastro Multifinalit{\'a}rio e Gest{\~a}o Territorial}.
-  Florian{\'o}polis, SC: Universidade Federal de Santa Catarina, 2020.
-  Dispon{\'\i}vel em:
+  para um webgis cadastral. In:  \textbf{Anais do Congresso de Cadastro
+  Multifinalit{\'a}rio e Gest{\~a}o Territorial (COBRAC)}. Florian{\'o}polis,
+  SC: Universidade Federal de Santa Catarina, 2020. Dispon{\'\i}vel em:
   \url{https://ojs.sites.ufsc.br/index.php/cobrac/article/view/10720}. Acesso
-  em: 22 set. 2026.}
+  em: 08 set. 2026.}
 
 \bibitem[Mell e Grance 2011]{MellGrance2011}
 \abntrefinfo{Mell e Grance}{MELL; GRANCE}{2011}
@@ -135,30 +124,31 @@ Gaithersburg, Maryland, 2011.}
 {{Open Geospatial Consortium}. \textbf{Web Map Service (WMS)}. 2006.
 OpenGIS Web Map Service Implementation Specification, vers{\~a}o 1.3.0,
   documento OGC 06-042.
-Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wms/}. Acesso em: 22
-  set. 2026.}
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wms/}. Acesso em: 28
+  jul. 2026.}
 
 \bibitem[{Open Geospatial Consortium} 2010]{OGCWMTS}
 \abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2010}
 {{Open Geospatial Consortium}. \textbf{Web Map Tile Service (WMTS)}. 2010.
 OpenGIS Web Map Tile Service Implementation Standard, vers{\~a}o 1.0.0,
   documento OGC 07-057r7.
-Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wmts/}. Acesso em: 22
-  set. 2026.}
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wmts/}. Acesso em: 07
+  ago. 2026.}
 
 \bibitem[{Open Geospatial Consortium} 2014]{OGCWFS}
 \abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2014}
 {{Open Geospatial Consortium}. \textbf{Web Feature Service (WFS)}. 2014.
 OGC Web Feature Service 2.0 Interface Standard with Corrigendum, vers{\~a}o
   2.0.2, documento OGC 09-025r2.
-Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wfs/}. Acesso em: 22
-  set. 2026.}
+Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wfs/}. Acesso em: 05
+  ago. 2026.}
 
 \bibitem[{Oracle Corporation} 2026]{MySQL80}
 \abntrefinfo{{Oracle Corporation}}{{Oracle Corporation}}{2026}
 {{Oracle Corporation}. \textbf{MySQL 8.0 Reference Manual}. 2026.
+Manual gerado em 8 jul. 2026.
 Dispon{\'\i}vel em: \url{https://dev.mysql.com/doc/refman/8.0/en/}. Acesso em:
-  22 set. 2026.}
+  20 jul. 2026.}
 
 \bibitem[Prodanov e Freitas 2013]{ProdanovFreitas2013}
 \abntrefinfo{Prodanov e Freitas}{PRODANOV; FREITAS}{2013}
@@ -172,22 +162,22 @@ ISBN 9788577171583. Dispon{\'\i}vel em:
 \bibitem[{QGIS PROJECT} 2025]{QGISCoordenadas2025}
 \abntrefinfo{{QGIS PROJECT}}{{QGIS PROJECT}}{2025}
 {{QGIS PROJECT}. \textbf{Coordinate Reference Systems}. 2025.
-A Gentle Introduction to GIS. Documentacao QGIS 3.44.
+A Gentle Introduction to GIS. Documentação QGIS 3.44.
 Dispon{\'\i}vel em:
   \url{https://docs.qgis.org/3.44/en/docs/gentle\_gis\_introduction/coordinate\_reference\_systems.html}.
-  Acesso em: 16 out. 2026.}
+  Acesso em: 15 out. 2026.}
 
-\bibitem[{React} 2026]{ReactDocs}
-\abntrefinfo{{React}}{{React}}{2026}
-{{React}. \textbf{React Documentation: Quick Start}. 2026.
-Dispon{\'\i}vel em: \url{https://react.dev/learn}. Acesso em: 22 set. 2026.}
+\bibitem[{React} s.d.]{ReactDocs}
+\abntrefinfo{{React}}{{React}}{s.d.}
+{{React}. \textbf{React Documentation: Quick Start}. s.d.
+Dispon{\'\i}vel em: \url{https://react.dev/learn}. Acesso em: 08 jul. 2026.}
 
-\bibitem[{React-Leaflet} 2026]{ReactLeafletDocs}
-\abntrefinfo{{React-Leaflet}}{{React-Leaflet}}{2026}
-{{React-Leaflet}. \textbf{React-Leaflet Documentation}. 2026.
+\bibitem[{React-Leaflet} s.d.]{ReactLeafletDocs}
+\abntrefinfo{{React-Leaflet}}{{React-Leaflet}}{s.d.}
+{{React-Leaflet}. \textbf{React-Leaflet Documentation}. s.d.
 Dispon{\'\i}vel em:
-  \url{https://react-leaflet.js.org/docs/start-introduction/}. Acesso em: 22
-  set. 2026.}
+  \url{https://react-leaflet.js.org/docs/start-introduction/}. Acesso em: 13
+  jul. 2026.}
 
 \bibitem[Silva 2013]{Silva2013}
 \abntrefinfo{Silva}{SILVA}{2013}
@@ -196,7 +186,7 @@ Dispon{\'\i}vel em:
 \textbf{Revista GeoAmaz{\^o}nia}, p. 19--32, 2013.
 Dispon{\'\i}vel em:
   \url{https://periodicos.ufpa.br/index.php/geoamazonia/article/view/12351}.
-  Acesso em: 22 set. 2026.}
+  Acesso em: 19 ago. 2026.}
 
 \bibitem[Vinueza-Martinez \textit{et al.} 2024]{VinuezaMartinez2024}
 \abntrefinfo{Vinueza-Martinez \textit{et al.}}{VINUEZA-MARTINEZ \textit{et

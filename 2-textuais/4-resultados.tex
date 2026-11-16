@@ -16,13 +16,14 @@ O ``Sobral em Mapas'' consiste em uma plataforma WebGIS destinada à consulta, o
 
     \caption{Interface principal da plataforma Sobral em Mapas}
 
-    \includegraphics[width=\textwidth]{figuras/interface-principal.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/interface-principal.png}}
 
     \label{fig:interface-principal}
 
     \fonte{Elaborado pelo autor.}
 
 \end{figure}
+
 
 A interface organiza o mapa como elemento central, acompanhado por um cabeçalho, um painel lateral e ferramentas de interação. Na Figura~\ref{fig:interface-principal}, as camadas de bairros e instituições de ensino aparecem simultaneamente, combinando polígonos e marcadores geográficos. A visualização utiliza React e Leaflet, integrados à API Laravel, com suporte a WMS e GeoJSON.
 
@@ -48,7 +49,7 @@ Para facilitar consultas recorrentes, o usuário também pode marcar camadas com
 
     \caption{Organização temática e seleção de camadas na plataforma Sobral em Mapas}
 
-    \includegraphics[width=\textwidth]{figuras/organizacao-camadas.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/organizacao-camadas.png}}
 
     \label{fig:organizacao-camadas}
 
@@ -74,7 +75,7 @@ A representação dos pontos utiliza símbolos temáticos definidos pelos atribu
 
     \caption{Visualização da divisão distrital e consulta de atributos geográficos}
 
-    \includegraphics[width=\textwidth]{figuras/visualizacao-geoespacial.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/visualizacao-geoespacial.png}}
 
     \label{fig:visualizacao-geoespacial}
 
@@ -104,7 +105,7 @@ Para exportar o mapa, o usuário delimita uma região da visualização por meio
 
     \caption{Ferramentas de medição e impressão cartográfica da plataforma}
 
-    \includegraphics[width=\textwidth]{figuras/medicao-impressao.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/medicao-impressao.png}}
 
     \label{fig:medicao-impressao}
 
@@ -130,7 +131,7 @@ A listagem também apresenta a origem dos dados, sua classificação temática e
 
     \caption{Interface administrativa de gerenciamento de camadas geográficas}
 
-    \includegraphics[width=\textwidth]{figuras/gerenciamento-camadas.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/gerenciamento-camadas.png}}
 
     \label{fig:gerenciamento-camadas}
 
@@ -140,7 +141,7 @@ A listagem também apresenta a origem dos dados, sua classificação temática e
 
 O cadastro de camadas permite selecionar a fonte cartográfica e informar os metadados necessários à sua organização. Para os arquivos GeoJSON, o formulário oferece a seleção de conteúdos já armazenados ou o envio de novos dados, ambos acompanhados de uma pré-visualização cartográfica. A Figura~\ref{fig:cadastro-geojson} apresenta esse processo com um arquivo de instituições de ensino, permitindo observar sua distribuição espacial antes da conclusão do cadastro.
 
-Para facilitar o cadastro, o formulário organiza em etapas a identificação, a seleção do arquivo e as configurações de apresentação e publicação. Os campos obrigatórios exibem mensagens de validação quando faltam nome, classificação temática ou arquivo geográfico. A biblioteca permite reutilizar arquivos GeoJSON e a pré-visualização mostra seu conteúdo, embora o envio de novas camadas esteja atualmente concentrado nesse formato.
+Para facilitar o cadastro, o formulário organiza em etapas a identificação, a seleção do arquivo e as configurações de apresentação e publicação. Os campos obrigatórios exibem mensagens de validação quando faltam nome, classificação temática ou arquivo geográfico. A biblioteca de arquivos da plataforma permite reutilizar arquivos GeoJSON e a pré-visualização mostra seu conteúdo, embora o envio de novas camadas esteja atualmente concentrado nesse formato.
 
 \begin{figure}[H]
 
@@ -148,8 +149,7 @@ Para facilitar o cadastro, o formulário organiza em etapas a identificação, a
 
     \caption{Cadastro de camada GeoJSON com pré-visualização cartográfica}
 
-    \includegraphics[width=\textwidth]{figuras/cadastro-geojson.png}
-
+    \fbox{\includegraphics[width=\textwidth]{figuras/cadastro-geojson.png}}
     \label{fig:cadastro-geojson}
 
     \fonte{Elaborado pelo autor.}
@@ -158,7 +158,7 @@ Para facilitar o cadastro, o formulário organiza em etapas a identificação, a
 
 Além do envio de arquivos, foi implementado um editor GeoJSON integrado ao ambiente administrativo, que permite criar e modificar feições no mapa. A ferramenta oferece desenho de pontos, linhas e polígonos, edição de geometrias e ajustes de cor e espessura. A Figura~\ref{fig:editor-geojson} apresenta o editor com instituições de ensino carregadas e seus controles disponíveis.
 
-O editor também oferece opções para desenhar retângulos e círculos, além de editar, excluir, desfazer e refazer operações. Durante a criação das feições, podem ser ajustados cores, estilos de linha, preenchimentos e tamanhos dos pontos, bem como consultadas as medidas das geometrias. Os atributos podem ser alterados antes do salvamento e o conteúdo resultante é convertido para GeoJSON. No caso dos círculos, utiliza-se uma aproximação poligonal, visto que o formato não possui um tipo geométrico específico para representá-los.
+O editor também oferece opções para desenhar retângulos e círculos, além de editar, excluir, desfazer e refazer operações. Durante a criação das feições, é possível ajustar cores, estilos de linha, preenchimentos e tamanhos dos pontos, além de consultar as medidas das geometrias. Os atributos podem ser alterados antes do salvamento e o conteúdo resultante é convertido para GeoJSON. No caso dos círculos, utiliza-se uma aproximação poligonal, visto que o formato não possui um tipo geométrico específico para representá-los.
 
 \begin{figure}[H]
 
@@ -166,7 +166,7 @@ O editor também oferece opções para desenhar retângulos e círculos, além d
 
     \caption{Editor de geometrias GeoJSON integrado ao ambiente administrativo}
 
-    \includegraphics[width=\textwidth]{figuras/editor-geojson.png}
+    \fbox{\includegraphics[width=\textwidth]{figuras/editor-geojson.png}}
 
     \label{fig:editor-geojson}
 
@@ -190,7 +190,7 @@ Para o desenvolvimento e a execução local, foi utilizado o Docker, que organiz
 
     \caption{Ambientes de publicação e execução da plataforma Sobral em Mapas}
 
-    \includegraphics[width=1.0\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-vercel.png}
+    \fbox{\includegraphics[width=1.0\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-vercel.png}}
 
     \par\smallskip
 
@@ -198,7 +198,7 @@ Para o desenvolvimento e a execução local, foi utilizado o Docker, que organiz
 
     \par\medskip
 
-    \includegraphics[width=1.0\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-railway.png}
+    \fbox{\includegraphics[width=1.0\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-railway.png}}
 
     \par\smallskip
 
@@ -206,7 +206,7 @@ Para o desenvolvimento e a execução local, foi utilizado o Docker, que organiz
 
     \par\medskip
 
-    \includegraphics[width=1.20\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-docker.png}
+    \fbox{\includegraphics[width=1.20\textwidth,height=0.25\textheight,keepaspectratio]{figuras/implantacao-docker.png}}
 
     \par\smallskip
 

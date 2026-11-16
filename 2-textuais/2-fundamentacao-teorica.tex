@@ -227,7 +227,7 @@ React é uma biblioteca JavaScript utilizada no desenvolvimento de interfaces ba
 \label{sec:backend-tecnologias}
 
 Laravel é um \textit{framework} PHP que oferece recursos para o desenvolvimento de aplicações \textit{web}, incluindo gerenciamento de rotas, validação, autenticação e acesso a bancos de dados \cite{LaravelDocs8}. Também permite desenvolver APIs para comunicação com interfaces independentes, concentrando no servidor o processamento das regras de negócio e das operações administrativas.
-O Eloquent é o mecanismo de mapeamento objeto-relacional do Laravel, utilizado para representar tabelas e relacionamentos do banco de dados por meio de modelos \cite{LaravelEloquent8}. Já o Laravel Sanctum disponibiliza mecanismos de autenticação para aplicações e APIs, incluindo a utilização de \textit{tokens} associados aos usuários \cite{LaravelSanctum8}. Em conjunto com as regras de autorização implementadas no servidor, esses recursos permitem controlar o acesso às funcionalidades administrativas da aplicação.
+Entre seus recursos, destaca-se o Eloquent, mecanismo de mapeamento objeto-relacional utilizado para representar tabelas e relacionamentos do banco de dados por meio de modelos. Já o Laravel Sanctum disponibiliza mecanismos de autenticação para aplicações e APIs, incluindo a utilização de \textit{tokens} associados aos usuários. Em conjunto com as regras de autorização implementadas no servidor, esses recursos permitem controlar o acesso às funcionalidades administrativas da aplicação.
 
 
 \subsection{Banco de Dados MySQL}
@@ -239,7 +239,6 @@ MySQL é um Sistema Gerenciador de Banco de Dados Relacional que organiza inform
 \label{sec:geoserver}
 
 GeoServer é um servidor de mapas de código aberto que permite publicar informações geoespaciais por meio de padrões interoperáveis, como \gls{WMS} e \gls{WFS} \cite{GeoServerDocs}. Sua utilização possibilita separar a disponibilização cartográfica das operações administrativas de uma aplicação, permitindo que serviços especializados forneçam as camadas geográficas enquanto outros componentes gerenciam usuários e metadados. Entretanto, quando essa infraestrutura é mantida externamente, o acesso às informações depende da disponibilidade e da configuração dos serviços publicados, tornando relevante considerar alternativas para o fornecimento dos dados geoespaciais.
-
 
 A Tabela \ref{tab:responsabilidades-tecnologias} sintetiza as responsabilidades das principais tecnologias e formatos apresentados.
 

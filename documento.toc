@@ -6,115 +6,95 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{16}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Justificativa}{17}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{18}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{18}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{18}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Estrutura do Trabalho}{19}{section.1.3}%
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{15}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Justificativa}{16}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{17}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{17}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{17}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Estrutura do Trabalho}{18}{section.1.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{20}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Sistemas de Informação Geográfica}{20}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Dados Vetoriais e Matriciais}{20}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Sistemas de Referência Espacial}{21}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Sistemas de Informação Geográfica na Web}{22}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}WebGIS na Gestão Pública}{23}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Interoperabilidade e Padrões Geoespaciais}{23}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Web Map Service}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Web Feature Service e GeoJSON}{24}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Web Map Tile Service}{24}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Arquitetura de Software em Aplicações Web}{25}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Arquitetura Monolítica e Arquitetura Desacoplada}{25}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Single Page Application}{26}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}APIs e Arquitetura REST}{27}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Tecnologias de Desenvolvimento da Plataforma}{27}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}React, Leaflet e React-Leaflet}{27}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Laravel, Eloquent e Laravel Sanctum}{28}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Banco de Dados MySQL}{28}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}GeoServer}{28}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Conteinerização e Computação em Nuvem}{29}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Responsividade e Usabilidade em Aplicações WebGIS}{30}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{30}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Considerações do Capítulo}{31}{section.2.9}%
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação Teórica}}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sistemas de Informação Geográfica}{19}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Dados Vetoriais e Matriciais}{19}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Sistemas de Referência Espacial}{20}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Sistemas de Informação Geográfica na Web}{21}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}WebGIS na Gestão Pública}{22}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Interoperabilidade e Padrões Geoespaciais}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Web Map Service}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Web Feature Service e GeoJSON}{23}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Web Map Tile Service}{23}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Arquitetura de Software em Aplicações Web}{24}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Arquitetura Monolítica e Arquitetura Desacoplada}{24}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Single Page Application}{25}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}APIs e Arquitetura REST}{26}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Tecnologias de Desenvolvimento da Plataforma}{26}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}React, Leaflet e React-Leaflet}{26}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Laravel, Eloquent e Laravel Sanctum}{27}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Banco de Dados MySQL}{27}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}GeoServer}{27}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Conteinerização e Computação em Nuvem}{28}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Responsividade e Usabilidade em Aplicações WebGIS}{29}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Trabalhos Relacionados}{29}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Considerações do Capítulo}{30}{section.2.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{32}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Caracterização da Pesquisa}{32}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Visão Geral do Sistema}{33}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Levantamento e Especificação de Requisitos}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Perfis de Interação com o Sistema}{35}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Requisitos Funcionais}{36}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Requisitos Não Funcionais}{37}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Arquitetura da Solução}{38}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Fluxo de Comunicação entre os Componentes}{38}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Modelagem dos Dados}{40}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Principais Entidades}{41}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Relacionamentos entre as Entidades}{41}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Separação entre Dados Administrativos e Dados Geoespaciais}{42}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}Desenvolvimento do Back-end}{42}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Estrutura e Preparação do Banco de Dados}{43}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Organização da API}{43}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Modelos e Persistência com Eloquent}{44}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Gerenciamento de Camadas e Arquivos GeoJSON}{44}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Autenticação e Controle de Acesso}{45}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Validação e Tratamento das Requisições}{45}{subsection.3.6.6}%
-\contentsline {subsection}{\numberline {3.6.7}Principais Endpoints da API}{46}{subsection.3.6.7}%
-\contentsline {section}{\numberline {3.7}Desenvolvimento do Front-end}{47}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Organização e Componentização da Interface}{48}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Gerenciamento de Estado e Integração entre Componentes}{49}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Comunicação com a API}{49}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Interface Cartográfica e Ferramentas de Interação}{50}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Integração com Fontes de Dados Geoespaciais}{51}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Metadados das Camadas}{52}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Consumo de Camadas por WMS}{52}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Integração de Arquivos GeoJSON}{53}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Responsabilidade sobre os Dados Geoespaciais}{54}{subsection.3.8.4}%
-\contentsline {section}{\numberline {3.9}Conteinerização e Ambiente de Execução}{54}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Conteinerização do Back-end}{55}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Configuração por Variáveis de Ambiente}{55}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Ambientes de Desenvolvimento e Produção}{56}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Implantação em Ambiente de Nuvem}{56}{subsection.3.9.4}%
-\contentsline {section}{\numberline {3.10}Procedimentos de Verificação}{57}{section.3.10}%
-\contentsline {subsection}{\numberline {3.10.1}Planejamento da Avaliação com Usuários}{58}{subsection.3.10.1}%
-\contentsline {section}{\numberline {3.11}Considerações do Capítulo}{59}{section.3.11}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Caracterização da Pesquisa}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Visão Geral do Sistema}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Levantamento e Especificação de Requisitos}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Perfis de Interação com o Sistema}{34}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Requisitos Funcionais}{35}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Requisitos Não Funcionais}{36}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Arquitetura da Solução}{37}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Fluxo de Comunicação entre os Componentes}{37}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Modelagem dos Dados}{39}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Principais Entidades}{40}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Relacionamentos entre as Entidades}{40}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Separação entre Dados Administrativos e Dados Geoespaciais}{41}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Desenvolvimento do Back-end}{41}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Estrutura e Preparação do Banco de Dados}{42}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Organização da API}{42}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Modelos e Persistência com Eloquent}{43}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Gerenciamento de Camadas e Arquivos GeoJSON}{43}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Autenticação e Controle de Acesso}{44}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Validação e Tratamento das Requisições}{44}{subsection.3.6.6}%
+\contentsline {subsection}{\numberline {3.6.7}Principais Endpoints da API}{45}{subsection.3.6.7}%
+\contentsline {section}{\numberline {3.7}Desenvolvimento do Front-end}{46}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Organização e Componentização da Interface}{47}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Gerenciamento de Estado e Integração entre Componentes}{48}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Comunicação com a API}{48}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Interface Cartográfica e Ferramentas de Interação}{49}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Integração com Fontes de Dados Geoespaciais}{50}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Metadados das Camadas}{51}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Consumo de Camadas por WMS}{51}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Integração de Arquivos GeoJSON}{52}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Responsabilidade sobre os Dados Geoespaciais}{53}{subsection.3.8.4}%
+\contentsline {section}{\numberline {3.9}Conteinerização e Ambiente de Execução}{53}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Conteinerização do Back-end}{54}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Configuração por Variáveis de Ambiente}{54}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Ambientes de Desenvolvimento e Produção}{55}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Implantação em Ambiente de Nuvem}{55}{subsection.3.9.4}%
+\contentsline {section}{\numberline {3.10}Procedimentos de Verificação}{56}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Planejamento da Avaliação com Usuários}{57}{subsection.3.10.1}%
+\contentsline {section}{\numberline {3.11}Considerações do Capítulo}{58}{section.3.11}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e Discussão}}{60}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Apresentação Geral da Plataforma}{60}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Organização e Visualização das Camadas Temáticas}{61}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Representação e Consulta de Dados Geoespaciais}{62}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Ferramentas de Interação Cartográfica}{63}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Ambiente Administrativo da Plataforma}{64}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Implantação e Ambiente de Execução}{67}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Atendimento aos Requisitos}{69}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Avaliação com Usuários}{70}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Discussão dos Resultados e Limitações}{70}{section.4.9}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e Discussão}}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Apresentação Geral da Plataforma}{59}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Organização e Visualização das Camadas Temáticas}{60}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Representação e Consulta de Dados Geoespaciais}{61}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Ferramentas de Interação Cartográfica}{62}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Ambiente Administrativo da Plataforma}{63}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Implantação e Ambiente de Execução}{66}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Atendimento aos Requisitos}{68}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Avaliação com Usuários}{69}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Discussão dos Resultados e Limitações}{69}{section.4.9}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{72}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Conclusões e Trabalhos Futuros}}{71}{chapter.5}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{74}{section*.37}%
-\contentsline {chapter}{AP\^ENDICES}{77}{section*.37}%
+\contentsline {chapter}{\MakeTextUppercase []{REFER\^ENCIAS}}{73}{section*.37}%
+\contentsline {chapter}{AP\^ENDICES}{75}{section*.37}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de apêndice}{77}{appendix.A}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Questionário utilizado para...}{78}{appendix.B}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\cftinsert {A}
-\contentsline {appendix}{\chapternumberline {C}\normalfont Códigos-fontes utilizados para...}{79}{appendix.C}%
-\contentsline {chapter}{ANEXOS}{79}{lstnumber.C.3.5}%
-\cftinsert {AAA}
-\renewcommand *{\cftappendixname }{ANEXO \space }
-\renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\normalfont Exemplo de um anexo}{80}{appendix.anexochapback.1}%
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\normalfont Exemplo de um anexo em PDF}{81}{appendix.anexochapback.2}%
+\contentsline {appendix}{\chapternumberline {A}\normalfont Questionário de Avaliação de Usabilidade da Plataforma Sobral em Mapas}{75}{appendix.A}%

@@ -36,22 +36,21 @@ As etapas não foram executadas de maneira estritamente linear, pois requisitos 
 \section{Visão Geral do Sistema}
 \label{sec:visao-geral}
 
-A aplicação ``Sobral em Mapas'' constitui-se como uma plataforma WebGIS desenvolvida para o município de Sobral, destinada à organização, ao gerenciamento e à visualização interativa de informações geográficas de interesse público e administrativo. A solução foi estruturada a partir de uma arquitetura desacoplada, distribuindo suas responsabilidades entre componentes que atuam de maneira integrada e permitem o consumo de diferentes fontes de dados geoespaciais.
-
-De forma geral, a plataforma pode ser compreendida a partir de quatro componentes principais:
+A aplicação ``Sobral em Mapas'' constitui-se como uma plataforma WebGIS desenvolvida para o município de Sobral, destinada à organização, ao gerenciamento e à visualização interativa de informações geográficas de interesse público e administrativo. A solução foi estruturada a partir de uma arquitetura desacoplada, distribuindo suas responsabilidades entre componentes que atuam de maneira integrada e permitem o consumo de diferentes fontes de dados geoespaciais. De forma geral, a plataforma é composta por quatro componentes principais, apresentados a seguir.
 
 \begin{alineascomponto}
 
-    \item \textbf{Cliente cartográfico (front-end):} desenvolvido como uma Single Page Application (SPA) em React, é responsável pela interface com o usuário, pela visualização cartográfica com Leaflet e React-Leaflet e pelas ferramentas de interação com o mapa. Também disponibiliza recursos de desenho e, no ambiente administrativo, de criação e edição de feições geográficas;
+    \item \textbf{Cliente cartográfico (front-end):} desenvolvido em React como uma Single Page Application (SPA), reúne a interface cartográfica construída com Leaflet e React-Leaflet, as ferramentas de interação com o mapa e os recursos de criação e edição de feições geográficas disponíveis no ambiente administrativo;
 
-    \item \textbf{Servidor de aplicação (back-end):} implementado em PHP com o framework Laravel, disponibiliza uma API responsável pelas regras de negócio, autenticação, autorização, gerenciamento administrativo e armazenamento de arquivos GeoJSON, além da intermediação das requisições aos serviços WMS;
+    \item \textbf{Servidor de aplicação (back-end):} implementado em PHP com Laravel, disponibiliza uma API responsável pelas regras de negócio, autenticação, autorização, gerenciamento administrativo, armazenamento de arquivos GeoJSON e intermediação das requisições aos serviços WMS;
 
-    \item \textbf{Serviço de dados geoespaciais:} representado pelo GeoServer, permite a publicação e disponibilização de camadas geográficas por meio de serviços interoperáveis, especialmente o Web Map Service (WMS), constituindo uma fonte externa de informações cartográficas;
+    \item \textbf{Serviço de dados geoespaciais:} representado pelo GeoServer, permite publicar e disponibilizar camadas geográficas por meio de serviços interoperáveis, especialmente o Web Map Service (WMS), constituindo uma fonte externa de informações cartográficas;
 
-    \item \textbf{Camada de persistência:} composta pelo banco de dados MySQL e pelo armazenamento de arquivos GeoJSON gerenciado pelo Laravel. O banco mantém usuários, perfis, categorias, subcategorias e metadados das camadas, enquanto os arquivos armazenam as geometrias e os atributos geográficos utilizados pela aplicação.
+    \item \textbf{Camada de persistência:} reúne o banco MySQL, responsável pelos registros de usuários, perfis, categorias, subcategorias e metadados das camadas, e os arquivos GeoJSON gerenciados pelo Laravel, que armazenam as geometrias e seus atributos.
 
 \end{alineascomponto}
 
+\Needspace{7\baselineskip}
 Essa organização mantém separadas as responsabilidades da interface, do processamento das regras de negócio e do armazenamento das informações. Ao oferecer suporte tanto a serviços WMS quanto a arquivos GeoJSON, a plataforma permite disponibilizar camadas geográficas por diferentes mecanismos, reduzindo sua dependência exclusiva de serviços externos e favorecendo a manutenção e a evolução das funcionalidades.
 
 A Figura \ref{fig:arquitetura-geral} apresenta a visão geral dos componentes da plataforma e suas principais relações de comunicação.
@@ -689,8 +688,6 @@ A Tabela \ref{tab:procedimentos-verificacao} sintetiza os principais aspectos co
 Os resultados desses procedimentos são apresentados no capítulo de Resultados e Discussão, juntamente com as evidências das funcionalidades implementadas e sua relação com os requisitos definidos anteriormente. Dessa forma, a etapa de verificação fornece subsídios para analisar o atendimento aos requisitos funcionais e não funcionais, bem como identificar eventuais limitações observadas durante a execução e a integração dos componentes da plataforma.
 
 
-
-
 \subsection{Planejamento da Avaliação com Usuários}
 \label{sec:avaliacao-usuarios-metodologia}
 
@@ -698,7 +695,7 @@ Além das verificações técnicas, foi planejada uma avaliação com usuários 
 
 Para orientar a interação, foi elaborado um roteiro que apresenta os objetivos da atividade e propõe tarefas de acesso à plataforma, exploração de camadas temáticas, utilização de ferramentas cartográficas e gerenciamento de camadas no ambiente administrativo. Nas atividades de cadastro, os participantes podem optar pelo envio de um arquivo GeoJSON ou pela criação de feições diretamente no editor. Também são previstas operações de consulta, edição e exclusão dos registros criados durante o teste, permitindo observar diferentes etapas do fluxo administrativo.
 
-Após a execução das tarefas, os participantes são convidados a responder a um questionário eletrônico, precedido de informações sobre a participação e o consentimento. O instrumento reúne questões sobre experiência prévia e dispositivo utilizado, facilidade de exploração do mapa, uso das funcionalidades administrativas, satisfação geral e sugestões de melhoria. As respostas serão examinadas de forma descritiva, buscando identificar dificuldades percebidas e oportunidades de aperfeiçoamento. Os resultados dessa avaliação serão apresentados na seção correspondente do capítulo de Resultados e Discussão.
+Após a execução das tarefas, os participantes são convidados a responder a um questionário eletrônico, precedido de informações sobre a participação e o consentimento. O instrumento, apresentado no Apêndice~\ref{ap:questionario-usabilidade}, reúne questões sobre experiência prévia e dispositivo utilizado, facilidade de exploração do mapa, uso das funcionalidades administrativas, satisfação geral e sugestões de melhoria. As respostas serão examinadas de forma descritiva, buscando identificar dificuldades percebidas e oportunidades de aperfeiçoamento. Os resultados dessa avaliação serão apresentados na seção correspondente do capítulo de Resultados e Discussão.
 
 \section{Considerações do Capítulo}
 \label{sec:consideracoes-metodologia}

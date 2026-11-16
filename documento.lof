@@ -1,14 +1,14 @@
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Representação dos modelos de dados vetoriais e matriciais}}{21}{figure.caption.13}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Representação das coordenadas geográficas de latitude e longitude}}{22}{figure.caption.14}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Visão geral dos componentes da plataforma Sobral em Mapas}}{34}{figure.caption.18}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Fluxo de comunicação para disponibilização de camadas WMS e GeoJSON}}{39}{figure.caption.21}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Modelo entidade-relacionamento das principais entidades da plataforma Sobral em Mapas}}{40}{figure.caption.22}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Interface principal da plataforma Sobral em Mapas}}{60}{figure.caption.26}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Organização temática e seleção de camadas na plataforma Sobral em Mapas}}{62}{figure.caption.27}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Visualização da divisão distrital e consulta de atributos geográficos}}{63}{figure.caption.28}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Ferramentas de medição e impressão cartográfica da plataforma}}{64}{figure.caption.29}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Interface administrativa de gerenciamento de camadas geográficas}}{65}{figure.caption.30}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Cadastro de camada GeoJSON com pré-visualização cartográfica}}{66}{figure.caption.31}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Editor de geometrias GeoJSON integrado ao ambiente administrativo}}{67}{figure.caption.32}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Ambientes de publicação e execução da plataforma Sobral em Mapas}}{68}{figure.caption.33}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Representação dos modelos de dados vetoriais e matriciais}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Representação das coordenadas geográficas de latitude e longitude}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Visão geral dos componentes da plataforma Sobral em Mapas}}{33}{figure.caption.18}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Fluxo de comunicação para disponibilização de camadas WMS e GeoJSON}}{38}{figure.caption.21}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Modelo entidade-relacionamento das principais entidades da plataforma Sobral em Mapas}}{39}{figure.caption.22}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Interface principal da plataforma Sobral em Mapas}}{59}{figure.caption.26}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Organização temática e seleção de camadas na plataforma Sobral em Mapas}}{61}{figure.caption.27}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Visualização da divisão distrital e consulta de atributos geográficos}}{62}{figure.caption.28}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Ferramentas de medição e impressão cartográfica da plataforma}}{63}{figure.caption.29}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Interface administrativa de gerenciamento de camadas geográficas}}{64}{figure.caption.30}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Cadastro de camada GeoJSON com pré-visualização cartográfica}}{65}{figure.caption.31}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Editor de geometrias GeoJSON integrado ao ambiente administrativo}}{66}{figure.caption.32}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Ambientes de publicação e execução da plataforma Sobral em Mapas}}{67}{figure.caption.33}%

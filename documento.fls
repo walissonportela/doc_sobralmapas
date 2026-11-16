@@ -319,6 +319,7 @@ INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\placeins\placeins.sty
+INPUT C:\Users\walis\AppData\Roaming\MiKTeX\tex\latex\needspace\needspace.sty
 OUTPUT documento.glo
 OUTPUT documento.acn
 OUTPUT documento.idx
@@ -653,75 +654,34 @@ INPUT 2-textuais\5-conclusao.tex
 INPUT .\documento.bbl
 INPUT .\documento.bbl
 INPUT documento.bbl
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8c.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8c.vf
 INPUT .\3-pos-textuais\apendices\apendice-a.tex
 INPUT .\3-pos-textuais\apendices\apendice-a.tex
 INPUT .\3-pos-textuais\apendices\apendice-a.tex
 INPUT .\3-pos-textuais\apendices\apendice-a.tex
 INPUT 3-pos-textuais\apendices\apendice-a.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-b.tex
-INPUT 3-pos-textuais\apendices\apendice-b.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT .\3-pos-textuais\apendices\apendice-c.tex
-INPUT 3-pos-textuais\apendices\apendice-c.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
-INPUT .\figuras\main.cpp
-INPUT .\figuras\main.cpp
-INPUT figuras\main.cpp
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\apendices\apendice-d.tex
-INPUT 3-pos-textuais\apendices\apendice-d.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-a.tex
-INPUT 3-pos-textuais\anexos\anexo-a.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\anexo-b.tex
-INPUT 3-pos-textuais\anexos\anexo-b.tex
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\3-pos-textuais\anexos\Sikasil.pdf
-INPUT .\documento.ind
-INPUT .\documento.ind
-INPUT documento.ind
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7m.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7y.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\zptmcm7v.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri7t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\walis\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 OUTPUT documento.lof
 OUTPUT documento.lot
 OUTPUT documento.toc

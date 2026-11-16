@@ -1,4 +1,122 @@
-\apendice{Exemplo de apêndice}
-\label{ap:A}
+\apendice{Questionário de Avaliação de Usabilidade da Plataforma Sobral em Mapas}
+\label{ap:questionario-usabilidade}
 
-Um apêndice é um documento elaborado pelo autor, diferentemente do anexo. Geralmente, se coloca como apêndice, questionários, códigos de programação, tabelas que tomariam muito espaço no meio do trabalho. Artigos, resumos ou qualquer publicação relacionada ao trabalho podem ser utilizados como apêndice.
+Este apêndice apresenta o conteúdo do questionário eletrônico utilizado na avaliação exploratória de usabilidade da plataforma ``Sobral em Mapas'', elaborado no Google Forms e disponibilizado aos participantes após a realização das atividades propostas no guia de teste. O instrumento reúne questões sobre experiência prévia, utilização das ferramentas cartográficas, gerenciamento administrativo, percepção geral da plataforma e dificuldades encontradas. A participação foi voluntária, e as respostas foram destinadas à análise agrupada para fins acadêmicos.
+
+% Apresentação compacta das alternativas de múltipla escolha.
+\newenvironment{alternativasFormulario}
+{\begin{itemize}\renewcommand{\labelitemi}{$\circ$}\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}}
+{\end{itemize}}
+
+% Repete, em cada afirmação, as cinco opções da escala utilizada no Forms.
+% Os pontos intermediários não recebiam rótulos no formulário original.
+\newcommand{\escalaFormulario}{%
+    \par\noindent\hspace*{0.8cm}%
+    {\small $\circ$~1\qquad $\circ$~2\qquad $\circ$~3\qquad $\circ$~4\qquad $\circ$~5}%
+    \par\medskip
+}
+
+% Mantém cada afirmação junto das opções da escala.
+\newcommand{\questaoComEscala}[2]{%
+    \par\noindent\begin{minipage}{\linewidth}
+    \noindent\textbf{Questão #1.} #2
+    \escalaFormulario
+    \end{minipage}
+    \par\medskip
+}
+
+\noindent\textbf{Consentimento para participação}
+\par\medskip
+
+\noindent\textbf{Questão 1.} Você concorda em participar voluntariamente desta pesquisa, sabendo que suas respostas serão utilizadas para fins acadêmicos?
+\begin{alternativasFormulario}
+    \item Sim, concordo em participar.
+    \item Não, prefiro não participar.
+\end{alternativasFormulario}
+
+\noindent\textbf{Perfil do Participante}
+\par\medskip
+
+\noindent\textbf{Questão 2.} Qual é sua experiência prévia com mapas digitais e ferramentas de geoprocessamento?
+\begin{alternativasFormulario}
+    \item Nunca utilizei mapas digitais.
+    \item Já utilizei mapas digitais, como Google Maps.
+    \item Já utilizei plataformas de mapas temáticos ou WebGIS.
+    \item Já utilizei ferramentas de geoprocessamento, como QGIS.
+\end{alternativasFormulario}
+
+\noindent\textbf{Questão 3.} Qual dispositivo você utilizou para realizar o teste?
+\begin{alternativasFormulario}
+    \item Computador ou notebook.
+    \item Celular.
+    \item Tablet.
+\end{alternativasFormulario}
+
+\noindent\textbf{Avaliação do Mapa e das Ferramentas}
+\par\medskip
+
+Considerando a experiência ao explorar o mapa sem realizar login, as questões 4 a 6 utilizaram uma escala de concordância de 1 a 5, na qual 1 corresponde a ``Discordo totalmente'' e 5 corresponde a ``Concordo totalmente''.
+
+\medskip
+\questaoComEscala{4}{Foi fácil compreender a organização da interface e encontrar as principais funcionalidades do mapa.}
+
+\questaoComEscala{5}{Foi fácil localizar, selecionar e ativar as camadas geográficas disponíveis na plataforma.}
+
+\questaoComEscala{6}{As informações apresentadas nas camadas geográficas foram claras e fáceis de compreender.}
+
+\noindent\textbf{Avaliação do Ambiente Administrativo}
+\par\medskip
+
+Considerando a experiência com o gerenciamento de camadas geográficas, as questões 7 e 8 utilizaram a mesma escala de concordância de 1 a 5, de ``Discordo totalmente'' a ``Concordo totalmente''.
+
+\medskip
+\questaoComEscala{7}{Foi fácil acessar o ambiente administrativo e localizar as funcionalidades de gerenciamento de camadas.}
+
+\questaoComEscala{8}{O processo de cadastrar, editar e excluir uma camada geográfica foi simples e intuitivo.}
+
+\noindent\textbf{Questão 9.} Como você criou a camada durante o teste?
+\begin{alternativasFormulario}
+    \item Utilizei o arquivo GeoJSON disponibilizado no Google Drive.
+    \item Desenhei uma nova camada diretamente no mapa.
+    \item Não consegui concluir o cadastro da camada.
+\end{alternativasFormulario}
+
+\noindent\textbf{Avaliação Geral da Plataforma}
+\par\medskip
+
+Considerando toda a experiência com o ``Sobral em Mapas'', as questões 10 a 13 utilizaram a escala de concordância de 1 a 5, na qual 1 representa ``Discordo totalmente'' e 5 representa ``Concordo totalmente''.
+
+\medskip
+\questaoComEscala{10}{De modo geral, considero a plataforma Sobral em Mapas fácil de utilizar.}
+
+\questaoComEscala{11}{Considero o Sobral em Mapas uma ferramenta útil para consultar e organizar informações geográficas do município.}
+
+\questaoComEscala{12}{De modo geral, fiquei satisfeito(a) com minha experiência ao utilizar o Sobral em Mapas.}
+
+\questaoComEscala{13}{Eu utilizaria o Sobral em Mapas novamente caso precisasse consultar ou gerenciar informações geográficas de Sobral.}
+
+\noindent\textbf{Dificuldades e Sugestões}
+\par\medskip
+
+\noindent\textbf{Questão 14.} Você conseguiu concluir as atividades propostas no guia de teste?
+\begin{alternativasFormulario}
+    \item Sim, concluí todas as atividades sem dificuldades.
+    \item Sim, concluí todas, mas encontrei algumas dificuldades.
+    \item Consegui concluir apenas uma parte das atividades.
+    \item Não consegui concluir as atividades.
+\end{alternativasFormulario}
+
+\noindent\textbf{Questão 15.} Em qual etapa você encontrou maior dificuldade durante o teste?
+\begin{alternativasFormulario}
+    \item Explorar o mapa e ativar camadas.
+    \item Utilizar as ferramentas cartográficas.
+    \item Acessar e navegar no ambiente administrativo.
+    \item Cadastrar uma camada.
+    \item Editar ou excluir uma camada.
+    \item Não encontrei dificuldades significativas.
+\end{alternativasFormulario}
+
+\noindent\textbf{Questão 16.} Você tem alguma sugestão de melhoria ou comentário sobre sua experiência com o Sobral em Mapas? (Opcional)
+
+\medskip
+\noindent\textbf{\textit{Questão opcional de resposta aberta.}}
