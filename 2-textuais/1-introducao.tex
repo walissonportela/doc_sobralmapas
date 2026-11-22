@@ -1,56 +1,60 @@
 \chapter{Introdução}
 \label{cap:introducao}
 
-A crescente produção de dados digitais e as demandas relacionadas ao planejamento urbano têm incentivado a Administração Pública a buscar soluções para organizar e disponibilizar informações sobre o território. No contexto municipal, dados referentes à infraestrutura, mobilidade, educação, saúde e equipamentos públicos possuem uma dimensão espacial, pois podem ser associados a localizações geográficas. Quando organizadas e apresentadas de forma integrada, essas informações permitem relacionar diferentes aspectos de uma mesma região e oferecem novas possibilidades de consulta sobre o espaço municipal.
+A crescente produção de dados digitais e as demandas do planejamento urbano têm incentivado a Administração Pública a organizar e disponibilizar informações sobre o território. No contexto municipal, dados de infraestrutura, mobilidade, educação, saúde e equipamentos públicos possuem dimensão espacial por estarem associados a localizações geográficas. Quando apresentados de forma integrada, permitem relacionar diferentes aspectos de uma mesma região e ampliam as possibilidades de consulta sobre o espaço municipal.
 
-Os Sistemas de Informação Geográfica (SIG)\glsunset{SIG}, do inglês \textit{Geographic Information Systems} (GIS)\glsunset{GIS}, oferecem recursos para armazenar, analisar e representar informações georreferenciadas. Com a expansão dessas tecnologias para o ambiente \textit{web}, surgiram os Sistemas de Informação Geográfica na Web (WebGIS)\glsunset{WebGIS}, que permitem acessar mapas e dados espaciais diretamente pelo navegador, facilitando sua disponibilização e seu compartilhamento \cite{Silva2013}. No setor público, essas plataformas podem apoiar atividades de planejamento e consulta territorial, atendendo tanto usuários institucionais quanto cidadãos \cite{Alcantara2015}. A possibilidade de reunir diferentes temas em um mesmo mapa também torna a exploração das informações mais acessível, sem exigir que o usuário tenha experiência com ferramentas especializadas de geoprocessamento.
+Os Sistemas de Informação Geográfica (SIG)\glsunset{SIG}, do inglês \textit{Geographic Information Systems} (GIS)\glsunset{GIS}, oferecem recursos para armazenar, analisar e representar informações georreferenciadas. Com a expansão dessas tecnologias para a \textit{web}, surgiram os Sistemas de Informação Geográfica na Web (WebGIS)\glsunset{WebGIS}, que permitem acessar mapas e dados espaciais diretamente pelo navegador, facilitando sua disponibilização e seu compartilhamento \cite{Silva2013}. No setor público, essas plataformas apoiam o planejamento e a consulta territorial, atendendo usuários institucionais e cidadãos \cite{Alcantara2015}. A reunião de diferentes temas em um mesmo mapa também torna a exploração dessas informações mais acessível, sem exigir experiência com ferramentas especializadas de geoprocessamento.
 
-Apesar dessas possibilidades, o desenvolvimento de um \gls{WebGIS} envolve mais do que a apresentação de mapas interativos. É necessário integrar interfaces, mecanismos de armazenamento, regras de negócio e diferentes fontes de dados geoespaciais. À medida que novas funcionalidades são incorporadas, a organização dos componentes e a manutenção da aplicação tornam-se desafios importantes \cite{VinuezaMartinez2024}. A interoperabilidade também merece atenção, especialmente quando os dados são disponibilizados por serviços externos ou em formatos distintos \cite{BastosCamboim2022}. Por isso, princípios de engenharia de \textit{software}, como modularidade, separação de responsabilidades e segurança, são relevantes para estruturar uma solução que possa ser mantida e ampliada ao longo do tempo.
+Apesar dessas possibilidades, o desenvolvimento de um \gls{WebGIS} envolve mais do que a apresentação de mapas interativos, exigindo a integração entre interfaces, armazenamento, regras de negócio e diferentes fontes de dados geoespaciais. À medida que novas funcionalidades são incorporadas, a organização dos componentes e a manutenção da aplicação tornam-se desafios importantes \cite{VinuezaMartinez2024}. A interoperabilidade também merece atenção, especialmente quando os dados provêm de serviços externos ou formatos distintos \cite{BastosCamboim2022}. Por isso, princípios de engenharia de \textit{software}, como modularidade, separação de responsabilidades e segurança, são essenciais para estruturar uma solução sustentável, manutenível e preparada para evoluir ao longo do tempo.
 
-É nesse cenário que se insere o projeto ``Sobral em Mapas'', uma plataforma \gls{WebGIS} voltada à organização, ao gerenciamento e à visualização de informações geográficas do município de Sobral, no Ceará. A aplicação reúne uma interface cartográfica pública e funcionalidades administrativas para o gerenciamento de usuários, categorias, subcategorias e camadas temáticas. Além da consulta aos dados disponíveis, o sistema oferece ferramentas de interação com o mapa, incluindo medições e personalização da representação cartográfica, enquanto o ambiente administrativo permite criar, editar e armazenar feições geográficas. Dessa maneira, a proposta não se limita à exibição de informações espaciais, contemplando também recursos para sua organização e utilização.
+É nesse cenário que se insere o projeto ``Sobral em Mapas'', uma plataforma \gls{WebGIS} voltada à organização, ao gerenciamento e à visualização de informações geográficas do município de Sobral, no Ceará. A aplicação reúne uma interface cartográfica pública e funcionalidades administrativas para gerenciar usuários, categorias, subcategorias e camadas temáticas. Além da consulta aos dados disponíveis, o sistema oferece ferramentas de interação com o mapa, como medições e personalização da representação cartográfica, enquanto o ambiente administrativo permite criar, editar e armazenar feições geográficas.
 
-Para atender a essas necessidades, a plataforma adota uma arquitetura desacoplada, com responsabilidades distribuídas entre a interface, o servidor e as fontes de dados geoespaciais. O \textit{front-end}, desenvolvido com React, Leaflet e React-Leaflet, reúne os recursos cartográficos, enquanto o \textit{back-end}, implementado em Laravel, gerencia as operações administrativas, a autenticação e o controle de acesso. Os dados administrativos são armazenados no MySQL, enquanto as informações geográficas são disponibilizadas por serviços baseados no padrão \textit{Web Map Service} (WMS)\glsunset{WMS}, por meio do GeoServer, ou por arquivos GeoJSON, incluindo as feições desenhadas na própria aplicação. Essa organização permite utilizar diferentes fontes de dados, mantendo a separação entre os componentes do sistema.
+Para atender a essas necessidades, a plataforma adota uma arquitetura desacoplada, distribuindo responsabilidades entre interface, servidor e fontes de dados geoespaciais. O \textit{front-end}, desenvolvido com React, Leaflet e React-Leaflet, concentra os recursos cartográficos, enquanto o \textit{back-end}, implementado em Laravel, gerencia as operações administrativas, a autenticação e o controle de acesso. Os dados administrativos são armazenados no MySQL, e as informações geográficas são disponibilizadas por serviços no padrão \textit{Web Map Service} (WMS)\glsunset{WMS}, via GeoServer, ou por arquivos GeoJSON, incluindo feições desenhadas na própria aplicação, mantendo clara a separação entre os componentes do sistema.
 
 A partir dessa proposta, a questão que orienta o trabalho é: \textit{como desenvolver uma plataforma \gls{WebGIS} municipal que integre o gerenciamento de informações administrativas, diferentes fontes de dados geoespaciais e ferramentas de interação cartográfica, mantendo uma arquitetura modular e adequada à manutenção e à evolução do sistema?}
 
-Para responder a essa questão, o trabalho apresenta o desenvolvimento do ``Sobral em Mapas'', abordando as decisões arquiteturais, as tecnologias utilizadas e as funcionalidades implementadas. Busca-se, assim, demonstrar a aplicação de conceitos de engenharia de \textit{software} e geotecnologias na construção de uma solução voltada à organização e à disponibilização de informações geoespaciais no contexto municipal.
+Para responder a essa questão, apresenta-se o desenvolvimento do ``Sobral em Mapas'', detalhando decisões arquiteturais, tecnologias, funcionalidades implementadas, verificação técnica e avaliação exploratória de usabilidade com usuários. Demonstra-se, assim, a aplicação de conceitos de engenharia de \textit{software} e geotecnologias na construção de uma solução voltada à gestão e ao acesso a dados geoespaciais no contexto municipal.
 
 \section{Justificativa}
 
-A gestão municipal envolve informações relacionadas a diferentes elementos distribuídos pelo território, como vias, equipamentos públicos e áreas de interesse administrativo. Quando esses dados são disponibilizados separadamente, sua consulta e interpretação conjunta podem se tornar mais difíceis. Nesse sentido, plataformas \gls{WebGIS} oferecem uma alternativa para reunir informações geográficas em um ambiente interativo, facilitando a visualização de diferentes temas e sua relação com o espaço urbano. No contexto de Sobral, essa abordagem pode contribuir para a organização e o acesso a dados de interesse da Administração Pública e da sociedade \cite{Marotta2020,Alcantara2015}.
+A gestão municipal lida com dados sobre elementos distribuídos pelo território, como vias, equipamentos públicos e áreas de interesse administrativo. Quando mantidos de forma isolada, sua consulta conjunta torna-se mais difícil. Nesse sentido, plataformas \gls{WebGIS} oferecem uma alternativa para reunir informações geográficas em um ambiente interativo, facilitando a visualização de diferentes temas no espaço urbano. No contexto de Sobral, essa abordagem contribui para organizar e ampliar o acesso a dados de interesse da Administração Pública e da sociedade \cite{Marotta2020,Alcantara2015}.
 
-A relevância do trabalho também está nos desafios de desenvolver uma aplicação que reúna recursos cartográficos e administrativos em uma mesma solução. A integração entre interface pública, gerenciamento de usuários, persistência de dados e fontes geoespaciais exige uma estrutura que permita a manutenção e a evolução do sistema. A adoção de uma arquitetura desacoplada busca atender a essa necessidade, delimitando as responsabilidades de cada componente. O suporte a serviços WMS e arquivos GeoJSON amplia as possibilidades de disponibilização das camadas, permitindo que a plataforma utilize tanto serviços externos quanto dados armazenados pela própria aplicação.
+A relevância técnica reside nos desafios de integrar recursos cartográficos e administrativos em uma mesma solução, articulando interface pública, gestão de usuários, persistência de dados e fontes geoespaciais com foco em manutenção e evolução. A adoção de uma arquitetura desacoplada delimita as responsabilidades de cada componente, enquanto o suporte simultâneo a serviços \gls{WMS} e arquivos GeoJSON amplia a disponibilização das camadas, reduzindo a dependência exclusiva de servidores de mapas externos e permitindo utilizar dados armazenados e gerenciados pela própria aplicação no ambiente administrativo.
 
-Do ponto de vista acadêmico, o desenvolvimento do ``Sobral em Mapas'' permite aplicar conhecimentos de engenharia de \textit{software}, desenvolvimento \textit{web}, bancos de dados, segurança e integração de sistemas em um problema concreto. O trabalho também proporciona a análise de decisões técnicas relacionadas à organização da arquitetura e à implementação de funcionalidades cartográficas. Sua contribuição está na aplicação conjunta desses conhecimentos para construir uma plataforma \gls{WebGIS} voltada ao contexto municipal, reunindo aspectos administrativos e geoespaciais em uma mesma solução.
+Do ponto de vista acadêmico, o desenvolvimento do ``Sobral em Mapas'' aplica conhecimentos de engenharia de \textit{software}, desenvolvimento \textit{web}, bancos de dados, segurança e integração de sistemas a um problema concreto. O trabalho também proporciona a análise de decisões arquiteturais, recursos cartográficos e usabilidade da plataforma, articulando aspectos administrativos e geoespaciais voltados ao contexto municipal.
 
 \section{Objetivos}
 
 \subsection{Objetivo Geral}
 
-Desenvolver uma plataforma \gls{WebGIS} para o projeto ``Sobral em Mapas'', baseada em uma arquitetura desacoplada, destinada à organização, ao gerenciamento e à visualização interativa de informações geoespaciais do município de Sobral, com suporte a diferentes fontes de dados e ferramentas de interação cartográfica.
+Desenvolver uma plataforma \gls{WebGIS} para o projeto ``Sobral em Mapas'', baseada em uma arquitetura desacoplada, destinada à organização, ao gerenciamento e à visualização interativa de informações geoespaciais do município de Sobral, com suporte a diferentes fontes de dados geográficos e ferramentas de interação cartográfica.
 
 \subsection{Objetivos Específicos}
 
 Para alcançar o objetivo geral, foram definidos os seguintes objetivos específicos:
 
 \begin{itemize}
-    \item Levantar e especificar os requisitos funcionais e não funcionais da plataforma, identificando os principais usuários, as funcionalidades necessárias e as estruturas de dados envolvidas;
+    \interlinepenalty=10000
 
-    \item Modelar as entidades e os relacionamentos necessários ao armazenamento dos dados administrativos, incluindo usuários, perfis, categorias, subcategorias, camadas e seus respectivos metadados;
+    \item Levantar e especificar os requisitos funcionais e não funcionais, identificando perfis de usuário, funcionalidades e estruturas de dados envolvidas;
 
-    \item Implementar o \textit{back-end} em PHP, utilizando o \textit{framework} Laravel, e disponibilizar uma \gls{API} com mecanismos de autenticação, autorização e gerenciamento das informações administrativas da plataforma;
+    \item Modelar as entidades e os relacionamentos dos dados administrativos, abrangendo usuários, perfis, categorias, subcategorias, camadas e metadados;
 
-    \item Desenvolver o \textit{front-end} em React, seguindo o modelo de \gls{SPA}, com uma interface componentizada e responsiva, adequada à utilização em diferentes dispositivos;
+    \item Implementar o \textit{back-end} em PHP, com o \textit{framework} Laravel, disponibilizando uma \gls{API} com autenticação, autorização e gerenciamento das informações administrativas da plataforma;
 
-    \item Implementar a interface cartográfica com Leaflet, permitindo visualizar, organizar, ativar e consultar as diferentes camadas geográficas disponibilizadas;
+    \item Desenvolver o \textit{front-end} em React no modelo \gls{SPA}, com interface componentizada e responsiva para diferentes dispositivos;
 
-    \item Integrar a plataforma a serviços geoespaciais \gls{WMS}, por meio do GeoServer, e implementar o suporte a arquivos GeoJSON como alternativa para o armazenamento e a disponibilização de camadas geográficas;
+    \item Implementar a interface cartográfica com Leaflet para visualizar, organizar, ativar e consultar as camadas geográficas disponibilizadas;
 
-    \item Desenvolver ferramentas de interação cartográfica, incluindo desenho e armazenamento de feições, medições e personalização da representação visual das camadas;
+    \item Integrar a plataforma a serviços \gls{WMS}, via GeoServer, e implementar o suporte a arquivos GeoJSON para armazenar e disponibilizar camadas;
 
-    \item Estruturar o ambiente de execução do \textit{back-end} utilizando Docker, buscando favorecer a padronização e a reprodutibilidade das configurações de desenvolvimento e implantação;
+    \item Desenvolver ferramentas cartográficas de medição, estilização visual das camadas e criação, edição e armazenamento de feições na área administrativa;
 
-    \item Verificar as funcionalidades e os fluxos de comunicação entre os componentes da plataforma por meio de cenários representativos de uso, considerando os recursos administrativos e cartográficos implementados.
+    \item Estruturar o ambiente do \textit{back-end} com Docker e implantar os componentes de forma independente em nuvem, favorecendo a padronização;
+
+    \item Verificar as funcionalidades administrativas e cartográficas e os fluxos entre os componentes por meio de cenários representativos de uso;
+
+    \item Conduzir uma avaliação exploratória de usabilidade com usuários para analisar a facilidade de uso e oportunidades de melhoria na plataforma.
 \end{itemize}
 
 \section{Estrutura do Trabalho}
@@ -59,13 +63,15 @@ Para alcançar o objetivo geral, foram definidos os seguintes objetivos específ
 Esta monografia está organizada em cinco capítulos:
 
 \begin{itemize}
+    \interlinepenalty=10000
+
     \item \textbf{Capítulo 1 -- Introdução:} apresenta a contextualização do tema, a questão de pesquisa, a justificativa, os objetivos e a organização do trabalho;
 
-    \item \textbf{Capítulo 2 -- Fundamentação Teórica:} aborda os SIG, as plataformas WebGIS, os padrões geoespaciais, os conceitos de arquitetura de \textit{software} e as tecnologias utilizadas;
+    \item \textbf{Capítulo 2 -- Fundamentação Teórica:} aborda os \gls{SIG}, as plataformas \gls{WebGIS}, os padrões geoespaciais, a arquitetura de \textit{software}, as tecnologias utilizadas, a usabilidade e os trabalhos relacionados;
 
-    \item \textbf{Capítulo 3 -- Metodologia:} descreve os procedimentos da pesquisa, os requisitos, a arquitetura, a modelagem dos dados, o desenvolvimento e a verificação da plataforma;
+    \item \textbf{Capítulo 3 -- Metodologia:} descreve os procedimentos da pesquisa, os requisitos, a arquitetura, a modelagem dos dados, o desenvolvimento, os procedimentos de verificação e a metodologia da avaliação com usuários;
 
-    \item \textbf{Capítulo 4 -- Resultados e Discussão:} apresenta as funcionalidades implementadas, a integração dos dados geoespaciais, o atendimento aos requisitos, a avaliação com usuários e as limitações identificadas;
+    \item \textbf{Capítulo 4 -- Resultados e Discussão:} apresenta as funcionalidades implementadas, a integração dos dados geoespaciais, o atendimento aos requisitos, os resultados da avaliação com usuários e as limitações identificadas;
 
     \item \textbf{Capítulo 5 -- Conclusões e Trabalhos Futuros:} reúne as considerações finais, o atendimento aos objetivos e as possibilidades de evolução da plataforma.
 \end{itemize}

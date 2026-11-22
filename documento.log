@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  16 NOV 2026 01:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  22 NOV 2026 18:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,108 +730,83 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
-Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks36
-\MT@tempbox=\box63
-\MT@count=\count385
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
-LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks37
-LaTeX Info: Redefining \rightprotrusion on input line 1104.
-LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen273
-LaTeX Info: Redefining \microtypecontext on input line 2053.
-LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count386
- (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
-File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 944.
-LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip264
-)
-Package microtype Info: Loading configuration file microtype.cfg.
- (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
-File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
-)
-LaTeX Info: Redefining \microtypesetup on input line 3065.
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count387
-\algocf@hangindent=\skip265
+\c@AlgoLine=\count385
+\algocf@hangindent=\skip264
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count388
+\c@checkoddpage=\count386
 LaTeX Info: Redefining \checkoddpage on input line 45.
 ) (C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
-\skiptotal=\skip266
-\skiplinenumber=\skip267
-\skiprule=\skip268
-\skiphlne=\skip269
-\skiptext=\skip270
-\skiplength=\skip271
-\algomargin=\skip272
-\skipalgocfslide=\skip273
-\algowidth=\dimen274
-\inoutsize=\dimen275
-\inoutindent=\dimen276
-\interspacetitleruled=\dimen277
-\interspacealgoruled=\dimen278
-\interspacetitleboxruled=\dimen279
-\algocf@ruledwidth=\skip274
-\algocf@inoutbox=\box64
-\algocf@inputbox=\box65
-\AlCapSkip=\skip275
-\AlCapHSkip=\skip276
-\algoskipindent=\skip277
-\algocf@nlbox=\box66
-\algocf@hangingbox=\box67
-\algocf@untilbox=\box68
-\algocf@skipuntil=\skip278
-\algocf@capbox=\box69
-\algocf@lcaptionbox=\skip279
-\algoheightruledefault=\skip280
-\algoheightrule=\skip281
-\algotitleheightruledefault=\skip282
-\algotitleheightrule=\skip283
-\c@algocfline=\count389
-\c@algocfproc=\count390
-\c@algocf=\count391
-\algocf@algoframe=\box70
-\algocf@algobox=\box71
+\skiptotal=\skip265
+\skiplinenumber=\skip266
+\skiprule=\skip267
+\skiphlne=\skip268
+\skiptext=\skip269
+\skiplength=\skip270
+\algomargin=\skip271
+\skipalgocfslide=\skip272
+\algowidth=\dimen273
+\inoutsize=\dimen274
+\inoutindent=\dimen275
+\interspacetitleruled=\dimen276
+\interspacealgoruled=\dimen277
+\interspacetitleboxruled=\dimen278
+\algocf@ruledwidth=\skip273
+\algocf@inoutbox=\box63
+\algocf@inputbox=\box64
+\AlCapSkip=\skip274
+\AlCapHSkip=\skip275
+\algoskipindent=\skip276
+\algocf@nlbox=\box65
+\algocf@hangingbox=\box66
+\algocf@untilbox=\box67
+\algocf@skipuntil=\skip277
+\algocf@capbox=\box68
+\algocf@lcaptionbox=\skip278
+\algoheightruledefault=\skip279
+\algoheightrule=\skip280
+\algotitleheightruledefault=\skip281
+\algotitleheightrule=\skip282
+\c@algocfline=\count387
+\c@algocfproc=\count388
+\c@algocf=\count389
+\algocf@algoframe=\box69
+\algocf@algobox=\box70
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count392
-\c@ALC@line=\count393
-\c@ALC@rem=\count394
-\c@ALC@depth=\count395
-\ALC@tlm=\skip284
-\algorithmicindent=\skip285
+\c@ALC@unique=\count390
+\c@ALC@line=\count391
+\c@ALC@rem=\count392
+\c@ALC@depth=\count393
+\ALC@tlm=\skip283
+\algorithmicindent=\skip284
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Program Files\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count396
-\l__lipsum_a_int=\count397
-\l__lipsum_b_int=\count398
+\g__lipsum_par_int=\count394
+\l__lipsum_a_int=\count395
+\l__lipsum_b_int=\count396
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/base\glossaries.sty
 Package: glossaries 2026/03/06 v5.0 (NLCT)
  (C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks38
-\XKV@tempa@toks=\toks39
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
 )
-\XKV@depth=\count399
+\XKV@depth=\count397
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks40
-\@glsmrest=\toks41
+\@glsmfirst=\toks38
+\@glsmrest=\toks39
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/tracklang\tracklang.sty
@@ -850,40 +825,40 @@ File: glossaries-spanish.ldf 2014/11/23 v1.0
 File: glossaries-pt-BR.ldf 2014/11/23 v1.0
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-portuges\glossaries-portuges-utf8.ldf)) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/datatool\datatool-base.sty
 Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
-\l__datatool_tmpa_int=\count400
-\l__datatool_tmpb_int=\count401
-\l__datatool_tmpc_int=\count402
-\l__datatool_tmpd_int=\count403
-\l__datatool_count_int=\count404
-\l__datatool_tmp_datatype_int=\count405
-\l__datatool_tmpa_dim=\dimen280
-\l__datatool_tmpb_dim=\dimen281
+\l__datatool_tmpa_int=\count398
+\l__datatool_tmpb_int=\count399
+\l__datatool_tmpc_int=\count400
+\l__datatool_tmpd_int=\count401
+\l__datatool_count_int=\count402
+\l__datatool_tmp_datatype_int=\count403
+\l__datatool_tmpa_dim=\dimen279
+\l__datatool_tmpb_dim=\dimen280
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/datatool\datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@toks=\toks42
-\@dtl@tmpcount=\count406
-\dtl@tmplength=\skip286
-\l__datatool_measure_box=\box72
-\dtl@sortresult=\count407
+\@dtl@toks=\toks40
+\@dtl@tmpcount=\count404
+\dtl@tmplength=\skip285
+\l__datatool_measure_box=\box71
+\dtl@sortresult=\count405
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/datatool\datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count408
-\c_datatool_unknown_int=\count409
-\l__datatool_year_int=\count410
-\l__datatool_month_int=\count411
-\l__datatool_day_int=\count412
-\l__datatool_hour_int=\count413
-\l__datatool_minute_int=\count414
-\l__datatool_second_int=\count415
-\l__datatool_tzhour_int=\count416
-\l__datatool_tzminute_int=\count417
-\l__datatool_julian_int=\count418
-\l__datatool_local_julian_int=\count419
-\l__datatool_prefix_int=\count420
-\l__datatool_suffix_int=\count421
-\@dtl@foreach@level=\count422
+\@dtl@datatype=\count406
+\c_datatool_unknown_int=\count407
+\l__datatool_year_int=\count408
+\l__datatool_month_int=\count409
+\l__datatool_day_int=\count410
+\l__datatool_hour_int=\count411
+\l__datatool_minute_int=\count412
+\l__datatool_second_int=\count413
+\l__datatool_tzhour_int=\count414
+\l__datatool_tzminute_int=\count415
+\l__datatool_julian_int=\count416
+\l__datatool_local_julian_int=\count417
+\l__datatool_prefix_int=\count418
+\l__datatool_suffix_int=\count419
+\@dtl@foreach@level=\count420
 
 
 Package tracklang Warning: No `datatool' support for dialect `english'  on input line 9924.
@@ -897,107 +872,107 @@ Package tracklang Warning: No `datatool' support for dialect `brazil'  on input 
 
 Package tracklang Warning: No `datatool' support for dialect `brazil'  on input line 9924.
 
-\dtl@codeA=\count423
-\dtl@codeB=\count424
+\dtl@codeA=\count421
+\dtl@codeB=\count422
 )
-\gls@level=\count425
-\@gls@tmpb=\toks43
-\gls@tmplen=\skip287
+\gls@level=\count423
+\@gls@tmpb=\toks41
+\gls@tmplen=\skip286
 
 
 Package glossaries Warning: Overriding \printglossary on input line 6495.
 
-\l__glossaries_tmpa_dim=\dimen282
-\l__glossaries_tmpb_dim=\dimen283
+\l__glossaries_tmpa_dim=\dimen281
+\l__glossaries_tmpb_dim=\dimen282
 
 Package glossaries Warning: Overriding `theglossary' environment on input line 7694.
 
-\glskeylisttok=\toks44
-\glslabeltok=\toks45
-\glsshorttok=\toks46
-\glslongtok=\toks47
+\glskeylisttok=\toks42
+\glslabeltok=\toks43
+\glsshorttok=\toks44
+\glslongtok=\toks45
 (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
 Package: glossary-hypernav 2026/03/06 v5.0 (NLCT)
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
 Package: glossary-list 2026/03/06 v5.0 (NLCT)
-\glslistdottedwidth=\skip288
+\glslistdottedwidth=\skip287
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
 Package: glossary-long 2026/03/06 v5.0 (NLCT)
  (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip289
-\LTright=\skip290
-\LTpre=\skip291
-\LTpost=\skip292
-\LTchunksize=\count426
-\LTcapwidth=\dimen284
-\LT@head=\box73
-\LT@firsthead=\box74
-\LT@foot=\box75
-\LT@lastfoot=\box76
-\LT@gbox=\box77
-\LT@cols=\count427
-\LT@rows=\count428
-\c@LT@tables=\count429
-\c@LT@chunks=\count430
-\LT@p@ftn=\toks48
+\LTleft=\skip288
+\LTright=\skip289
+\LTpre=\skip290
+\LTpost=\skip291
+\LTchunksize=\count424
+\LTcapwidth=\dimen283
+\LT@head=\box72
+\LT@firsthead=\box73
+\LT@foot=\box74
+\LT@lastfoot=\box75
+\LT@gbox=\box76
+\LT@cols=\count425
+\LT@rows=\count426
+\c@LT@tables=\count427
+\c@LT@chunks=\count428
+\LT@p@ftn=\toks46
 )
-\glsdescwidth=\skip293
-\glspagelistwidth=\skip294
+\glsdescwidth=\skip292
+\glspagelistwidth=\skip293
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
 Package: glossary-super 2026/03/06 v5.0 (NLCT)
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count431
-\ST@wd=\dimen285
-\ST@rightskip=\skip295
-\ST@leftskip=\skip296
-\ST@parfillskip=\skip297
-\ST@pageleft=\dimen286
-\ST@headht=\dimen287
-\ST@tailht=\dimen288
-\ST@pagesofar=\dimen289
-\ST@pboxht=\dimen290
-\ST@rowht=\dimen291
-\ST@prevht=\dimen292
-\ST@toadd=\dimen293
-\ST@dimen=\dimen294
-\ST@pbox=\box78
+\c@tracingst=\count429
+\ST@wd=\dimen284
+\ST@rightskip=\skip294
+\ST@leftskip=\skip295
+\ST@parfillskip=\skip296
+\ST@pageleft=\dimen285
+\ST@headht=\dimen286
+\ST@tailht=\dimen287
+\ST@pagesofar=\dimen288
+\ST@pboxht=\dimen289
+\ST@rowht=\dimen290
+\ST@prevht=\dimen291
+\ST@toadd=\dimen292
+\ST@dimen=\dimen293
+\ST@pbox=\box77
 )) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
 Package: glossary-tree 2026/03/06 v5.0 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count432
-\l__glossaries_tree_offset_dim=\dimen295
-\l__glossaries_tree_namewidth_dim=\dimen296
-\l__glossaries_tree_symbolwidth_dim=\dimen297
-\l__glossaries_tree_prenamesym_width_dim=\dimen298
-\l__glossaries_tree_presubnamesym_width_dim=\dimen299
-\l__glossaries_tree_namewidth_padding_dim=\dimen300
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen301
-\l__glossaries_tree_namesymbolwidth_dim=\dimen302
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen303
-\l__glossaries_tree_level_int=\count433
-\glstreeindent=\skip298
+\l__glossaries_tree_max_known_level_int=\count430
+\l__glossaries_tree_offset_dim=\dimen294
+\l__glossaries_tree_namewidth_dim=\dimen295
+\l__glossaries_tree_symbolwidth_dim=\dimen296
+\l__glossaries_tree_prenamesym_width_dim=\dimen297
+\l__glossaries_tree_presubnamesym_width_dim=\dimen298
+\l__glossaries_tree_namewidth_padding_dim=\dimen299
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen300
+\l__glossaries_tree_namesymbolwidth_dim=\dimen301
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen302
+\l__glossaries_tree_level_int=\count431
+\glstreeindent=\skip297
 )) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen304
-\captionmargin=\dimen305
-\caption@leftmargin=\dimen306
-\caption@rightmargin=\dimen307
-\caption@width=\dimen308
-\caption@indent=\dimen309
-\caption@parindent=\dimen310
-\caption@hangindent=\dimen311
+\caption@tempdima=\dimen303
+\captionmargin=\dimen304
+\caption@leftmargin=\dimen305
+\caption@rightmargin=\dimen306
+\caption@width=\dimen307
+\caption@indent=\dimen308
+\caption@parindent=\dimen309
+\caption@hangindent=\dimen310
 Package caption Info: memoir document class detected.
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/caption\caption-memoir.sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
 ))
-\c@caption@flags=\count434
-\c@continuedfloat=\count435
+\c@caption@flags=\count432
+\c@continuedfloat=\count433
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen312
-\caption@adjustwidth@linewidth=\dimen313
+\caption@adjustwidth@hsize=\dimen311
+\caption@adjustwidth@linewidth=\dimen312
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1008,19 +983,19 @@ Package caption Info: supertabular package is loaded.
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/abntex2\abntex2cite.sty
 Package: abntex2cite 2018/11/24 v-1.9.7 abnTeX2
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/abntex2\abntex2abrev.sty)
-\minimumbiblabelwidth=\skip299
-\ABCIauxlen=\skip300
-\c@ABCIaux=\count436
-\c@ABCImax=\count437
+\minimumbiblabelwidth=\skip298
+\ABCIauxlen=\skip299
+\c@ABCIaux=\count434
+\c@ABCImax=\count435
  (C:\Program Files\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (C:\Program Files\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-\biblabelsep=\skip301
+\biblabelsep=\skip300
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks49
+\ABCItoken=\toks47
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
@@ -1058,116 +1033,141 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Info: Redefining \hbar on input line 50.
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/paracol\paracol.sty
 Package: paracol 2025/07/14 1.37 typeset columns in parallel
-\pcol@currcol=\count438
-\pcol@nextcol=\count439
-\pcol@ncol=\count440
-\pcol@ncolleft=\count441
-\pcol@page=\count442
-\pcol@basepage=\count443
-\pcol@toppage=\count444
-\pcol@footnotebase=\count445
-\pcol@nfootnotes=\count446
-\pcol@mcid=\count447
-\pcol@prevdepth=\dimen314
-\pcol@colht=\dimen315
-\pcol@textfloatsep=\dimen316
-\pcol@lrmargin=\dimen317
-\pagerim=\dimen318
-\pcol@topskip=\skip302
-\belowfootnoteskip=\skip303
-\pcol@topfnotes=\box79
-\pcol@prespan=\box80
-\pcol@rightpage=\box81
-\pcol@colorstack@saved=\box82
-\pcol@tempboxa=\box83
-\pcol@tempboxb=\box84
+\pcol@currcol=\count436
+\pcol@nextcol=\count437
+\pcol@ncol=\count438
+\pcol@ncolleft=\count439
+\pcol@page=\count440
+\pcol@basepage=\count441
+\pcol@toppage=\count442
+\pcol@footnotebase=\count443
+\pcol@nfootnotes=\count444
+\pcol@mcid=\count445
+\pcol@prevdepth=\dimen313
+\pcol@colht=\dimen314
+\pcol@textfloatsep=\dimen315
+\pcol@lrmargin=\dimen316
+\pagerim=\dimen317
+\pcol@topskip=\skip301
+\belowfootnoteskip=\skip302
+\pcol@topfnotes=\box78
+\pcol@prespan=\box79
+\pcol@rightpage=\box80
+\pcol@colorstack@saved=\box81
+\pcol@tempboxa=\box82
+\pcol@tempboxb=\box83
 \pcol@colorins=\insert247
-\pcol@everyvbox=\toks50
+\pcol@everyvbox=\toks48
 ) (lib/ufctex.sty (1-pre-textuais/lista-de-abreviaturas-e-siglas.tex) (3-pos-textuais/glossario.tex)
-\enitdp@alineascomponto=\count448
-\c@subalineascompontoi=\count449
-\enitdp@subalineascomponto=\count450
-\c@alineascomnumeroi=\count451
-\c@alineascomnumeroii=\count452
-\enitdp@alineascomnumero=\count453
-\c@subalineascomnumeroi=\count454
-\enitdp@subalineascomnumero=\count455
-\c@afirmacao=\count456
-\c@argumento=\count457
-\c@teo=\count458
-\c@lema=\count459
-\c@cor=\count460
-\c@conjec=\count461
-\c@premissa=\count462
-\c@procedimento=\count463
-\c@heuristica=\count464
-\c@axioma=\count465
-\c@exem=\count466
-\c@xdefinicao=\count467
-\c@cdefinicao=\count468
-\c@propriedade=\count469
-\c@quest=\count470
-\c@quadro=\count471
-\c@loqdepth=\count472
-\cftbeforequadroskip=\skip304
-\cftquadroindent=\skip305
-\cftquadronumwidth=\skip306
-\mylen=\skip307
-\cftbeforelstlistingskip=\skip308
-\cftlstlistingindent=\skip309
-\cftlstlistingnumwidth=\skip310
-\myAlgoLen=\skip311
-\cftbeforealgocfskip=\skip312
-\cftalgocfindent=\skip313
-\cftalgocfnumwidth=\skip314
+\enitdp@alineascomponto=\count446
+\c@subalineascompontoi=\count447
+\enitdp@subalineascomponto=\count448
+\c@alineascomnumeroi=\count449
+\c@alineascomnumeroii=\count450
+\enitdp@alineascomnumero=\count451
+\c@subalineascomnumeroi=\count452
+\enitdp@subalineascomnumero=\count453
+\c@afirmacao=\count454
+\c@argumento=\count455
+\c@teo=\count456
+\c@lema=\count457
+\c@cor=\count458
+\c@conjec=\count459
+\c@premissa=\count460
+\c@procedimento=\count461
+\c@heuristica=\count462
+\c@axioma=\count463
+\c@exem=\count464
+\c@xdefinicao=\count465
+\c@cdefinicao=\count466
+\c@propriedade=\count467
+\c@quest=\count468
+\c@quadro=\count469
+\c@loqdepth=\count470
+\cftbeforequadroskip=\skip303
+\cftquadroindent=\skip304
+\cftquadronumwidth=\skip305
+\mylen=\skip306
+\cftbeforelstlistingskip=\skip307
+\cftlstlistingindent=\skip308
+\cftlstlistingnumwidth=\skip309
+\myAlgoLen=\skip310
+\cftbeforealgocfskip=\skip311
+\cftalgocfindent=\skip312
+\cftalgocfnumwidth=\skip313
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
-\ESO@tempdima=\dimen319
-\ESO@tempdimb=\dimen320
+\ESO@tempdima=\dimen318
+\ESO@tempdimb=\dimen319
 )
-\AM@pagewidth=\dimen321
-\AM@pageheight=\dimen322
-\AM@fboxrule=\dimen323
+\AM@pagewidth=\dimen320
+\AM@pageheight=\dimen321
+\AM@fboxrule=\dimen322
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count473
-\AM@pagebox=\box85
-\AM@global@opts=\toks51
-\AM@pagecnt=\count474
-\AM@toc@title=\toks52
-\AM@lof@heading=\toks53
-\c@AM@survey=\count475
-\AM@templatesizebox=\box86
+\pdfpages@includegraphics@status=\count471
+\AM@pagebox=\box84
+\AM@global@opts=\toks49
+\AM@pagecnt=\count472
+\AM@toc@title=\toks50
+\AM@lof@heading=\toks51
+\c@AM@survey=\count473
+\AM@templatesizebox=\box85
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count476
-\float@exts=\toks54
-\float@box=\box87
-\@float@everytoks=\toks55
-\@floatcapt=\box88
+\c@float@type=\count474
+\float@exts=\toks52
+\float@box=\box86
+\@float@everytoks=\toks53
+\@floatcapt=\box87
 ) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
+) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks54
+\MT@tempbox=\box88
+\MT@count=\count475
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks55
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen323
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count476
+ (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 944.
+LaTeX Info: Redefining \lslig on input line 944.
+\MT@outer@space=\skip314
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+ (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `documento.glo'.
 
-Package glossaries Info: Writing glossary file documento.glo on input line 102.
+Package glossaries Info: Writing glossary file documento.glo on input line 60.
 \glo@acronym@file=\write6
 \openout6 = `documento.acn'.
 
-Package glossaries Info: Writing glossary file documento.acn on input line 102.
+Package glossaries Info: Writing glossary file documento.acn on input line 60.
+)
 \documento@idxfile=\write7
 \openout7 = `documento.idx'.
 
 
 Writing index file documento.idx 
-)
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 219.
- (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
+(C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 
@@ -1221,6 +1221,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count483
+ (documento.glsdefs) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-english\glossaries-dictionary-English.dict
+Dictionary: glossaries-dictionary, Language: English 
+) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-spanish\glossaries-dictionary-Spanish.dict
+Dictionary: glossaries-dictionary, Language: Spanish 
+) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-portuges\glossaries-dictionary-Brazilian.dict
+Dictionary: glossaries-dictionary, Language: Brazilian 
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 LaTeX Info: Redefining \microtypecontext on input line 219.
 Package microtype Info: Applying patch `item' on input line 219.
 Package microtype Info: Applying patch `toc' on input line 219.
@@ -1240,25 +1259,7 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
-) (documento.glsdefs) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-english\glossaries-dictionary-English.dict
-Dictionary: glossaries-dictionary, Language: English 
-) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-spanish\glossaries-dictionary-Spanish.dict
-Dictionary: glossaries-dictionary, Language: Spanish 
-) (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/glossaries-portuges\glossaries-dictionary-Brazilian.dict
-Dictionary: glossaries-dictionary, Language: Brazilian 
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
-Package caption Info: End \AtBeginDocument code.
- (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
-Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
-Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-))
 <lib/logo-ufc.png, id=3, 489.83pt x 732.7375pt>
 File: lib/logo-ufc.png Graphic file (type png)
 <use lib/logo-ufc.png>
@@ -1398,7 +1399,7 @@ Cap\'{\i }tulo 1.
 
 
 ] [16]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 37.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 39.
  (C:\Users\walis\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [17]) (2-textuais/2-fundamentacao-teorica.tex [18]
@@ -1406,219 +1407,163 @@ Cap\'{\i }tulo 2.
 [19
 
 ]
-<figuras/dados-vetoriais-matriciais.png, id=421, 291.0875pt x 174.6525pt>
-File: figuras/dados-vetoriais-matriciais.png Graphic file (type png)
-<use figuras/dados-vetoriais-matriciais.png>
-Package pdftex.def Info: figuras/dados-vetoriais-matriciais.png  used on input line 25.
-(pdftex.def)             Requested size: 318.66948pt x 191.21758pt.
- [20 <./figuras/dados-vetoriais-matriciais.png>]
-<figuras/coordenadas-geograficas.png, id=433, 709.65125pt x 435.6275pt>
+
+pdfTeX warning: pdflatex (file ./figuras/dados-vetoriais-matriciais.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figuras/dados-vetoriais-matriciais.pdf, id=431, 1238.6275pt x 689.57625pt>
+File: figuras/dados-vetoriais-matriciais.pdf Graphic file (type pdf)
+<use figuras/dados-vetoriais-matriciais.pdf>
+Package pdftex.def Info: figuras/dados-vetoriais-matriciais.pdf  used on input line 23.
+(pdftex.def)             Requested size: 364.19667pt x 202.76033pt.
+[20 <./figuras/dados-vetoriais-matriciais.pdf>]
+<figuras/coordenadas-geograficas.png, id=447, 709.65125pt x 435.6275pt>
 File: figuras/coordenadas-geograficas.png Graphic file (type png)
 <use figuras/coordenadas-geograficas.png>
-Package pdftex.def Info: figuras/coordenadas-geograficas.png  used on input line 40.
+Package pdftex.def Info: figuras/coordenadas-geograficas.png  used on input line 36.
 (pdftex.def)             Requested size: 318.66948pt x 195.62508pt.
- [21 <./figuras/coordenadas-geograficas.png (PNG copy)>]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [22]
+ [21 <./figuras/coordenadas-geograficas.png (PNG copy)>] [22]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
-
-Underfull \hbox (badness 1983) in paragraph at lines 134--134
-[]|\T1/ptm/m/n/10 (+20) Geometrias dis-po-ní-
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 134--134
-[]|\T1/ptm/m/n/10 (+20) Processamento tam-bém
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 134--134
-[]|\T1/ptm/m/n/10 (+20) Geometrias dis-po-ní-
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 134--134
-[]|\T1/ptm/m/n/10 (+20) Processamento tam-bém
- []
-
-[23] [24]
-Overfull \hbox (5.10732pt too wide) in paragraph at lines 193--193
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 129.
+ [23] [24]
+Overfull \hbox (5.10732pt too wide) in paragraph at lines 191--191
 [] [] 
  []
 
 [25] [26] [27]
-Overfull \hbox (6.53004pt too wide) in paragraph at lines 289--289
+Overfull \hbox (6.53004pt too wide) in paragraph at lines 285--285
 [] [] 
  []
 
-[28] [29]) (2-textuais/3-metodologia.tex [30]
+[28] [29]) (2-textuais/3-metodologia.tex [30] [31]
 Cap\'{\i }tulo 3.
-[31
+[32
 
-] [32]
+] [33]
 
 pdfTeX warning: pdflatex (file ./figuras/arquitetura-geral.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/arquitetura-geral.pdf, id=594, 1035.87pt x 732.7375pt>
+<figuras/arquitetura-geral.pdf, id=626, 1035.87pt x 732.7375pt>
 File: figuras/arquitetura-geral.pdf Graphic file (type pdf)
 <use figuras/arquitetura-geral.pdf>
-Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 63.
-(pdftex.def)             Requested size: 500.77129pt x 354.22566pt.
-[33 <./figuras/arquitetura-geral.pdf>] [34] [35] [36] [37]
+Package pdftex.def Info: figuras/arquitetura-geral.pdf  used on input line 61.
+(pdftex.def)             Requested size: 437.0374pt x 309.14523pt.
+[34 <./figuras/arquitetura-geral.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 151.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 151.
+ [35] [36] [37] [38]
 
 pdfTeX warning: pdflatex (file ./figuras/fluxo-comunicacao.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/fluxo-comunicacao.pdf, id=1596, 614.295pt x 809.0225pt>
+<figuras/fluxo-comunicacao.pdf, id=1628, 614.295pt x 809.0225pt>
 File: figuras/fluxo-comunicacao.pdf Graphic file (type pdf)
 <use figuras/fluxo-comunicacao.pdf>
-Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 243.
-(pdftex.def)             Requested size: 364.19667pt x 479.6523pt.
-[38 <./figuras/fluxo-comunicacao.pdf>]
+Package pdftex.def Info: figuras/fluxo-comunicacao.pdf  used on input line 245.
+(pdftex.def)             Requested size: 300.46277pt x 395.70851pt.
+[39 <./figuras/fluxo-comunicacao.pdf>]
 
 pdfTeX warning: pdflatex (file ./figuras/modelo-entidade-relacionamento.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figuras/modelo-entidade-relacionamento.pdf, id=1923, 1062.97125pt x 813.0375pt>
+<figuras/modelo-entidade-relacionamento.pdf, id=1955, 1062.97125pt x 813.0375pt>
 File: figuras/modelo-entidade-relacionamento.pdf Graphic file (type pdf)
 <use figuras/modelo-entidade-relacionamento.pdf>
-Package pdftex.def Info: figuras/modelo-entidade-relacionamento.pdf  used on input line 259.
-(pdftex.def)             Requested size: 364.19667pt x 278.56291pt.
-[39 <./figuras/modelo-entidade-relacionamento.pdf>] [40] [41] [42] [43] [44] [45]
-Underfull \hbox (badness 1424) in paragraph at lines 470--470
-[]|\T1/ptm/m/n/10 (+20) GET / POST /
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 470--470
-[]|\T1/ptm/m/n/10 (+20) GET / POST /
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 470--470
-[]|\T1/ptm/m/n/10 (+20) GET / POST /
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 470--470
-[]|\T1/ptm/m/n/10 (+20) GET / POST /
- []
-
-[46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]) (2-textuais/4-resultados.tex [58]
+Package pdftex.def Info: figuras/modelo-entidade-relacionamento.pdf  used on input line 260.
+(pdftex.def)             Requested size: 336.88313pt x 257.67131pt.
+[40 <./figuras/modelo-entidade-relacionamento.pdf>] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]) (2-textuais/4-resultados.tex [59]
 Cap\'{\i }tulo 4.
-<figuras/interface-principal.png, id=2241, 1436.36626pt x 685.8122pt>
+<figuras/interface-principal.png, id=2275, 1436.36626pt x 685.8122pt>
 File: figuras/interface-principal.png Graphic file (type png)
 <use figuras/interface-principal.png>
-Package pdftex.def Info: figuras/interface-principal.png  used on input line 19.
-(pdftex.def)             Requested size: 455.24411pt x 217.361pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 19--20
- [][] 
- []
-
-[59
+Package pdftex.def Info: figuras/interface-principal.png  used on input line 14.
+(pdftex.def)             Requested size: 446.13727pt x 213.0077pt.
+[60
 
  <./figuras/interface-principal.png>]
-<figuras/organizacao-camadas.png, id=2249, 1439.3775pt x 686.565pt>
+<figuras/responsividade-mobile.png, id=2284, 1296.845pt x 874.26625pt>
+File: figuras/responsividade-mobile.png Graphic file (type png)
+<use figuras/responsividade-mobile.png>
+Package pdftex.def Info: figuras/responsividade-mobile.png  used on input line 26.
+(pdftex.def)             Requested size: 446.13727pt x 300.7684pt.
+ [61 <./figuras/responsividade-mobile.png>]
+<figuras/organizacao-camadas.png, id=2291, 1439.3775pt x 686.565pt>
 File: figuras/organizacao-camadas.png Graphic file (type png)
 <use figuras/organizacao-camadas.png>
-Package pdftex.def Info: figuras/organizacao-camadas.png  used on input line 52.
-(pdftex.def)             Requested size: 455.24411pt x 217.14911pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-[60]
-<figuras/visualizacao-geoespacial.png, id=2256, 1436.36626pt x 685.05937pt>
+Package pdftex.def Info: figuras/organizacao-camadas.png  used on input line 44.
+(pdftex.def)             Requested size: 446.13727pt x 212.80151pt.
+ [62 <./figuras/organizacao-camadas.png>]
+<figuras/visualizacao-geoespacial.png, id=2298, 1436.36626pt x 685.05937pt>
 File: figuras/visualizacao-geoespacial.png Graphic file (type png)
 <use figuras/visualizacao-geoespacial.png>
-Package pdftex.def Info: figuras/visualizacao-geoespacial.png  used on input line 78.
-(pdftex.def)             Requested size: 455.24411pt x 217.12239pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 78--79
- [][] 
- []
-
-[61 <./figuras/organizacao-camadas.png>] [62 <./figuras/visualizacao-geoespacial.png>]
-<figuras/medicao-impressao.png, id=2268, 1431.84938pt x 686.565pt>
+Package pdftex.def Info: figuras/visualizacao-geoespacial.png  used on input line 62.
+(pdftex.def)             Requested size: 446.13727pt x 212.77388pt.
+ [63 <./figuras/visualizacao-geoespacial.png>]
+<figuras/medicao-impressao.png, id=2305, 1431.84938pt x 686.565pt>
 File: figuras/medicao-impressao.png Graphic file (type png)
 <use figuras/medicao-impressao.png>
-Package pdftex.def Info: figuras/medicao-impressao.png  used on input line 108.
-(pdftex.def)             Requested size: 455.24411pt x 218.28053pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 108--109
- [][] 
- []
-
-[63 <./figuras/medicao-impressao.png>]
-<figuras/gerenciamento-camadas.png, id=2275, 1443.14156pt x 685.8122pt>
+Package pdftex.def Info: figuras/medicao-impressao.png  used on input line 80.
+(pdftex.def)             Requested size: 446.13727pt x 213.91199pt.
+ [64 <./figuras/medicao-impressao.png>]
+<figuras/gerenciamento-camadas.png, id=2312, 1443.14156pt x 685.8122pt>
 File: figuras/gerenciamento-camadas.png Graphic file (type png)
 <use figuras/gerenciamento-camadas.png>
-Package pdftex.def Info: figuras/gerenciamento-camadas.png  used on input line 134.
-(pdftex.def)             Requested size: 455.24411pt x 216.33546pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 134--135
- [][] 
- []
-
-<figuras/cadastro-geojson.png, id=2277, 1434.86063pt x 684.30656pt>
+Package pdftex.def Info: figuras/gerenciamento-camadas.png  used on input line 98.
+(pdftex.def)             Requested size: 446.13727pt x 212.01357pt.
+ [65 <./figuras/gerenciamento-camadas.png>]
+<figuras/cadastro-geojson.png, id=2319, 1434.86063pt x 684.30656pt>
 File: figuras/cadastro-geojson.png Graphic file (type png)
 <use figuras/cadastro-geojson.png>
-Package pdftex.def Info: figuras/cadastro-geojson.png  used on input line 152.
-(pdftex.def)             Requested size: 455.24411pt x 217.11351pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 152--154
- [][] 
- []
-
-[64 <./figuras/gerenciamento-camadas.png>]
-<figuras/editor-geojson.png, id=2284, 1436.36626pt x 686.565pt>
+Package pdftex.def Info: figuras/cadastro-geojson.png  used on input line 108.
+(pdftex.def)             Requested size: 446.13727pt x 212.76978pt.
+<figuras/editor-geojson.png, id=2321, 1436.36626pt x 686.565pt>
 File: figuras/editor-geojson.png Graphic file (type png)
 <use figuras/editor-geojson.png>
-Package pdftex.def Info: figuras/editor-geojson.png  used on input line 169.
-(pdftex.def)             Requested size: 455.24411pt x 217.59958pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 169--170
- [][] 
- []
-
-[65 <./figuras/cadastro-geojson.png>]
-<figuras/implantacao-vercel.png, id=2291, 1438.6247pt x 690.32906pt>
+Package pdftex.def Info: figuras/editor-geojson.png  used on input line 120.
+(pdftex.def)             Requested size: 446.13727pt x 213.24152pt.
+ [66 <./figuras/cadastro-geojson.png>]
+<figuras/implantacao-vercel.png, id=2331, 1438.6247pt x 690.32906pt>
 File: figuras/implantacao-vercel.png Graphic file (type png)
 <use figuras/implantacao-vercel.png>
-Package pdftex.def Info: figuras/implantacao-vercel.png  used on input line 193.
-(pdftex.def)             Requested size: 366.13101pt x 175.68924pt.
-<figuras/implantacao-railway.png, id=2292, 1440.13031pt x 687.31781pt>
+Package pdftex.def Info: figuras/implantacao-vercel.png  used on input line 136.
+(pdftex.def)             Requested size: 351.51125pt x 168.67389pt.
+<figuras/implantacao-railway.png, id=2332, 1440.13031pt x 687.31781pt>
 File: figuras/implantacao-railway.png Graphic file (type png)
 <use figuras/implantacao-railway.png>
-Package pdftex.def Info: figuras/implantacao-railway.png  used on input line 201.
-(pdftex.def)             Requested size: 368.11835pt x 175.68846pt.
-<figuras/implantacao-docker.png, id=2293, 1444.64719pt x 775.39688pt>
+Package pdftex.def Info: figuras/implantacao-railway.png  used on input line 140.
+(pdftex.def)             Requested size: 353.41734pt x 168.67226pt.
+<figuras/implantacao-docker.png, id=2333, 1444.64719pt x 686.565pt>
 File: figuras/implantacao-docker.png Graphic file (type png)
 <use figuras/implantacao-docker.png>
-Package pdftex.def Info: figuras/implantacao-docker.png  used on input line 209.
-(pdftex.def)             Requested size: 327.32411pt x 175.68726pt.
- [66 <./figuras/editor-geojson.png>] [67 <./figuras/implantacao-vercel.png> <./figuras/implantacao-railway.png> <./figuras/implantacao-docker.png>] [68]) (2-textuais/5-conclusao.tex [69] [70]
+Package pdftex.def Info: figuras/implantacao-docker.png  used on input line 144.
+(pdftex.def)             Requested size: 354.90056pt x 168.6656pt.
+ [67 <./figuras/editor-geojson.png>] [68 <./figuras/implantacao-vercel.png> <./figuras/implantacao-railway.png> <./figuras/implantacao-docker.png>] [69] [70]
+Overfull \hbox (14.64105pt too wide) in paragraph at lines 352--353
+ []$[]$ 
+ []
+
+[71]
+<figuras/avaliacao-conclusao-dificuldades.png, id=2365, 751.608pt x 267.1581pt>
+File: figuras/avaliacao-conclusao-dificuldades.png Graphic file (type png)
+<use figuras/avaliacao-conclusao-dificuldades.png>
+Package pdftex.def Info: figuras/avaliacao-conclusao-dificuldades.png  used on input line 363.
+(pdftex.def)             Requested size: 446.13727pt x 158.57988pt.
+ [72 <./figuras/avaliacao-conclusao-dificuldades.png>]) (2-textuais/5-conclusao.tex [73]
 Cap\'{\i }tulo 5.
-[71
+[74
 
-]) (documento.bbl [72]
+]) (documento.bbl [75]
 bibitemlist
-[73
+[76
 
-]) [74] (3-pos-textuais/apendices/apendice-a.tex
+]) [77] (3-pos-textuais/apendices/apendice-a.tex
 \bfseries AP\^ENDICE A.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-[75
+[78
 
-] [76]) [77]
+] [79]) [80]
 \tf@lof=\write8
 \openout8 = `documento.lof'.
 
@@ -1635,17 +1580,17 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 35895 strings out of 467867
- 641178 string characters out of 5428402
- 1291313 words of memory out of 5000000
- 63524 multiletter control sequences out of 15000+600000
- 702898 words of font info for 422 fonts, out of 8000000 for 9000
+ 36028 strings out of 467867
+ 643704 string characters out of 5428402
+ 1313604 words of memory out of 5000000
+ 63637 multiletter control sequences out of 15000+600000
+ 716376 words of font info for 432 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,120p,2547b,1254s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on documento.pdf (78 pages, 8530298 bytes).
+ 99i,17n,120p,2640b,1243s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\walis\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on documento.pdf (81 pages, 9808796 bytes).
 PDF statistics:
- 2819 PDF objects out of 2984 (max. 8388607)
- 262 named destinations out of 1000 (max. 500000)
- 77592 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 2911 PDF objects out of 2984 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
+ 94498 words of extra memory for PDF output out of 106986 (max. 10000000)
 
