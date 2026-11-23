@@ -439,6 +439,9 @@ INPUT .\1-pre-textuais\dedicatoria.tex
 INPUT .\1-pre-textuais\dedicatoria.tex
 INPUT .\1-pre-textuais\dedicatoria.tex
 INPUT 1-pre-textuais\dedicatoria.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\1-pre-textuais\agradecimentos.tex
 INPUT .\1-pre-textuais\agradecimentos.tex
 INPUT .\1-pre-textuais\agradecimentos.tex
@@ -454,9 +457,6 @@ INPUT .\1-pre-textuais\resumo.tex
 INPUT .\1-pre-textuais\resumo.tex
 INPUT .\1-pre-textuais\resumo.tex
 INPUT 1-pre-textuais\resumo.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\1-pre-textuais\abstract.tex
 INPUT .\1-pre-textuais\abstract.tex
 INPUT .\1-pre-textuais\abstract.tex

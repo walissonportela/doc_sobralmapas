@@ -22,7 +22,7 @@ O modelo matricial, também denominado \textit{raster}, representa o espaço por
     \caption{Representação dos modelos de dados vetoriais e matriciais}
     \includegraphics[width=0.80\textwidth]{figuras/dados-vetoriais-matriciais.pdf}
     \label{fig:dados-vetoriais-matriciais}
-    \fonte{Elaborado pelo autor.} % Atualize caso opte por imagem de documentação externa
+    \fonte{Elaborado pelo autor.}
 \end{figure}
 
 \subsection{Sistemas de Referência Espacial}
@@ -314,7 +314,7 @@ Embora apresentem semelhanças, essas iniciativas possuem objetivos e contextos 
 
 \begin{table}[!htbp]
     \captionsetup{width=15cm}
-    \Caption{\label{tab:trabalhos-relacionados} Comparativo entre os trabalhos relacionados e a plataforma proposta}
+    \Caption{\label{tab:trabalhos-relacionados} Comparativo entre os trabalhos relacionados e a plataforma desenvolvida}
     \IBGEtab{}{
         \begin{tabular}{
             >{\raggedright\arraybackslash}p{2.7cm}
@@ -347,7 +347,7 @@ Embora apresentem semelhanças, essas iniciativas possuem objetivos e contextos 
             Organização, integração e compartilhamento de dados \\
             \midrule
 
-            Sobral em Mapas (Proposta) &
+            Sobral em Mapas (este trabalho) &
             Gestão municipal (Sobral -- CE) &
             Serviços WMS (GeoServer) e arquivos GeoJSON &
             Gestão administrativa, perfis de acesso e edição no mapa \\
@@ -362,6 +362,4 @@ Embora apresentem semelhanças, essas iniciativas possuem objetivos e contextos 
 \section{Considerações do Capítulo}
 \label{sec:consideracoes-fundamentacao}
 
-Os conceitos discutidos neste capítulo fundamentam o desenvolvimento do ``Sobral em Mapas''. Os \gls{SIG} e as plataformas \gls{WebGIS} embasam a representação e a oferta de dados espaciais, enquanto os padrões do \gls{OGC} e o formato GeoJSON definem formas de acesso e intercâmbio. A arquitetura desacoplada, o modelo \gls{SPA} e as APIs orientam a estruturação e a comunicação entre todos os componentes da aplicação.
-
-React, Leaflet, React-Leaflet, Laravel, MySQL e GeoServer, aliados ao GeoJSON, sustentam os recursos da plataforma, complementados por conteinerização, nuvem, responsividade e usabilidade. Com essa base e os trabalhos relacionados, o próximo capítulo apresenta a Metodologia, abrangendo requisitos, arquitetura, modelagem dos dados, desenvolvimento, verificação e a metodologia da avaliação com usuários.
+Os conceitos apresentados fundamentam o desenvolvimento do ``Sobral em Mapas''. Os SIG, as plataformas WebGIS e os padrões geoespaciais orientam o tratamento e a disponibilização das informações territoriais, enquanto a arquitetura desacoplada e as tecnologias estudadas sustentam a organização da aplicação. Esses fundamentos, aliados aos princípios de usabilidade e aos trabalhos relacionados, embasam a metodologia de desenvolvimento e avaliação apresentada no capítulo seguinte.

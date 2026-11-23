@@ -27,7 +27,7 @@ ISBN 9780136886099.}
 {BASTOS, T.~L.; CAMBOIM, S.~P. Compara{\c{c}}{\~a}o e an{\'a}lise de
   m{\'e}todos de disponibiliza{\c{c}}{\~a}o e publica{\c{c}}{\~a}o de mapas
   topogr{\'a}ficos na web.
-\textbf{Revista Brasileira de Cartografia}, v.~77, n.~0a, 2025.
+\textbf{Revista Brasileira de Cartografia}, v.~77, 2025.
 Dispon{\'\i}vel em:
   \url{https://seer.ufu.br/index.php/revistabrasileiracartografia/article/view/75024}.
   Acesso em: 11 set. 2026.}
@@ -88,6 +88,8 @@ Dispon{\'\i}vel em:
 {{International Organization for Standardization}. \textbf{ISO 9241-11:2018 --
   Ergonomics of Human-System Interaction -- Part 11: Usability: Definitions and
   Concepts}. Geneva: International Organization for Standardization, 2018.
+Norma internacional sobre usabilidade, considerando efic{\'a}cia,
+  efici{\^e}ncia e satisfa{\c{c}}{\~a}o em contextos de uso.
 Dispon{\'\i}vel em: \url{https://www.iso.org/standard/63500.html}. Acesso em:
   25 set. 2026.}
 
@@ -117,7 +119,9 @@ Dispon{\'\i}vel em: \url{https://leafletjs.com/reference-1.9.4.html}. Acesso
 \bibitem[Mell e Grance 2011]{MellGrance2011}
 \abntrefinfo{Mell e Grance}{MELL; GRANCE}{2011}
 {MELL, P.; GRANCE, T. \textbf{The NIST Definition of Cloud Computing}.
-Gaithersburg, Maryland, 2011.}
+Gaithersburg, Maryland, 2011. Publica{\c{c}}{\~a}o especial NIST SP 800-145
+  sobre a defini{\c{c}}{\~a}o de computa{\c{c}}{\~a}o em nuvem. Dispon{\'\i}vel
+  em: \url{https://doi.org/10.6028/NIST.SP.800-145}. Acesso em: 22 nov. 2026.}
 
 \bibitem[{Open Geospatial Consortium} 2006]{OGCWMS}
 \abntrefinfo{{Open Geospatial Consortium}}{{Open Geospatial Consortium}}{2006}
@@ -142,6 +146,22 @@ OGC Web Feature Service 2.0 Interface Standard with Corrigendum, vers{\~a}o
   2.0.2, documento OGC 09-025r2.
 Dispon{\'\i}vel em: \url{https://www.ogc.org/standards/wfs/}. Acesso em: 05
   ago. 2026.}
+
+\bibitem[{OpenStreetMap contributors} s.d.]{OpenStreetMapDados}
+\abntrefinfo{{OpenStreetMap contributors}}{{OpenStreetMap contributors}}{s.d.}
+{{OpenStreetMap contributors}. \textbf{OpenStreetMap}. s.d.
+Base cartogr{\'a}fica colaborativa mantida por contribuidores e disponibilizada
+  sob a Open Database License (ODbL) 1.0.
+Dispon{\'\i}vel em: \url{https://www.openstreetmap.org/}. Acesso em: 22 nov.
+  2026.}
+
+\bibitem[{OpenStreetMap Wiki} s.d.]{OverpassAPI}
+\abntrefinfo{{OpenStreetMap Wiki}}{{OpenStreetMap Wiki}}{s.d.}
+{{OpenStreetMap Wiki}. \textbf{Overpass API}. s.d.
+Servi{\c{c}}o de consulta que permite selecionar elementos geogr{\'a}ficos da
+  base OpenStreetMap por crit{\'e}rios definidos.
+Dispon{\'\i}vel em: \url{https://wiki.openstreetmap.org/wiki/Overpass\_API}.
+  Acesso em: 22 nov. 2026.}
 
 \bibitem[{Oracle Corporation} 2026]{MySQL80}
 \abntrefinfo{{Oracle Corporation}}{{Oracle Corporation}}{2026}
@@ -183,18 +203,33 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Silva}{SILVA}{2013}
 {SILVA, C. N.~d. O webgis como ferramenta no processo de ensino-aprendizagem de
   geografia e cartografia.
-\textbf{Revista GeoAmaz{\^o}nia}, p. 19--32, 2013.
+\textbf{Revista GeoAmaz{\^o}nia}, v.~1, n.~2, p. 19--32, 2013.
 Dispon{\'\i}vel em:
   \url{https://periodicos.ufpa.br/index.php/geoamazonia/article/view/12351}.
   Acesso em: 19 ago. 2026.}
+
+\bibitem[{SOBRAL (CE). Secretaria do Urbanismo, Habita{\c{c}}{\~a}o e Meio
+  Ambiente} s.d.]{SEUMADadosGeograficos}
+\abntrefinfo{{SOBRAL (CE). Secretaria do Urbanismo, Habita{\c{c}}{\~a}o e Meio
+  Ambiente}}{{SOBRAL (CE). Secretaria do Urbanismo, Habita{\c{c}}{\~a}o e Meio
+  Ambiente}}{s.d.}
+{{SOBRAL (CE). Secretaria do Urbanismo, Habita{\c{c}}{\~a}o e Meio Ambiente}.
+  \textbf{Dados Geogr{\'a}ficos (KML, KMZ, SHP, MDT e ECW)}. s.d.
+Cat{\'a}logo municipal com bases de bairros, distritos, sistema vi{\'a}rio e
+  outros conjuntos de dados geogr{\'a}ficos para consulta e obten{\c{c}}{\~a}o.
+Dispon{\'\i}vel em:
+  \url{https://seuma.sobral.ce.gov.br/iinformativos/dados-geograficos}. Acesso
+  em: 22 nov. 2026.}
 
 \bibitem[Vinueza-Martinez \textit{et al.} 2024]{VinuezaMartinez2024}
 \abntrefinfo{Vinueza-Martinez \textit{et al.}}{VINUEZA-MARTINEZ \textit{et
   al.}}{2024}
 {VINUEZA-MARTINEZ, J.; CORREA-PERALTA, M.; RAMIREZ-ANORMALIZA, R.; ARIAS,
-  O.~F.; PAREDES, D.~V. Geographic information systems (giss) based on webgis
-  architecture: Bibliometric analysis of the current status and research
-  trends.
-\textbf{Sustainability}, MDPI, v.~16, n.~15, p.~6439, 2024.}
+  O.~F.; PAREDES, D.~V. Geographic information systems ({GISs}) based on
+  {WebGIS} architecture: Bibliometric analysis of the current status and
+  research trends.
+\textbf{Sustainability}, MDPI, v.~16, n.~15, p.~6439, 2024.
+Dispon{\'\i}vel em: \url{https://doi.org/10.3390/su16156439}. Acesso em: 22
+  nov. 2026.}
 
 \end{thebibliography}

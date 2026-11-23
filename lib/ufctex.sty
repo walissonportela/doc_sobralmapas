@@ -371,7 +371,6 @@
 \newcommand{\ies}{\def \@ies}
 \newcommand{\iessigla}{\def \@iessigla}
 \newcommand{\centro}{\def \@centro}
-\newcommand{\departamento}{\def \@departamento}
 \newcommand{\programamestrado}{\def \@programamestrado}
 \newcommand{\programadoutorado}{\def \@programadoutorado}
 \newcommand{\nomedomestrado}{\def \@mestrado}
@@ -414,7 +413,6 @@
 \newcommand{\imprimiries}{\@ies}
 \newcommand{\imprimiriessigla}{\@iessigla}
 \newcommand{\imprimircentro}{\@centro}
-\newcommand{\imprimirdepartamento}{\@departamento}
 \newcommand{\imprimirprogramamestrado}{\@programamestrado}
 \newcommand{\imprimirprogramadoutorado}{\@programadoutorado}
 \newcommand{\imprimirmestrado}{\@mestrado}
@@ -458,7 +456,6 @@
 \ies{Universidade Federal do Ceará}
 \iessigla{UFC}
 \centro{}
-\departamento{}
 \graduacaoem{}
 \habilitacao{} % Pode colocar tambem 'licenciada'
 \especializacaoem{}
@@ -554,7 +551,6 @@
         \vspace{-0.4cm}
 		\MakeUppercase{\imprimiries} \\
 		\MakeUppercase{\imprimircentro} \\
-		\MakeUppercase{\imprimirdepartamento} \\
 		\abntex@ifnotempty{\imprimirprogramadoutorado}{
 			\MakeUppercase{\imprimirprogramadoutorado} \\
 		}		
@@ -587,7 +583,6 @@
         \vspace{-0.4cm}
 		\MakeUppercase{\imprimiries} \\
 		\MakeUppercase{\imprimircentro} \\
-		\MakeUppercase{\imprimirdepartamento} \\
 		\abntex@ifnotempty{\imprimirprogramamestrado}{
 			\MakeUppercase{\imprimirprogramamestrado} \\
 		}		
@@ -620,7 +615,6 @@
         \vspace{-0.4cm}
 		\MakeUppercase{\imprimiries} \\
 		\MakeUppercase{\imprimircentro} \\
-		\MakeUppercase{\imprimirdepartamento} \\
 		\MakeUppercase{Curso de #1 em \imprimirgraduacaoem} \\
 
 		\vspace{\onelineskip}
