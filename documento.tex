@@ -83,6 +83,8 @@
 
 \input{lib/preambulo}
 
+\AtBeginDocument{\glsaddall[types=\acronymtype]}
+
 \setlength{\mathindent}{0pt} %Complementa o alinhamento de equações para totalmente a esquerda.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,7 +224,7 @@
 	% Elementos pré-textuais
 	\imprimircapa
 	\imprimirfolhaderosto{}
-	\imprimirfichacatalografica{1-pre-textuais/ficha-catalografica}
+	%\imprimirfichacatalografica{1-pre-textuais/ficha-catalografica}
 	%\imprimirerrata{elementos-pre-textuais/errata}
 	\imprimirfolhadeaprovacao
 	\imprimirdedicatoria{1-pre-textuais/dedicatoria}

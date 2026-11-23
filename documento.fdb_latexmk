@@ -1,30 +1,29 @@
 # Fdb version 4
-["bibtex documento"] 1795405692.42931 "documento.aux" "documento.bbl" "documento" 1795405698.76589 0
+["bibtex documento"] 1795408822.38096 "documento.aux" "documento.bbl" "documento" 1795408965.82498 0
   "./3-pos-textuais/referencias.bib" 1795392407 16567 4d99fa622b4e64f84b067f4b9e117eb8 ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "documento.aux" 1795405697 72246 2e687cc384c5aac30c26109d9fb85646 "pdflatex"
+  "documento.aux" 1795408964 72246 35b146e8d46e740b7e10384779f66fd5 "pdflatex"
   (generated)
   "documento.bbl"
   "documento.blg"
   (rewritten before read)
-["makeindex documento.idx"] 1795405685.99315 "documento.idx" "documento.ind" "documento" 1795405698.76492 0
-  "documento.idx" 1795405693 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex documento.idx"] 1795407507.59328 "documento.idx" "documento.ind" "documento" 1795408965.82461 0
+  "documento.idx" 1795408961 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "documento.ilg"
   "documento.ind"
   (rewritten before read)
-["pdflatex"] 1795405692.72026 "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" "documento.pdf" "documento" 1795405698.76717 0
+["pdflatex"] 1795408960.71693 "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" "documento.pdf" "documento" 1795408965.82556 0
   "1-pre-textuais/abstract.tex" 1795383085 2467 fe7f1d2ba0c893fd67f91671528d0858 ""
   "1-pre-textuais/agradecimentos.tex" 1795403184 2426 8ca4c21dc6d4ebcbfced93b76e23d3e5 ""
   "1-pre-textuais/dedicatoria.tex" 1795399437 214 a785d9e518f843e2c73919d8eb5e7fa0 ""
   "1-pre-textuais/epigrafe.tex" 1795403416 93 4f8dc9d9dc888edc0b39f321d1f81a93 ""
-  "1-pre-textuais/ficha-catalografica.pdf" 1775085270 424460 580187f79f08e2b2ef33d85f00fd1dcf ""
-  "1-pre-textuais/lista-de-abreviaturas-e-siglas.tex" 1795405409 2288 a3abd7ad47d2bd919b93837a7a7f4f21 ""
+  "1-pre-textuais/lista-de-abreviaturas-e-siglas.tex" 1795405728 2288 a3abd7ad47d2bd919b93837a7a7f4f21 ""
   "1-pre-textuais/resumo.tex" 1795383143 2619 ac7955ad7d1217b5ef2eca3f793ea720 ""
   "2-textuais/1-introducao.tex" 1795146829 9673 68d25394b456f714660604c7b6fcc036 ""
   "2-textuais/2-fundamentacao-teorica.tex" 1795388684 32676 a34841b86f7cbb543753282fe148f4fa ""
-  "2-textuais/3-metodologia.tex" 1795390694 74998 840873642768182c265786d4344ef1e2 ""
+  "2-textuais/3-metodologia.tex" 1795408960 74891 9563f151a2398089c95eeb48a502bc98 ""
   "2-textuais/4-resultados.tex" 1795391532 30517 18a933751727e93b9e4603cdac0cb4d6 ""
   "2-textuais/5-conclusao.tex" 1795396557 5326 24f3cb3bfe41b511a84d932bea70decc ""
   "3-pos-textuais/apendices/apendice-a.tex" 1794799986 5938 3749865738b6417f74f5eb9695feb0e4 ""
@@ -232,16 +231,16 @@
   "C:/Users/walis/AppData/Roaming/MiKTeX/tex/latex/translator/translator.sty" 1622471510 8765 56d370785f0143111ff9898b5adfe08e ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/walis/AppData/Roaming/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
-  "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" 1795405434 10679 cc8f46ede1c40ddba452cfbac94c2510 ""
-  "documento.acr" 1795405665 1877 2b5ac596f342e36dfc6af367815664f1 ""
-  "documento.aux" 1795405697 72246 2e687cc384c5aac30c26109d9fb85646 "pdflatex"
-  "documento.bbl" 1795405692 11218 63c59a01ed8ca9eba8de64e257a60084 "bibtex documento"
+  "c:/Users/walis/OneDrive/Documentos/TCC_Walisson/documento.tex" 1795408298 10730 dff902a9d03885eb6ef3725358a2ffac ""
+  "documento.acr" 1795407721 5105 892e67ef97f7f234205111aed909c6cf ""
+  "documento.aux" 1795408964 72246 35b146e8d46e740b7e10384779f66fd5 "pdflatex"
+  "documento.bbl" 1795408822 11218 63c59a01ed8ca9eba8de64e257a60084 "bibtex documento"
   "documento.glsdefs" 1786592293 398 74c743572a537185e509ee29475d98f7 ""
-  "documento.ind" 1795405686 0 d41d8cd98f00b204e9800998ecf8427e "makeindex documento.idx"
-  "documento.lof" 1795405697 2261 6b753e0af37405a10d7085f15aadeb6b "pdflatex"
-  "documento.lot" 1795405697 1630 8b9d4db032192417ed74469058e8457f "pdflatex"
-  "documento.tex" 1795405434 10679 cc8f46ede1c40ddba452cfbac94c2510 ""
-  "documento.toc" 1795405697 9531 576bcc7928bab4499659077a89ac9146 "pdflatex"
+  "documento.ind" 1795407507 0 d41d8cd98f00b204e9800998ecf8427e "makeindex documento.idx"
+  "documento.lof" 1795408964 2261 6745e8a6efe7d638900eff3daa16a109 "pdflatex"
+  "documento.lot" 1795408964 1630 09b697a4ae715bfea97c79b05eb108f6 "pdflatex"
+  "documento.tex" 1795408298 10730 dff902a9d03885eb6ef3725358a2ffac ""
+  "documento.toc" 1795408964 9531 47c274f62fee9fc2be78a209a975c93b "pdflatex"
   "figuras/arquitetura-geral.pdf" 1794800116 1023909 ecd7fde0878983d47ef72cba75047da6 ""
   "figuras/avaliacao-conclusao-dificuldades.png" 1795377421 241047 af483e6db8c2df111fbb66ce3458d717 ""
   "figuras/cadastro-geojson.png" 1793980230 524598 a16962fa59a7af815da17661c165c0c2 ""
